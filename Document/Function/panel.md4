@@ -1,0 +1,23 @@
+# `Panel` functions
+
+## Introduction
+Use the panel to select the file to be opened or saved.
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`panel.d.ts')
+</pre>
+
+See [FileType](KIWI_LIB_DOC/Enum/FileType.md) and [URLIF](KIWI_LIB_DOC/Class/URL.md).
+
+## Example
+sample script: [panel.jspkg](ARISIA_TOP/ArisiaCard/Resource/Samples/panel.jspkg)
+
+<pre>
+m4_include(`panel.jspkg/panel.as')
+</pre>
+
+m4_include(`footer.md')
+

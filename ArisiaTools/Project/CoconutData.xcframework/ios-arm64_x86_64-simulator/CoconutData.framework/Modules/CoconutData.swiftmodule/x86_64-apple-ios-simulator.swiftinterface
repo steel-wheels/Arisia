@@ -1,0 +1,3925 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name CoconutData
+import CoreGraphics
+import Darwin
+import Foundation
+import SpriteKit
+import Swift
+import UIKit
+import UniformTypeIdentifiers
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import Darwin.POSIX.termios
+public class CNValueProperties : CoconutData.CNProperties {
+  public static let ClassName: Swift.String
+  public static let InterfaceName: Swift.String
+  public init(type typ: CoconutData.CNInterfaceType)
+  public static func baseInterfaceMembers() -> Swift.Array<CoconutData.CNInterfaceType.Member>
+  public static func subInterfaceMembers(recordIF recif: CoconutData.CNInterfaceType) -> Swift.Array<CoconutData.CNInterfaceType.Member>
+  public var type: CoconutData.CNInterfaceType {
+    get
+  }
+  public var count: Swift.Int {
+    get
+  }
+  public var properties: Swift.Dictionary<Swift.String, CoconutData.CNValue> {
+    get
+  }
+  public var names: Swift.Array<Swift.String> {
+    get
+  }
+  public func name(at index: Swift.Int) -> Swift.String?
+  public var values: Swift.Array<CoconutData.CNValue> {
+    get
+  }
+  public func value(byName name: Swift.String) -> CoconutData.CNValue?
+  public func set(value val: CoconutData.CNValue, forName name: Swift.String) -> Swift.Bool
+  public func load(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>, from filename: Swift.String?) -> Foundation.NSError?
+  public func save(to url: Foundation.URL) -> Swift.Bool
+  @objc deinit
+}
+public struct CNMenuItem {
+  public static let InterfaceName: Swift.String
+  public var title: Swift.String
+  public var value: Swift.Int
+  public init(title ttl: Swift.String, value val: Swift.Int)
+  public static var empty: CoconutData.CNMenuItem {
+    get
+  }
+  public func toValue() -> CoconutData.CNValue
+  public static func fromValue(dictionary dict: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> CoconutData.CNMenuItem?
+}
+@_hasMissingDesignatedInitializers public class CNValueSet {
+  public static let ClassName: Swift.String
+  public static func isSet(dictionary dict: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> Swift.Bool
+  public static func fromValue(value val: CoconutData.CNValue) -> CoconutData.CNValue?
+  public static func fromValue(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> CoconutData.CNValue?
+  public static func toValue(values vals: Swift.Array<CoconutData.CNValue>) -> CoconutData.CNValue
+  public static func insert(target targ: inout Swift.Array<CoconutData.CNValue>, element elm: CoconutData.CNValue)
+  public static func compare(set0 s0: Swift.Array<CoconutData.CNValue>, set1 s1: Swift.Array<CoconutData.CNValue>) -> Foundation.ComparisonResult
+  @objc deinit
+}
+public func CNCastValue(from srcval: CoconutData.CNValue, to dsttyp: CoconutData.CNValueType) -> CoconutData.CNValue?
+open class CNPreferenceTable {
+  public typealias ListenerFunction = CoconutData.CNObserverDictionary.ListenerFunction
+  public typealias ListnerHolder = CoconutData.CNObserverDictionary.ListnerHolder
+  public init(sectionName name: Swift.String)
+  public func path(keyString key: Swift.String) -> Swift.String
+  public func set(objectValue val: ObjectiveC.NSObject, forKey key: Swift.String)
+  public func objectValue(forKey key: Swift.String) -> ObjectiveC.NSObject?
+  public func set(intValue val: Swift.Int, forKey key: Swift.String)
+  public func intValue(forKey key: Swift.String) -> Swift.Int?
+  public func storeIntValue(intValue val: Swift.Int, forKey key: Swift.String)
+  public func loadIntValue(forKey key: Swift.String) -> Swift.Int?
+  public func set(stringValue val: Swift.String, forKey key: Swift.String)
+  public func stringValue(forKey key: Swift.String) -> Swift.String?
+  public func storeStringValue(stringValue val: Swift.String, forKey key: Swift.String)
+  public func loadStringValue(forKey key: Swift.String) -> Swift.String?
+  public func set(colorValue val: CoconutData.CNColor, forKey key: Swift.String)
+  public func colorValue(forKey key: Swift.String) -> CoconutData.CNColor?
+  public func storeColorValue(colorValue val: CoconutData.CNColor, forKey key: Swift.String)
+  public func loadColorValue(forKey key: Swift.String) -> CoconutData.CNColor?
+  public func set(fontValue val: CoconutData.CNFont, forKey key: Swift.String)
+  public func fontValue(forKey key: Swift.String) -> CoconutData.CNFont?
+  public func storeFontValue(fontValue val: CoconutData.CNFont, forKey key: Swift.String)
+  public func loadFontValue(forKey key: Swift.String) -> CoconutData.CNFont?
+  public func set(dataDictionaryValue val: Swift.Dictionary<Swift.String, Foundation.Data>, forKey key: Swift.String)
+  public func dataDictionaryValue(forKey key: Swift.String) -> Swift.Dictionary<Swift.String, Foundation.Data>?
+  public func storeDataDictionaryValue(dataDictionaryValue val: Swift.Dictionary<Swift.String, Foundation.Data>, forKey key: Swift.String)
+  public func loadDataDictionaryValue(forKey key: Swift.String) -> Swift.Dictionary<Swift.String, Foundation.Data>?
+  public func set(colorDictionaryValue val: Swift.Dictionary<CoconutData.CNInterfaceStyle, CoconutData.CNColor>, forKey key: Swift.String)
+  public func colorDictionaryValue(forKey key: Swift.String) -> Swift.Dictionary<CoconutData.CNInterfaceStyle, CoconutData.CNColor>?
+  public func storeColorDictionaryValue(dataDictionaryValue val: Swift.Dictionary<CoconutData.CNInterfaceStyle, CoconutData.CNColor>, forKey key: Swift.String)
+  public func loadColorDictionaryValue(forKey key: Swift.String) -> Swift.Dictionary<CoconutData.CNInterfaceStyle, CoconutData.CNColor>?
+  public func addObserver(forKey key: Swift.String, listnerFunction lfunc: @escaping CoconutData.CNPreferenceTable.ListenerFunction) -> CoconutData.CNPreferenceTable.ListnerHolder
+  public func removeObserver(listnerHolder holder: CoconutData.CNPreferenceTable.ListnerHolder?)
+  @objc deinit
+}
+public class CNTokenStream {
+  required public init(source src: Swift.Array<CoconutData.CNToken>)
+  public var lineNo: Swift.Int? {
+    get
+  }
+  public func get() -> CoconutData.CNToken?
+  public func getReservedWord() -> Swift.Int?
+  public func requireReservedWord(reservedWordId rid: Swift.Int) -> Swift.Bool
+  public func requireReservedWord() -> Swift.Int?
+  public func getSymbol() -> Swift.Character?
+  public func requireSymbol(symbol sym: Swift.Character) -> Swift.Bool
+  public func requireSymbol() -> Swift.Character?
+  public func getIdentifier() -> Swift.String?
+  public func requireIdentifier(identifier ident: Swift.String) -> Swift.Bool
+  public func requireIdentifier() -> Swift.String?
+  public func getBool() -> Swift.Bool?
+  public func requireBool(value src: Swift.Bool) -> Swift.Bool
+  public func requireBool() -> Swift.Bool?
+  public func getInt() -> Swift.Int?
+  public func requireInt(value src: Swift.Int) -> Swift.Bool
+  public func requireInt() -> Swift.Int?
+  public func getUInt() -> Swift.UInt?
+  public func requireUInt(value src: Swift.UInt) -> Swift.Bool
+  public func requireUInt() -> Swift.UInt?
+  public func getDouble() -> Swift.Double?
+  public func requireDouble(value src: Swift.Double) -> Swift.Bool
+  public func requireDouble() -> Swift.Double?
+  public func getNumber() -> Foundation.NSNumber?
+  public func requireNumber(value src: Foundation.NSNumber) -> Swift.Bool
+  public func requireNumber() -> Foundation.NSNumber?
+  public func getString() -> Swift.String?
+  public func requireString(value src: Swift.String) -> Swift.Bool
+  public func requireString() -> Swift.String?
+  public func getText() -> Swift.String?
+  public func requireText(value src: Swift.String) -> Swift.Bool
+  public func requireText() -> Swift.String?
+  public func unget() -> CoconutData.CNToken?
+  public func peek(offset ofst: Swift.Int) -> CoconutData.CNToken?
+  public func isEmpty() -> Swift.Bool
+  public func append(item newitem: CoconutData.CNToken)
+  public func trace(trace trc: (_ src: CoconutData.CNToken) -> Swift.Bool) -> Swift.Array<CoconutData.CNToken>
+  public var description: Swift.String {
+    get
+  }
+  public var near: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CNEnvironment {
+  public static let HomeVariable: Swift.String
+  public static let PackageDirVariable: Swift.String
+  public static let PwdVariable: Swift.String
+  public static var shared: CoconutData.CNEnvironment {
+    get
+  }
+  public init(parent par: CoconutData.CNEnvironment)
+  public func setVariable(_ name: Swift.String, _ value: Swift.String)
+  public func getVariable(_ name: Swift.String) -> Swift.String?
+  public var currentDirectory: Foundation.URL {
+    get
+  }
+  public var packageDirectory: Foundation.URL? {
+    get
+  }
+  public func setCurrentDirectory(path pth: Swift.String)
+  public func setPackageDirectory(path pth: Swift.String)
+  public func getAll() -> Swift.Dictionary<Swift.String, Swift.String>
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CNLogManager {
+  public static var shared: CoconutData.CNLogManager
+  public var console: any CoconutData.CNConsole {
+    get
+  }
+  public func pushConsone(console cons: any CoconutData.CNConsole)
+  public func popConsole()
+  public func log(logLevel level: CoconutData.CNConfig.LogLevel, message msg: Swift.String)
+  @objc deinit
+}
+public func CNLog(logLevel level: CoconutData.CNConfig.LogLevel, message msg: Swift.String)
+public func CNLog(logLevel level: CoconutData.CNConfig.LogLevel, message msg: Swift.String, atFunction afunc: Swift.String, inFile ifile: Swift.String)
+public func CNLog(logLevel level: CoconutData.CNConfig.LogLevel, messages msgs: Swift.Array<Swift.String>)
+public func CNLog(logLevel level: CoconutData.CNConfig.LogLevel, text txt: any CoconutData.CNText)
+public class CNValueFormatter {
+  public init()
+  public func load(source src: CoconutData.CNValue, type typ: CoconutData.CNValueType, from fname: Swift.String?) -> Swift.Result<CoconutData.CNValue, Foundation.NSError>
+  @objc deinit
+}
+public struct CNParserConfig {
+  public init(allowIdentiferHasPeriod allowp: Swift.Bool)
+  public var allowIdentiferHasPeriod: Swift.Bool {
+    get
+  }
+}
+public class CNQueue<T> {
+  public init()
+  public var count: Swift.Int {
+    get
+  }
+  open func push(_ data: T)
+  public func peek() -> T?
+  open func pop() -> T?
+  public func clear()
+  public func peekAll() -> Swift.Array<T>
+  public func dumpState(console cons: any CoconutData.CNConsole)
+  @objc deinit
+}
+public class CNCurses {
+  public static let InterfaceName: Swift.String
+  public var foregroundColor: CoconutData.CNColor {
+    get
+    set(newcol)
+  }
+  public var backgroundColor: CoconutData.CNColor {
+    get
+    set(newcol)
+  }
+  public init(console cons: CoconutData.CNFileConsole)
+  public var width: Swift.Int {
+    get
+  }
+  public var height: Swift.Int {
+    get
+  }
+  public func begin()
+  public func end()
+  public func moveTo(x xpos: Swift.Int, y ypos: Swift.Int)
+  public func put(string str: Swift.String)
+  public func inkey() -> Swift.Character?
+  public func fill(x xpos: Swift.Int, y ypos: Swift.Int, width dwidth: Swift.Int, height dheight: Swift.Int, char c: Swift.Character)
+  @objc deinit
+}
+public class CNTerminalInfo {
+  public var isAlternative: Swift.Bool
+  public var width: Swift.Int
+  public var height: Swift.Int
+  public var foregroundColor: CoconutData.CNColor
+  public var backgroundColor: CoconutData.CNColor
+  public var doBold: Swift.Bool
+  public var doItalic: Swift.Bool
+  public var doUnderline: Swift.Bool
+  public var doBlink: Swift.Bool
+  public var doReverse: Swift.Bool
+  public var defaultForegroundColor: CoconutData.CNColor {
+    get
+  }
+  public var defaultBackgroundColor: CoconutData.CNColor {
+    get
+  }
+  public init(width widthval: Swift.Int, height heightval: Swift.Int)
+  public func reset()
+  @objc deinit
+}
+public enum CNValue {
+  case boolValue(_: Swift.Bool)
+  case numberValue(_: Foundation.NSNumber)
+  case stringValue(_: Swift.String)
+  case enumValue(_: CoconutData.CNEnum)
+  case dictionaryValue(_: Swift.Dictionary<Swift.String, CoconutData.CNValue>)
+  case arrayValue(_: Swift.Array<CoconutData.CNValue>)
+  case setValue(_: Swift.Array<CoconutData.CNValue>)
+  case interfaceValue(_: CoconutData.CNInterfaceValue)
+  case objectValue(_: Swift.AnyObject)
+  public var valueType: CoconutData.CNValueType {
+    get
+  }
+  public static var null: CoconutData.CNValue {
+    get
+  }
+  public func toBool() -> Swift.Bool?
+  public func toNumber() -> Foundation.NSNumber?
+  public func toString() -> Swift.String?
+  public func toEnum() -> CoconutData.CNEnum?
+  public func toDictionary() -> Swift.Dictionary<Swift.String, CoconutData.CNValue>?
+  public func toInterface(interfaceName ifname: Swift.String) -> CoconutData.CNInterfaceValue?
+  public func toArray() -> Swift.Array<CoconutData.CNValue>?
+  public func toSet() -> Swift.Array<CoconutData.CNValue>?
+  public func toObject() -> Swift.AnyObject?
+  public func boolProperty(identifier ident: Swift.String) -> Swift.Bool?
+  public func numberProperty(identifier ident: Swift.String) -> Foundation.NSNumber?
+  public func stringProperty(identifier ident: Swift.String) -> Swift.String?
+  public func dictionaryProperty(identifier ident: Swift.String) -> Swift.Dictionary<Swift.String, CoconutData.CNValue>?
+  public func arrayProperty(identifier ident: Swift.String) -> Swift.Array<CoconutData.CNValue>?
+  public func setProperty(identifier ident: Swift.String) -> Swift.Array<CoconutData.CNValue>?
+  public func objectProperty(identifier ident: Swift.String) -> Swift.AnyObject?
+  public func valueProperty(identifier ident: Swift.String) -> CoconutData.CNValue?
+  public var description: Swift.String {
+    get
+  }
+  public func toScript() -> any CoconutData.CNText
+  public static func stringProperty(name nm: Swift.String, in dict: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> Swift.String?
+  public static func className(forValue dict: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> Swift.String?
+  public static func hasClassName(inValue dict: Swift.Dictionary<Swift.String, CoconutData.CNValue>, className expname: Swift.String) -> Swift.Bool
+  public static func arrayProperty(name nm: Swift.String, in dict: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> Swift.Array<CoconutData.CNValue>?
+  public static func dictionaryProperty(name nm: Swift.String, in dict: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> Swift.Dictionary<Swift.String, CoconutData.CNValue>?
+  public static func setClassName(toValue dict: inout Swift.Dictionary<Swift.String, CoconutData.CNValue>, className name: Swift.String)
+  public static func removeClassName(fromValue dict: inout Swift.Dictionary<Swift.String, CoconutData.CNValue>)
+}
+@_hasMissingDesignatedInitializers public class CNStandardFiles {
+  public static var shared: CoconutData.CNStandardFiles {
+    get
+  }
+  public var input: CoconutData.CNFile
+  public var output: CoconutData.CNFile
+  public var error: CoconutData.CNFile
+  @objc deinit
+}
+extension Foundation.FileHandle {
+  public func write(string str: Swift.String)
+  public var availableString: Swift.String {
+    get
+  }
+  public func closeHandle() -> Foundation.NSError?
+  public func setRawMode(enable en: Swift.Bool)
+}
+public class CNBitmapContext {
+  public static let InterfaceName: Swift.String
+  public init()
+  public var width: Swift.Int {
+    get
+  }
+  public var height: Swift.Int {
+    get
+  }
+  public var data: CoconutData.CNBitmapData {
+    get
+  }
+  public func draw(context ctxt: CoreGraphics.CGContext, physicalFrame pframe: CoreFoundation.CGRect, width wdt: Swift.Int, height hgt: Swift.Int)
+  public func set(x posx: Swift.Int, y posy: Swift.Int, color col: CoconutData.CNColor)
+  public func set(x posx: Swift.Int, y posy: Swift.Int, bitmap bm: CoconutData.CNBitmapData)
+  public func clean()
+  public func get(x posx: Swift.Int, y posy: Swift.Int) -> CoconutData.CNColor?
+  public func toText() -> any CoconutData.CNText
+  @objc deinit
+}
+public typealias CNFont = UIKit.UIFont
+extension UIKit.UIFont {
+  public static let StyleName: Swift.String
+  public static let SizeName: Swift.String
+  public enum Style : Swift.Int {
+    case normal
+    case monospace
+    public static func allocateEnumType() -> CoconutData.CNEnumType
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum Size : Swift.Int {
+    case small
+    case regular
+    case large
+    public static func allocateEnumType() -> CoconutData.CNEnumType
+    public func toSize() -> CoreFoundation.CGFloat
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public static func fromValue(value val: CoconutData.CNValue) -> CoconutData.CNFont?
+  public static func fromValue(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> CoconutData.CNFont?
+  public func toValue() -> Swift.Dictionary<Swift.String, CoconutData.CNValue>
+}
+extension CoreFoundation.CGPoint {
+  public static let InterfaceName: Swift.String
+  public static func allocateInterfaceType() -> CoconutData.CNInterfaceType
+  public static func fromValue(value val: CoconutData.CNInterfaceValue) -> CoreFoundation.CGPoint?
+  public func toValue() -> CoconutData.CNInterfaceValue
+  public func moving(dx x: CoreFoundation.CGFloat, dy y: CoreFoundation.CGFloat) -> CoreFoundation.CGPoint
+  public func subtracting(_ p: CoreFoundation.CGPoint) -> CoreFoundation.CGPoint
+  public var description: Swift.String {
+    get
+  }
+  public static func center(_ pt0: CoreFoundation.CGPoint, _ pt1: CoreFoundation.CGPoint) -> CoreFoundation.CGPoint
+}
+@_hasMissingDesignatedInitializers public class CNLineConnector {
+  public static func connectLines(lines lns: Swift.Array<Swift.String>) -> Swift.Array<Swift.String>
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CNFontManager {
+  public static let shared: CoconutData.CNFontManager
+  @objc deinit
+}
+extension CoconutData.CNFontManager {
+  public var availableFonts: Swift.Array<Swift.String> {
+    get
+  }
+  public var availableFixedPitchFonts: Swift.Array<Swift.String> {
+    get
+  }
+  public func convert(font fnt: CoconutData.CNFont, terminalInfo terminfo: CoconutData.CNTerminalInfo) -> CoconutData.CNFont
+}
+public protocol CNConsole {
+  func print(string str: Swift.String)
+  func error(string str: Swift.String)
+  func log(string str: Swift.String)
+  func scan() -> Swift.String?
+}
+public class CNDefaultConsole : CoconutData.CNConsole {
+  public static let InterfaceName: Swift.String
+  public static func allocateInterfaceType() -> CoconutData.CNInterfaceType
+  public init()
+  public func print(string str: Swift.String)
+  public func error(string str: Swift.String)
+  public func log(string str: Swift.String)
+  public func scan() -> Swift.String?
+  @objc deinit
+}
+public class CNFileConsole : CoconutData.CNConsole {
+  public var inputFile: CoconutData.CNFile
+  public var outputFile: CoconutData.CNFile
+  public var errorFile: CoconutData.CNFile
+  public init(input ifile: CoconutData.CNFile, output ofile: CoconutData.CNFile, error efile: CoconutData.CNFile)
+  public init()
+  public func print(string str: Swift.String)
+  public func error(string str: Swift.String)
+  public func log(string str: Swift.String)
+  public func scan() -> Swift.String?
+  @objc deinit
+}
+public class CNIndentedConsole : CoconutData.CNConsole {
+  required public init(console cons: any CoconutData.CNConsole)
+  public func print(string str: Swift.String)
+  public func error(string str: Swift.String)
+  public func log(string str: Swift.String)
+  public func scan() -> Swift.String?
+  public func incrementIndent()
+  public func decrementIndent()
+  public func updateIndent(indent idt: Swift.Int)
+  @objc deinit
+}
+public class CNBufferedConsole : CoconutData.CNConsole {
+  public init()
+  public var outputConsole: (any CoconutData.CNConsole)? {
+    get
+    set(newcons)
+  }
+  public func print(string str: Swift.String)
+  public func error(string str: Swift.String)
+  public func log(string str: Swift.String)
+  public func scan() -> Swift.String?
+  @objc deinit
+}
+public class CNReadline {
+  public var line: Swift.String {
+    get
+  }
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public init()
+  public func insert(string str: Swift.String)
+  public func delete() -> Swift.Bool
+  public func cursorForward(_ num: Swift.Int) -> Swift.Int
+  public func cursorBackward(_ num: Swift.Int) -> Swift.Int
+  public func clear()
+  @objc deinit
+}
+public enum CNSpriteAction {
+  case setPosition(CoreFoundation.CGPoint)
+  case setVelocity(CoreFoundation.CGVector)
+  case retire
+}
+@_inheritsConvenienceInitializers @objc public class CNSpriteActions : ObjectiveC.NSObject {
+  public static let InterfaceName: Swift.String
+  public var actions: Swift.Array<CoconutData.CNSpriteAction> {
+    get
+  }
+  @objc override dynamic public init()
+  public func clear()
+  public func setPosition(_ pos: CoreFoundation.CGPoint)
+  public func setVelocity(_ vec: CoreFoundation.CGVector)
+  public func retire()
+  @objc deinit
+}
+extension Foundation.UserDefaults {
+  public func applyDefaultSetting()
+  public func number(forKey key: Swift.String) -> Foundation.NSNumber?
+  public func set(number num: Foundation.NSNumber, forKey key: Swift.String)
+  public func font(forKey key: Swift.String) -> CoconutData.CNFont?
+  public func set(font fnt: CoconutData.CNFont, forKey key: Swift.String)
+  public func dataDictionary(forKey key: Swift.String) -> Swift.Dictionary<Swift.String, Foundation.Data>?
+  public func set(dataDictionary dict: Swift.Dictionary<Swift.String, Foundation.Data>, forKey key: Swift.String)
+  public func color(forKey key: Swift.String) -> CoconutData.CNColor?
+  public func set(color col: CoconutData.CNColor, forKey key: Swift.String)
+}
+@_hasMissingDesignatedInitializers public class CNSemanticColorTable {
+  public static var foregroundTextColor: CoconutData.CNColor {
+    get
+  }
+  public static var backgroundTextColor: CoconutData.CNColor {
+    get
+  }
+  @objc deinit
+}
+indirect public enum CNValueType {
+  public static let typeName: Swift.String
+  case voidType
+  case anyType
+  case boolType
+  case numberType
+  case stringType
+  case enumType(CoconutData.CNEnumType)
+  case dictionaryType(CoconutData.CNValueType)
+  case arrayType(CoconutData.CNValueType)
+  case setType(CoconutData.CNValueType)
+  case objectType(Swift.String?)
+  case interfaceType(CoconutData.CNInterfaceType)
+  case functionType(CoconutData.CNValueType, Swift.Array<CoconutData.CNValueType>)
+  case nullable(CoconutData.CNValueType)
+  public var typeName: Swift.String {
+    get
+  }
+  public static func encode(valueType vtype: CoconutData.CNValueType) -> Swift.String
+  public static func decode(code str: Swift.String) -> Swift.Result<CoconutData.CNValueType, Foundation.NSError>
+  public static func compare(type0 t0: CoconutData.CNValueType, type1 t1: CoconutData.CNValueType) -> Foundation.ComparisonResult
+}
+public enum CNSymbolSize : Swift.Int, Swift.Comparable {
+  public static let TypeName: Swift.String
+  case character
+  case small
+  case regular
+  case large
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public func toPointSize() -> CoreFoundation.CGFloat
+  public func toSize() -> CoreFoundation.CGSize
+  public func size(fitIn targsize: CoreFoundation.CGSize) -> CoreFoundation.CGSize
+  public static func < (lhs: CoconutData.CNSymbolSize, rhs: CoconutData.CNSymbolSize) -> Swift.Bool
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum CNSymbol : Swift.Int {
+  public static let EnumName: Swift.String
+  public static let InterfaceName: Swift.String
+  case character
+  case checkmarkSquare
+  case chevronBackward
+  case chevronDown
+  case chevronForward
+  case chevronUp
+  case game
+  case gearshape
+  case handPointUp
+  case handRaised
+  case house
+  case lineDiagonal
+  case line_1p
+  case line_2p
+  case line_4p
+  case line_8p
+  case line_16p
+  case moonStars
+  case oval
+  case ovalFill
+  case paintbrush
+  case pencil
+  case pencilCircle
+  case pencilCircleFill
+  case play
+  case questionmark
+  case rectangle
+  case rectangleFill
+  case square
+  case sunMax
+  case sunMin
+  case terminal
+  public static var allCases: Swift.Array<CoconutData.CNSymbol> {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var identifier: Swift.String {
+    get
+  }
+  public static func pencil(doFill fill: Swift.Bool) -> CoconutData.CNSymbol
+  public static func path(doFill fill: Swift.Bool) -> CoconutData.CNSymbol
+  public static func rectangle(doFill fill: Swift.Bool, hasRound round: Swift.Bool) -> CoconutData.CNSymbol
+  public static func oval(doFill fill: Swift.Bool) -> CoconutData.CNSymbol
+  public func load(size sz: CoconutData.CNSymbolSize) -> CoconutData.CNImage
+  public static func decode(fromName name: Swift.String) -> CoconutData.CNSymbol?
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias CNEdgeInsets = UIKit.UIEdgeInsets
+public typealias CNImage = UIKit.UIImage
+extension Swift.String {
+  public var isWhiteSpace: Swift.Bool {
+    get
+  }
+  public var isNumber: Swift.Bool {
+    get
+  }
+  public var isAlphaNumerics: Swift.Bool {
+    get
+  }
+  public var isIdentifier: Swift.Bool {
+    get
+  }
+  public static func stringFromData(data dat: Foundation.Data) -> Swift.String?
+  public var deletingPathExtension: Swift.String {
+    get
+  }
+  public func pad(char c: Swift.Character, toLength len: Swift.Int, align algn: UIKit.NSTextAlignment) -> Swift.String
+}
+@_hasMissingDesignatedInitializers public class CNStringUtil {
+  public class func insertEscapeForQuote(source src: Swift.String) -> Swift.String
+  public class func removeEscapeForQuote(source strm: CoconutData.CNStringStream) -> Swift.Result<Swift.String, Foundation.NSError>
+  public class func divideByQuote(sourceString src: Swift.String, quote qchar: Swift.Character) -> Swift.Array<Swift.String>
+  public class func divideBySpaces(string src: Swift.String) -> Swift.Array<Swift.String>
+  public class func spacePrefix(string str: Swift.String) -> Swift.String
+  public class func traceForward(string str: Swift.String, pointer ptr: Swift.String.Index, doSkipFunc skip: (Swift.Character) -> Swift.Bool) -> Swift.String.Index
+  public class func traceBackward(string str: Swift.String, pointer ptr: Swift.String.Index, doSkipFunc skip: (Swift.Character) -> Swift.Bool) -> Swift.String.Index
+  public class func skipHeadingSpaces(string str: Swift.String) -> Swift.String
+  public class func removingTailSpaces(string str: Swift.String) -> Swift.String
+  public class func removingSideSpaces(string str: Swift.String) -> Swift.String
+  public class func cutFirstWord(string str: Swift.String) -> (Swift.String?, Swift.String?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CNUTTypeManager {
+  public static var shared: CoconutData.CNUTTypeManager {
+    get
+  }
+  public func extensionToType(extension ext: Swift.String) -> UniformTypeIdentifiers.UTType?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CNWorkspace {
+  public static func open(URL url: Foundation.URL, callback cbfunc: @escaping (_ result: Swift.Bool) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CNEscapeSequences {
+  public static let InterfaceName: Swift.String
+  public static var shared: CoconutData.CNEscapeSequences {
+    get
+  }
+  public func str(string str: Swift.String) -> CoconutData.CNEscapeSequence
+  public func eot() -> CoconutData.CNEscapeSequence
+  public func newline() -> CoconutData.CNEscapeSequence
+  public func tab() -> CoconutData.CNEscapeSequence
+  public func backspace() -> CoconutData.CNEscapeSequence
+  public func delete() -> CoconutData.CNEscapeSequence
+  public func insertSpaces(count cnt: Swift.Int) -> CoconutData.CNEscapeSequence
+  public func cursorUp(count cnt: Swift.Int) -> CoconutData.CNEscapeSequence
+  public func cursorDown(count cnt: Swift.Int) -> CoconutData.CNEscapeSequence
+  public func cursorForward(count cnt: Swift.Int) -> CoconutData.CNEscapeSequence
+  public func cursorBackward(count cnt: Swift.Int) -> CoconutData.CNEscapeSequence
+  public func cursorNextLine(count cnt: Swift.Int) -> CoconutData.CNEscapeSequence
+  public func cursorPreviousLine(count cnt: Swift.Int) -> CoconutData.CNEscapeSequence
+  public func cursorHolizontalAbsolute(count cnt: Swift.Int) -> CoconutData.CNEscapeSequence
+  public func cursorVisible(flag flg: Swift.Bool) -> CoconutData.CNEscapeSequence
+  public func saveCursorPosition() -> CoconutData.CNEscapeSequence
+  public func restoreCursorPosition() -> CoconutData.CNEscapeSequence
+  public func cursorPosition(row rnum: Swift.Int, column cnum: Swift.Int) -> CoconutData.CNEscapeSequence
+  public func eraceFromCursorToEnd() -> CoconutData.CNEscapeSequence
+  public func eraceFromCursorToBegin() -> CoconutData.CNEscapeSequence
+  public func eraceEntireBuffer() -> CoconutData.CNEscapeSequence
+  public func eraceFromCursorToRight() -> CoconutData.CNEscapeSequence
+  public func eraceFromCursorToLeft() -> CoconutData.CNEscapeSequence
+  public func eraceEntireLine() -> CoconutData.CNEscapeSequence
+  public func scrollUp(count cnt: Swift.Int) -> CoconutData.CNEscapeSequence
+  public func scrollDown(count cnt: Swift.Int) -> CoconutData.CNEscapeSequence
+  public func resetAll() -> CoconutData.CNEscapeSequence
+  public func resetCharacterAttribute() -> CoconutData.CNEscapeSequence
+  public func boldCharacter(flag flg: Swift.Bool) -> CoconutData.CNEscapeSequence
+  public func underlineCharacter(flag flg: Swift.Bool) -> CoconutData.CNEscapeSequence
+  public func blinkCharacter(flag flg: Swift.Bool) -> CoconutData.CNEscapeSequence
+  public func reverseCharacter(flag flg: Swift.Bool) -> CoconutData.CNEscapeSequence
+  public func foregroundColor(color col: CoconutData.CNColor) -> CoconutData.CNEscapeSequence
+  public func defaultForegroundColor() -> CoconutData.CNEscapeSequence
+  public func backgroundColor(color col: CoconutData.CNColor) -> CoconutData.CNEscapeSequence
+  public func defaultBackgroundColor() -> CoconutData.CNEscapeSequence
+  public func requestScreenSize() -> CoconutData.CNEscapeSequence
+  public func screenSize(width wnum: Swift.Int, height hnum: Swift.Int) -> CoconutData.CNEscapeSequence
+  public func selectAltScreen(flag flg: Swift.Bool) -> CoconutData.CNEscapeSequence
+  public func setFontStyle(style stl: Swift.Int) -> CoconutData.CNEscapeSequence
+  public func setFontSize(size sz: Swift.Int) -> CoconutData.CNEscapeSequence
+  @objc deinit
+}
+public class CNEscapeSequence {
+  public static let InterfaceName: Swift.String
+  public var code: CoconutData.CNEscapeCode {
+    get
+  }
+  public init(escapeCode ecode: CoconutData.CNEscapeCode)
+  public func toString() -> Swift.String
+  @objc deinit
+}
+public class CNObserverDictionary {
+  public typealias ListenerFunction = (Any?) -> Swift.Void
+  public struct ListnerHolder {
+    public init(key k: Swift.String, listnerId l: Swift.Int)
+  }
+  public init()
+  @objc deinit
+  public var keys: Swift.Array<Swift.String> {
+    get
+  }
+  public var count: Swift.Int {
+    get
+  }
+  public var values: Swift.Array<Any> {
+    get
+  }
+  public var core: Foundation.NSMutableDictionary {
+    get
+  }
+  public func setValue(_ val: ObjectiveC.NSObject, forKey key: Swift.String)
+  public func value(forKey k: Swift.String) -> ObjectiveC.NSObject?
+  public func setBooleanValue(_ bval: Swift.Bool, forKey key: Swift.String)
+  public func booleanValue(forKey key: Swift.String) -> Swift.Bool?
+  public func addObserver(forKey key: Swift.String, listnerFunction lfunc: @escaping CoconutData.CNObserverDictionary.ListenerFunction) -> CoconutData.CNObserverDictionary.ListnerHolder
+  public func countOfObservers(forKey key: Swift.String) -> Swift.Int
+  public func removeObserver(listnerHolder holderp: CoconutData.CNObserverDictionary.ListnerHolder?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CNSpriteScene : SpriteKit.SKScene {
+  public typealias InitCallback = () -> Swift.Bool
+  public typealias FinishCallback = (_ time: Foundation.TimeInterval) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func setupScene()
+  @_Concurrency.MainActor(unsafe) public func setupCallbacks(initCallback ifunc: @escaping CoconutData.CNSpriteScene.InitCallback, finishCallback ffunc: @escaping CoconutData.CNSpriteScene.FinishCallback)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var size: CoreFoundation.CGSize {
+    @objc get
+    @objc set(newsize)
+  }
+  @_Concurrency.MainActor(unsafe) public func setBackground(imageFile file: Foundation.URL)
+  @_Concurrency.MainActor(unsafe) public var isStarted: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func start()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func update(_ currentTime: Foundation.TimeInterval)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(size: CoreFoundation.CGSize)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+public class CNRGBColorTable {
+  public static let snow: CoconutData.CNColor
+  public static let ghostWhite: CoconutData.CNColor
+  public static let whiteSmoke: CoconutData.CNColor
+  public static let gainsboro: CoconutData.CNColor
+  public static let floralWhite: CoconutData.CNColor
+  public static let oldLace: CoconutData.CNColor
+  public static let linen: CoconutData.CNColor
+  public static let antiqueWhite: CoconutData.CNColor
+  public static let papayaWhip: CoconutData.CNColor
+  public static let blanchedAlmond: CoconutData.CNColor
+  public static let bisque: CoconutData.CNColor
+  public static let peachPuff: CoconutData.CNColor
+  public static let navajoWhite: CoconutData.CNColor
+  public static let moccasin: CoconutData.CNColor
+  public static let cornsilk: CoconutData.CNColor
+  public static let ivory: CoconutData.CNColor
+  public static let lemonChiffon: CoconutData.CNColor
+  public static let seashell: CoconutData.CNColor
+  public static let honeydew: CoconutData.CNColor
+  public static let mintCream: CoconutData.CNColor
+  public static let azure: CoconutData.CNColor
+  public static let aliceBlue: CoconutData.CNColor
+  public static let lavender: CoconutData.CNColor
+  public static let lavenderBlush: CoconutData.CNColor
+  public static let mistyRose: CoconutData.CNColor
+  public static let white: CoconutData.CNColor
+  public static let black: CoconutData.CNColor
+  public static let darkSlateGray: CoconutData.CNColor
+  public static let dimGray: CoconutData.CNColor
+  public static let slateGray: CoconutData.CNColor
+  public static let lightSlateGray: CoconutData.CNColor
+  public static let gray: CoconutData.CNColor
+  public static let lightGray: CoconutData.CNColor
+  public static let midnightBlue: CoconutData.CNColor
+  public static let navy: CoconutData.CNColor
+  public static let navyBlue: CoconutData.CNColor
+  public static let cornflowerBlue: CoconutData.CNColor
+  public static let darkSlateBlue: CoconutData.CNColor
+  public static let slateBlue: CoconutData.CNColor
+  public static let mediumSlateBlue: CoconutData.CNColor
+  public static let lightSlateBlue: CoconutData.CNColor
+  public static let mediumBlue: CoconutData.CNColor
+  public static let royalBlue: CoconutData.CNColor
+  public static let blue: CoconutData.CNColor
+  public static let dodgerBlue: CoconutData.CNColor
+  public static let deepSkyBlue: CoconutData.CNColor
+  public static let skyBlue: CoconutData.CNColor
+  public static let lightSkyBlue: CoconutData.CNColor
+  public static let steelBlue: CoconutData.CNColor
+  public static let lightSteelBlue: CoconutData.CNColor
+  public static let lightBlue: CoconutData.CNColor
+  public static let powderBlue: CoconutData.CNColor
+  public static let paleTurquoise: CoconutData.CNColor
+  public static let darkTurquoise: CoconutData.CNColor
+  public static let mediumTurquoise: CoconutData.CNColor
+  public static let turquoise: CoconutData.CNColor
+  public static let cyan: CoconutData.CNColor
+  public static let lightCyan: CoconutData.CNColor
+  public static let cadetBlue: CoconutData.CNColor
+  public static let mediumAquamarine: CoconutData.CNColor
+  public static let aquamarine: CoconutData.CNColor
+  public static let darkGreen: CoconutData.CNColor
+  public static let darkOliveGreen: CoconutData.CNColor
+  public static let darkSeaGreen: CoconutData.CNColor
+  public static let seaGreen: CoconutData.CNColor
+  public static let mediumSeaGreen: CoconutData.CNColor
+  public static let lightSeaGreen: CoconutData.CNColor
+  public static let paleGreen: CoconutData.CNColor
+  public static let springGreen: CoconutData.CNColor
+  public static let lawnGreen: CoconutData.CNColor
+  public static let green: CoconutData.CNColor
+  public static let chartreuse: CoconutData.CNColor
+  public static let mediumSpringGreen: CoconutData.CNColor
+  public static let greenYellow: CoconutData.CNColor
+  public static let limeGreen: CoconutData.CNColor
+  public static let yellowGreen: CoconutData.CNColor
+  public static let forestGreen: CoconutData.CNColor
+  public static let oliveDrab: CoconutData.CNColor
+  public static let darkKhaki: CoconutData.CNColor
+  public static let khaki: CoconutData.CNColor
+  public static let paleGoldenrod: CoconutData.CNColor
+  public static let lightGoldenrodYellow: CoconutData.CNColor
+  public static let lightYellow: CoconutData.CNColor
+  public static let yellow: CoconutData.CNColor
+  public static let gold: CoconutData.CNColor
+  public static let lightGoldenrod: CoconutData.CNColor
+  public static let goldenrod: CoconutData.CNColor
+  public static let darkGoldenrod: CoconutData.CNColor
+  public static let rosyBrown: CoconutData.CNColor
+  public static let indianRed: CoconutData.CNColor
+  public static let saddleBrown: CoconutData.CNColor
+  public static let sienna: CoconutData.CNColor
+  public static let peru: CoconutData.CNColor
+  public static let burlywood: CoconutData.CNColor
+  public static let beige: CoconutData.CNColor
+  public static let wheat: CoconutData.CNColor
+  public static let sandyBrown: CoconutData.CNColor
+  public static let tan: CoconutData.CNColor
+  public static let chocolate: CoconutData.CNColor
+  public static let firebrick: CoconutData.CNColor
+  public static let brown: CoconutData.CNColor
+  public static let darkSalmon: CoconutData.CNColor
+  public static let salmon: CoconutData.CNColor
+  public static let lightSalmon: CoconutData.CNColor
+  public static let orange: CoconutData.CNColor
+  public static let darkOrange: CoconutData.CNColor
+  public static let coral: CoconutData.CNColor
+  public static let lightCoral: CoconutData.CNColor
+  public static let tomato: CoconutData.CNColor
+  public static let orangeRed: CoconutData.CNColor
+  public static let red: CoconutData.CNColor
+  public static let hotPink: CoconutData.CNColor
+  public static let deepPink: CoconutData.CNColor
+  public static let pink: CoconutData.CNColor
+  public static let lightPink: CoconutData.CNColor
+  public static let paleVioletRed: CoconutData.CNColor
+  public static let maroon: CoconutData.CNColor
+  public static let mediumVioletRed: CoconutData.CNColor
+  public static let violetRed: CoconutData.CNColor
+  public static let magenta: CoconutData.CNColor
+  public static let violet: CoconutData.CNColor
+  public static let plum: CoconutData.CNColor
+  public static let orchid: CoconutData.CNColor
+  public static let mediumOrchid: CoconutData.CNColor
+  public static let darkOrchid: CoconutData.CNColor
+  public static let darkViolet: CoconutData.CNColor
+  public static let blueViolet: CoconutData.CNColor
+  public static let purple: CoconutData.CNColor
+  public static let mediumPurple: CoconutData.CNColor
+  public static let thistle: CoconutData.CNColor
+  public static let snow1: CoconutData.CNColor
+  public static let snow2: CoconutData.CNColor
+  public static let snow3: CoconutData.CNColor
+  public static let snow4: CoconutData.CNColor
+  public static let seashell1: CoconutData.CNColor
+  public static let seashell2: CoconutData.CNColor
+  public static let seashell3: CoconutData.CNColor
+  public static let seashell4: CoconutData.CNColor
+  public static let antiqueWhite1: CoconutData.CNColor
+  public static let antiqueWhite2: CoconutData.CNColor
+  public static let antiqueWhite3: CoconutData.CNColor
+  public static let antiqueWhite4: CoconutData.CNColor
+  public static let bisque1: CoconutData.CNColor
+  public static let bisque2: CoconutData.CNColor
+  public static let bisque3: CoconutData.CNColor
+  public static let bisque4: CoconutData.CNColor
+  public static let peachPuff1: CoconutData.CNColor
+  public static let peachPuff2: CoconutData.CNColor
+  public static let peachPuff3: CoconutData.CNColor
+  public static let peachPuff4: CoconutData.CNColor
+  public static let navajoWhite1: CoconutData.CNColor
+  public static let navajoWhite2: CoconutData.CNColor
+  public static let navajoWhite3: CoconutData.CNColor
+  public static let navajoWhite4: CoconutData.CNColor
+  public static let lemonChiffon1: CoconutData.CNColor
+  public static let lemonChiffon2: CoconutData.CNColor
+  public static let lemonChiffon3: CoconutData.CNColor
+  public static let lemonChiffon4: CoconutData.CNColor
+  public static let cornsilk1: CoconutData.CNColor
+  public static let cornsilk2: CoconutData.CNColor
+  public static let cornsilk3: CoconutData.CNColor
+  public static let cornsilk4: CoconutData.CNColor
+  public static let ivory1: CoconutData.CNColor
+  public static let ivory2: CoconutData.CNColor
+  public static let ivory3: CoconutData.CNColor
+  public static let ivory4: CoconutData.CNColor
+  public static let honeydew1: CoconutData.CNColor
+  public static let honeydew2: CoconutData.CNColor
+  public static let honeydew3: CoconutData.CNColor
+  public static let honeydew4: CoconutData.CNColor
+  public static let lavenderBlush1: CoconutData.CNColor
+  public static let lavenderBlush2: CoconutData.CNColor
+  public static let lavenderBlush3: CoconutData.CNColor
+  public static let lavenderBlush4: CoconutData.CNColor
+  public static let mistyRose1: CoconutData.CNColor
+  public static let mistyRose2: CoconutData.CNColor
+  public static let mistyRose3: CoconutData.CNColor
+  public static let mistyRose4: CoconutData.CNColor
+  public static let azure1: CoconutData.CNColor
+  public static let azure2: CoconutData.CNColor
+  public static let azure3: CoconutData.CNColor
+  public static let azure4: CoconutData.CNColor
+  public static let slateBlue1: CoconutData.CNColor
+  public static let slateBlue2: CoconutData.CNColor
+  public static let slateBlue3: CoconutData.CNColor
+  public static let slateBlue4: CoconutData.CNColor
+  public static let royalBlue1: CoconutData.CNColor
+  public static let royalBlue2: CoconutData.CNColor
+  public static let royalBlue3: CoconutData.CNColor
+  public static let royalBlue4: CoconutData.CNColor
+  public static let blue1: CoconutData.CNColor
+  public static let blue2: CoconutData.CNColor
+  public static let blue3: CoconutData.CNColor
+  public static let blue4: CoconutData.CNColor
+  public static let dodgerBlue1: CoconutData.CNColor
+  public static let dodgerBlue2: CoconutData.CNColor
+  public static let dodgerBlue3: CoconutData.CNColor
+  public static let dodgerBlue4: CoconutData.CNColor
+  public static let steelBlue1: CoconutData.CNColor
+  public static let steelBlue2: CoconutData.CNColor
+  public static let steelBlue3: CoconutData.CNColor
+  public static let steelBlue4: CoconutData.CNColor
+  public static let deepSkyBlue1: CoconutData.CNColor
+  public static let deepSkyBlue2: CoconutData.CNColor
+  public static let deepSkyBlue3: CoconutData.CNColor
+  public static let deepSkyBlue4: CoconutData.CNColor
+  public static let skyBlue1: CoconutData.CNColor
+  public static let skyBlue2: CoconutData.CNColor
+  public static let skyBlue3: CoconutData.CNColor
+  public static let skyBlue4: CoconutData.CNColor
+  public static let lightSkyBlue1: CoconutData.CNColor
+  public static let lightSkyBlue2: CoconutData.CNColor
+  public static let lightSkyBlue3: CoconutData.CNColor
+  public static let lightSkyBlue4: CoconutData.CNColor
+  public static let slateGray1: CoconutData.CNColor
+  public static let slateGray2: CoconutData.CNColor
+  public static let slateGray3: CoconutData.CNColor
+  public static let slateGray4: CoconutData.CNColor
+  public static let lightSteelBlue1: CoconutData.CNColor
+  public static let lightSteelBlue2: CoconutData.CNColor
+  public static let lightSteelBlue3: CoconutData.CNColor
+  public static let lightSteelBlue4: CoconutData.CNColor
+  public static let lightBlue1: CoconutData.CNColor
+  public static let lightBlue2: CoconutData.CNColor
+  public static let lightBlue3: CoconutData.CNColor
+  public static let lightBlue4: CoconutData.CNColor
+  public static let lightCyan1: CoconutData.CNColor
+  public static let lightCyan2: CoconutData.CNColor
+  public static let lightCyan3: CoconutData.CNColor
+  public static let lightCyan4: CoconutData.CNColor
+  public static let paleTurquoise1: CoconutData.CNColor
+  public static let paleTurquoise2: CoconutData.CNColor
+  public static let paleTurquoise3: CoconutData.CNColor
+  public static let paleTurquoise4: CoconutData.CNColor
+  public static let cadetBlue1: CoconutData.CNColor
+  public static let cadetBlue2: CoconutData.CNColor
+  public static let cadetBlue3: CoconutData.CNColor
+  public static let cadetBlue4: CoconutData.CNColor
+  public static let turquoise1: CoconutData.CNColor
+  public static let turquoise2: CoconutData.CNColor
+  public static let turquoise3: CoconutData.CNColor
+  public static let turquoise4: CoconutData.CNColor
+  public static let cyan1: CoconutData.CNColor
+  public static let cyan2: CoconutData.CNColor
+  public static let cyan3: CoconutData.CNColor
+  public static let cyan4: CoconutData.CNColor
+  public static let darkSlateGray1: CoconutData.CNColor
+  public static let darkSlateGray2: CoconutData.CNColor
+  public static let darkSlateGray3: CoconutData.CNColor
+  public static let darkSlateGray4: CoconutData.CNColor
+  public static let aquamarine1: CoconutData.CNColor
+  public static let aquamarine2: CoconutData.CNColor
+  public static let aquamarine3: CoconutData.CNColor
+  public static let aquamarine4: CoconutData.CNColor
+  public static let darkSeaGreen1: CoconutData.CNColor
+  public static let darkSeaGreen2: CoconutData.CNColor
+  public static let darkSeaGreen3: CoconutData.CNColor
+  public static let darkSeaGreen4: CoconutData.CNColor
+  public static let seaGreen1: CoconutData.CNColor
+  public static let seaGreen2: CoconutData.CNColor
+  public static let seaGreen3: CoconutData.CNColor
+  public static let seaGreen4: CoconutData.CNColor
+  public static let paleGreen1: CoconutData.CNColor
+  public static let paleGreen2: CoconutData.CNColor
+  public static let paleGreen3: CoconutData.CNColor
+  public static let paleGreen4: CoconutData.CNColor
+  public static let springGreen1: CoconutData.CNColor
+  public static let springGreen2: CoconutData.CNColor
+  public static let springGreen3: CoconutData.CNColor
+  public static let springGreen4: CoconutData.CNColor
+  public static let green1: CoconutData.CNColor
+  public static let green2: CoconutData.CNColor
+  public static let green3: CoconutData.CNColor
+  public static let green4: CoconutData.CNColor
+  public static let chartreuse1: CoconutData.CNColor
+  public static let chartreuse2: CoconutData.CNColor
+  public static let chartreuse3: CoconutData.CNColor
+  public static let chartreuse4: CoconutData.CNColor
+  public static let oliveDrab1: CoconutData.CNColor
+  public static let oliveDrab2: CoconutData.CNColor
+  public static let oliveDrab3: CoconutData.CNColor
+  public static let oliveDrab4: CoconutData.CNColor
+  public static let darkOliveGreen1: CoconutData.CNColor
+  public static let darkOliveGreen2: CoconutData.CNColor
+  public static let darkOliveGreen3: CoconutData.CNColor
+  public static let darkOliveGreen4: CoconutData.CNColor
+  public static let khaki1: CoconutData.CNColor
+  public static let khaki2: CoconutData.CNColor
+  public static let khaki3: CoconutData.CNColor
+  public static let khaki4: CoconutData.CNColor
+  public static let lightGoldenrod1: CoconutData.CNColor
+  public static let lightGoldenrod2: CoconutData.CNColor
+  public static let lightGoldenrod3: CoconutData.CNColor
+  public static let lightGoldenrod4: CoconutData.CNColor
+  public static let lightYellow1: CoconutData.CNColor
+  public static let lightYellow2: CoconutData.CNColor
+  public static let lightYellow3: CoconutData.CNColor
+  public static let lightYellow4: CoconutData.CNColor
+  public static let yellow1: CoconutData.CNColor
+  public static let yellow2: CoconutData.CNColor
+  public static let yellow3: CoconutData.CNColor
+  public static let yellow4: CoconutData.CNColor
+  public static let gold1: CoconutData.CNColor
+  public static let gold2: CoconutData.CNColor
+  public static let gold3: CoconutData.CNColor
+  public static let gold4: CoconutData.CNColor
+  public static let goldenrod1: CoconutData.CNColor
+  public static let goldenrod2: CoconutData.CNColor
+  public static let goldenrod3: CoconutData.CNColor
+  public static let goldenrod4: CoconutData.CNColor
+  public static let darkGoldenrod1: CoconutData.CNColor
+  public static let darkGoldenrod2: CoconutData.CNColor
+  public static let darkGoldenrod3: CoconutData.CNColor
+  public static let darkGoldenrod4: CoconutData.CNColor
+  public static let rosyBrown1: CoconutData.CNColor
+  public static let rosyBrown2: CoconutData.CNColor
+  public static let rosyBrown3: CoconutData.CNColor
+  public static let rosyBrown4: CoconutData.CNColor
+  public static let indianRed1: CoconutData.CNColor
+  public static let indianRed2: CoconutData.CNColor
+  public static let indianRed3: CoconutData.CNColor
+  public static let indianRed4: CoconutData.CNColor
+  public static let sienna1: CoconutData.CNColor
+  public static let sienna2: CoconutData.CNColor
+  public static let sienna3: CoconutData.CNColor
+  public static let sienna4: CoconutData.CNColor
+  public static let burlywood1: CoconutData.CNColor
+  public static let burlywood2: CoconutData.CNColor
+  public static let burlywood3: CoconutData.CNColor
+  public static let burlywood4: CoconutData.CNColor
+  public static let wheat1: CoconutData.CNColor
+  public static let wheat2: CoconutData.CNColor
+  public static let wheat3: CoconutData.CNColor
+  public static let wheat4: CoconutData.CNColor
+  public static let tan1: CoconutData.CNColor
+  public static let tan2: CoconutData.CNColor
+  public static let tan3: CoconutData.CNColor
+  public static let tan4: CoconutData.CNColor
+  public static let chocolate1: CoconutData.CNColor
+  public static let chocolate2: CoconutData.CNColor
+  public static let chocolate3: CoconutData.CNColor
+  public static let chocolate4: CoconutData.CNColor
+  public static let firebrick1: CoconutData.CNColor
+  public static let firebrick2: CoconutData.CNColor
+  public static let firebrick3: CoconutData.CNColor
+  public static let firebrick4: CoconutData.CNColor
+  public static let brown1: CoconutData.CNColor
+  public static let brown2: CoconutData.CNColor
+  public static let brown3: CoconutData.CNColor
+  public static let brown4: CoconutData.CNColor
+  public static let salmon1: CoconutData.CNColor
+  public static let salmon2: CoconutData.CNColor
+  public static let salmon3: CoconutData.CNColor
+  public static let salmon4: CoconutData.CNColor
+  public static let lightSalmon1: CoconutData.CNColor
+  public static let lightSalmon2: CoconutData.CNColor
+  public static let lightSalmon3: CoconutData.CNColor
+  public static let lightSalmon4: CoconutData.CNColor
+  public static let orange1: CoconutData.CNColor
+  public static let orange2: CoconutData.CNColor
+  public static let orange3: CoconutData.CNColor
+  public static let orange4: CoconutData.CNColor
+  public static let darkOrange1: CoconutData.CNColor
+  public static let darkOrange2: CoconutData.CNColor
+  public static let darkOrange3: CoconutData.CNColor
+  public static let darkOrange4: CoconutData.CNColor
+  public static let coral1: CoconutData.CNColor
+  public static let coral2: CoconutData.CNColor
+  public static let coral3: CoconutData.CNColor
+  public static let coral4: CoconutData.CNColor
+  public static let tomato1: CoconutData.CNColor
+  public static let tomato2: CoconutData.CNColor
+  public static let tomato3: CoconutData.CNColor
+  public static let tomato4: CoconutData.CNColor
+  public static let orangeRed1: CoconutData.CNColor
+  public static let orangeRed2: CoconutData.CNColor
+  public static let orangeRed3: CoconutData.CNColor
+  public static let orangeRed4: CoconutData.CNColor
+  public static let red1: CoconutData.CNColor
+  public static let red2: CoconutData.CNColor
+  public static let red3: CoconutData.CNColor
+  public static let red4: CoconutData.CNColor
+  public static let deepPink1: CoconutData.CNColor
+  public static let deepPink2: CoconutData.CNColor
+  public static let deepPink3: CoconutData.CNColor
+  public static let deepPink4: CoconutData.CNColor
+  public static let hotPink1: CoconutData.CNColor
+  public static let hotPink2: CoconutData.CNColor
+  public static let hotPink3: CoconutData.CNColor
+  public static let hotPink4: CoconutData.CNColor
+  public static let pink1: CoconutData.CNColor
+  public static let pink2: CoconutData.CNColor
+  public static let pink3: CoconutData.CNColor
+  public static let pink4: CoconutData.CNColor
+  public static let lightPink1: CoconutData.CNColor
+  public static let lightPink2: CoconutData.CNColor
+  public static let lightPink3: CoconutData.CNColor
+  public static let lightPink4: CoconutData.CNColor
+  public static let paleVioletRed1: CoconutData.CNColor
+  public static let paleVioletRed2: CoconutData.CNColor
+  public static let paleVioletRed3: CoconutData.CNColor
+  public static let paleVioletRed4: CoconutData.CNColor
+  public static let maroon1: CoconutData.CNColor
+  public static let maroon2: CoconutData.CNColor
+  public static let maroon3: CoconutData.CNColor
+  public static let maroon4: CoconutData.CNColor
+  public static let violetRed1: CoconutData.CNColor
+  public static let violetRed2: CoconutData.CNColor
+  public static let violetRed3: CoconutData.CNColor
+  public static let violetRed4: CoconutData.CNColor
+  public static let magenta1: CoconutData.CNColor
+  public static let magenta2: CoconutData.CNColor
+  public static let magenta3: CoconutData.CNColor
+  public static let magenta4: CoconutData.CNColor
+  public static let orchid1: CoconutData.CNColor
+  public static let orchid2: CoconutData.CNColor
+  public static let orchid3: CoconutData.CNColor
+  public static let orchid4: CoconutData.CNColor
+  public static let plum1: CoconutData.CNColor
+  public static let plum2: CoconutData.CNColor
+  public static let plum3: CoconutData.CNColor
+  public static let plum4: CoconutData.CNColor
+  public static let mediumOrchid1: CoconutData.CNColor
+  public static let mediumOrchid2: CoconutData.CNColor
+  public static let mediumOrchid3: CoconutData.CNColor
+  public static let mediumOrchid4: CoconutData.CNColor
+  public static let darkOrchid1: CoconutData.CNColor
+  public static let darkOrchid2: CoconutData.CNColor
+  public static let darkOrchid3: CoconutData.CNColor
+  public static let darkOrchid4: CoconutData.CNColor
+  public static let purple1: CoconutData.CNColor
+  public static let purple2: CoconutData.CNColor
+  public static let purple3: CoconutData.CNColor
+  public static let purple4: CoconutData.CNColor
+  public static let mediumPurple1: CoconutData.CNColor
+  public static let mediumPurple2: CoconutData.CNColor
+  public static let mediumPurple3: CoconutData.CNColor
+  public static let mediumPurple4: CoconutData.CNColor
+  public static let thistle1: CoconutData.CNColor
+  public static let thistle2: CoconutData.CNColor
+  public static let thistle3: CoconutData.CNColor
+  public static let thistle4: CoconutData.CNColor
+  public static let gray0: CoconutData.CNColor
+  public static let gray1: CoconutData.CNColor
+  public static let gray2: CoconutData.CNColor
+  public static let gray3: CoconutData.CNColor
+  public static let gray4: CoconutData.CNColor
+  public static let gray5: CoconutData.CNColor
+  public static let gray6: CoconutData.CNColor
+  public static let gray7: CoconutData.CNColor
+  public static let gray8: CoconutData.CNColor
+  public static let gray9: CoconutData.CNColor
+  public static let gray10: CoconutData.CNColor
+  public static let gray11: CoconutData.CNColor
+  public static let gray12: CoconutData.CNColor
+  public static let gray13: CoconutData.CNColor
+  public static let gray14: CoconutData.CNColor
+  public static let gray15: CoconutData.CNColor
+  public static let gray16: CoconutData.CNColor
+  public static let gray17: CoconutData.CNColor
+  public static let gray18: CoconutData.CNColor
+  public static let gray19: CoconutData.CNColor
+  public static let gray20: CoconutData.CNColor
+  public static let gray21: CoconutData.CNColor
+  public static let gray22: CoconutData.CNColor
+  public static let gray23: CoconutData.CNColor
+  public static let gray24: CoconutData.CNColor
+  public static let gray25: CoconutData.CNColor
+  public static let gray26: CoconutData.CNColor
+  public static let gray27: CoconutData.CNColor
+  public static let gray28: CoconutData.CNColor
+  public static let gray29: CoconutData.CNColor
+  public static let gray30: CoconutData.CNColor
+  public static let gray31: CoconutData.CNColor
+  public static let gray32: CoconutData.CNColor
+  public static let gray33: CoconutData.CNColor
+  public static let gray34: CoconutData.CNColor
+  public static let gray35: CoconutData.CNColor
+  public static let gray36: CoconutData.CNColor
+  public static let gray37: CoconutData.CNColor
+  public static let gray38: CoconutData.CNColor
+  public static let gray39: CoconutData.CNColor
+  public static let gray40: CoconutData.CNColor
+  public static let gray41: CoconutData.CNColor
+  public static let gray42: CoconutData.CNColor
+  public static let gray43: CoconutData.CNColor
+  public static let gray44: CoconutData.CNColor
+  public static let gray45: CoconutData.CNColor
+  public static let gray46: CoconutData.CNColor
+  public static let gray47: CoconutData.CNColor
+  public static let gray48: CoconutData.CNColor
+  public static let gray49: CoconutData.CNColor
+  public static let gray50: CoconutData.CNColor
+  public static let gray51: CoconutData.CNColor
+  public static let gray52: CoconutData.CNColor
+  public static let gray53: CoconutData.CNColor
+  public static let gray54: CoconutData.CNColor
+  public static let gray55: CoconutData.CNColor
+  public static let gray56: CoconutData.CNColor
+  public static let gray57: CoconutData.CNColor
+  public static let gray58: CoconutData.CNColor
+  public static let gray59: CoconutData.CNColor
+  public static let gray60: CoconutData.CNColor
+  public static let gray61: CoconutData.CNColor
+  public static let gray62: CoconutData.CNColor
+  public static let gray63: CoconutData.CNColor
+  public static let gray64: CoconutData.CNColor
+  public static let gray65: CoconutData.CNColor
+  public static let gray66: CoconutData.CNColor
+  public static let gray67: CoconutData.CNColor
+  public static let gray68: CoconutData.CNColor
+  public static let gray69: CoconutData.CNColor
+  public static let gray70: CoconutData.CNColor
+  public static let gray71: CoconutData.CNColor
+  public static let gray72: CoconutData.CNColor
+  public static let gray73: CoconutData.CNColor
+  public static let gray74: CoconutData.CNColor
+  public static let gray75: CoconutData.CNColor
+  public static let gray76: CoconutData.CNColor
+  public static let gray77: CoconutData.CNColor
+  public static let gray78: CoconutData.CNColor
+  public static let gray79: CoconutData.CNColor
+  public static let gray80: CoconutData.CNColor
+  public static let gray81: CoconutData.CNColor
+  public static let gray82: CoconutData.CNColor
+  public static let gray83: CoconutData.CNColor
+  public static let gray84: CoconutData.CNColor
+  public static let gray85: CoconutData.CNColor
+  public static let gray86: CoconutData.CNColor
+  public static let gray87: CoconutData.CNColor
+  public static let gray88: CoconutData.CNColor
+  public static let gray89: CoconutData.CNColor
+  public static let gray90: CoconutData.CNColor
+  public static let gray91: CoconutData.CNColor
+  public static let gray92: CoconutData.CNColor
+  public static let gray93: CoconutData.CNColor
+  public static let gray94: CoconutData.CNColor
+  public static let gray95: CoconutData.CNColor
+  public static let gray96: CoconutData.CNColor
+  public static let gray97: CoconutData.CNColor
+  public static let gray98: CoconutData.CNColor
+  public static let gray99: CoconutData.CNColor
+  public static let gray100: CoconutData.CNColor
+  public static let darkGray: CoconutData.CNColor
+  public static let darkBlue: CoconutData.CNColor
+  public static let darkCyan: CoconutData.CNColor
+  public static let darkMagenta: CoconutData.CNColor
+  public static let darkRed: CoconutData.CNColor
+  public static let lightGreen: CoconutData.CNColor
+  public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CNFile {
+  public static let InterfaceName: Swift.String
+  public static let EOF: Swift.String
+  public enum FileType {
+    case standardIO
+    case file
+    public static func == (a: CoconutData.CNFile.FileType, b: CoconutData.CNFile.FileType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Char {
+    case char(Swift.Character)
+    case endOfFile
+    case null
+  }
+  public enum Str {
+    case str(Swift.String)
+    case endOfFile
+    case null
+  }
+  public enum Line {
+    case line(Swift.String)
+    case endOfFile
+    case null
+  }
+  public static func open(forWriting url: Foundation.URL) -> CoconutData.CNFile?
+  public static func open(forReading url: Foundation.URL) -> CoconutData.CNFile?
+  public static func isEOF(_ src: Swift.String) -> Swift.Bool
+  open var fileHandle: Foundation.FileHandle {
+    get
+  }
+  open func close()
+  open func getc() -> CoconutData.CNFile.Char
+  open func gets() -> CoconutData.CNFile.Str
+  open func getl() -> CoconutData.CNFile.Line
+  open func put(string str: Swift.String)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CNInputFile : CoconutData.CNFile {
+  public init(fileType ftype: CoconutData.CNFile.FileType, fileHandle hdl: Foundation.FileHandle)
+  @objc deinit
+  public var isStandardIO: Swift.Bool {
+    get
+  }
+  override public func close()
+  override public var fileHandle: Foundation.FileHandle {
+    get
+  }
+  override public func getc() -> CoconutData.CNFile.Char
+  override public func gets() -> CoconutData.CNFile.Str
+  override public func getl() -> CoconutData.CNFile.Line
+  public func setRawMode(enable en: Swift.Bool)
+}
+@_hasMissingDesignatedInitializers public class CNOutputFile : CoconutData.CNFile {
+  public init(fileType ftype: CoconutData.CNFile.FileType, fileHandle hdl: Foundation.FileHandle)
+  @objc deinit
+  override public var fileHandle: Foundation.FileHandle {
+    get
+  }
+  override public func close()
+  public var isStandardIO: Swift.Bool {
+    get
+  }
+  override public func put(string str: Swift.String)
+}
+@objc open class CNOperationContext : ObjectiveC.NSObject {
+  public typealias ListnerHolder = CoconutData.CNObserverDictionary.ListnerHolder
+  public static let isExecutingItem: Swift.String
+  public static let isFinishedItem: Swift.String
+  public static let isCanceledItem: Swift.String
+  weak public var ownerExecutor: CoconutData.CNOperationExecutor?
+  public var console: CoconutData.CNFileConsole {
+    get
+  }
+  public var executionCount: Swift.Int
+  public var totalExecutionTime: Foundation.TimeInterval
+  public init(input ifile: CoconutData.CNFile, output ofile: CoconutData.CNFile, error efile: CoconutData.CNFile)
+  @objc deinit
+  public func parameterNames() -> Swift.Array<Swift.String>
+  open func setParameter(name nm: Swift.String, value val: CoconutData.CNValue)
+  open func parameter(name nm: Swift.String) -> CoconutData.CNValue?
+  public func reset()
+  public func addIsExecutingListener(listnerFunction lfunc: @escaping CoconutData.CNObserverDictionary.ListenerFunction)
+  public func addIsFinishedListener(listnerFunction lfunc: @escaping CoconutData.CNObserverDictionary.ListenerFunction)
+  public func addIsCanceledListener(listnerFunction lfunc: @escaping CoconutData.CNObserverDictionary.ListenerFunction)
+  open var isExecuting: Swift.Bool {
+    get
+    set(val)
+  }
+  open var isFinished: Swift.Bool {
+    get
+    set(val)
+  }
+  open var isCancelled: Swift.Bool {
+    get
+    set(val)
+  }
+  open func main()
+  public func cancel()
+  public func set(console cons: CoconutData.CNFileConsole)
+}
+public enum CNTableLoadResult {
+  case ok
+  case error(Foundation.NSError)
+}
+public protocol CNTable {
+  var recordType: CoconutData.CNInterfaceType { get }
+  var recordCount: Swift.Int { get }
+  func fieldName(at index: Swift.Int) -> Swift.String?
+  func fieldNames() -> Swift.Array<Swift.String>
+  func newRecord() -> any CoconutData.CNRecord
+  func record(at row: Swift.Int) -> (any CoconutData.CNRecord)?
+  func records() -> Swift.Array<any CoconutData.CNRecord>
+  var selectedEvent: CoconutData.CNValueTable.SelectedEvent? { get set }
+  func select(value val: CoconutData.CNValue, forField name: Swift.String) -> Swift.Bool
+  var current: (any CoconutData.CNRecord)? { get }
+  func search(value val: CoconutData.CNValue, forField field: Swift.String) -> Swift.Array<any CoconutData.CNRecord>
+  func append(record rcd: any CoconutData.CNRecord)
+  func remove(at row: Swift.Int) -> Swift.Bool
+  func forEach(callback cbfunc: (_ record: any CoconutData.CNRecord) -> Swift.Void)
+  func load(value val: Swift.Array<CoconutData.CNValue>, from filename: Swift.String?) -> Foundation.NSError?
+  func save(to url: Foundation.URL) -> Swift.Bool
+}
+extension CoconutData.CNTable {
+  public func toValue() -> Swift.Array<Swift.Dictionary<Swift.String, CoconutData.CNValue>>
+}
+public class CNGraphicsContext {
+  public static let InterfaceName: Swift.String
+  public init()
+  public var logicalFrame: CoreFoundation.CGRect {
+    get
+  }
+  public func begin(context ctxt: CoreGraphics.CGContext?, logicalFrame lframe: CoreFoundation.CGRect, physicalFrame pframe: CoreFoundation.CGRect)
+  public func end()
+  public func setFillColor(color col: CoconutData.CNColor)
+  public func setStrokeColor(color col: CoconutData.CNColor)
+  public func setPenSize(width val: CoreFoundation.CGFloat)
+  public func move(to point: CoreFoundation.CGPoint)
+  public func line(to point: CoreFoundation.CGPoint)
+  public func rect(rect rct: CoreFoundation.CGRect, doFill fill: Swift.Bool)
+  public func circle(center pt: CoreFoundation.CGPoint, radius rad: CoreFoundation.CGFloat, doFill fill: Swift.Bool)
+  public func logicalToPhysical(point pt: CoreFoundation.CGPoint) -> CoreFoundation.CGPoint
+  @objc deinit
+}
+public enum CNSpriteMaterial : Swift.Int {
+  public static let EnumName: Swift.String
+  case scene
+  case background
+  case text
+  case image
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct CNSpriteNodeDecl {
+  public static let InterfaceName: Swift.String
+  public static let ScriptItem: Swift.String
+  public static let ValueItem: Swift.String
+  public static let CountItem: Swift.String
+  public var material: CoconutData.CNSpriteMaterial
+  public var script: Swift.String
+  public var value: Swift.String
+  public var count: Swift.Int
+  public static func allocateInterfaceType() -> CoconutData.CNInterfaceType
+  public init(material m: CoconutData.CNSpriteMaterial, value v: Swift.String, script scr: Swift.String, count c: Swift.Int)
+  public static func fromValue(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> Swift.Result<CoconutData.CNSpriteNodeDecl, Foundation.NSError>
+}
+extension SpriteKit.SKNode {
+  @_Concurrency.MainActor(unsafe) public static var interfaceName: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public static func allocateInterfaceType(pointIf pif: CoconutData.CNInterfaceType, sizeIF szif: CoconutData.CNInterfaceType, vectorIF vecif: CoconutData.CNInterfaceType, triggerIF trigif: CoconutData.CNInterfaceType, actionsIF actif: CoconutData.CNInterfaceType) -> CoconutData.CNInterfaceType
+  @_Concurrency.MainActor(unsafe) public func setupNode(material mat: CoconutData.CNSpriteMaterial, machine mcn: Swift.String, nodeId nid: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public var isMovable: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var isRetired: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var nodeId: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var material: CoconutData.CNSpriteMaterial {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var currentTime: Foundation.TimeInterval {
+    get
+    set(newval)
+  }
+  @_Concurrency.MainActor(unsafe) public var trigger: CoconutData.CNTrigger {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var actions: CoconutData.CNSpriteActions {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var field: CoconutData.CNSpriteField {
+    get
+    set(fld)
+  }
+  @_Concurrency.MainActor(unsafe) public var scriptContext: ObjectiveC.NSObject? {
+    get
+    set(objp)
+  }
+  @_Concurrency.MainActor(unsafe) public var velocity: CoreFoundation.CGVector {
+    get
+    set(newval)
+  }
+  @_Concurrency.MainActor(unsafe) public var collisionBitMask: Swift.UInt32 {
+    get
+    set(newval)
+  }
+  @_Concurrency.MainActor(unsafe) public var contactTestBitMask: Swift.UInt32 {
+    get
+    set(newval)
+  }
+  @_Concurrency.MainActor(unsafe) public var mass: CoreFoundation.CGFloat {
+    get
+    set(newval)
+  }
+  @_Concurrency.MainActor(unsafe) public var density: CoreFoundation.CGFloat {
+    get
+    set(newval)
+  }
+  @_Concurrency.MainActor(unsafe) public var area: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func execute()
+}
+public class CNValueRecord : CoconutData.CNRecord {
+  public static let InterfaceName: Swift.String
+  public init(type typ: CoconutData.CNInterfaceType)
+  public var type: CoconutData.CNInterfaceType {
+    get
+  }
+  public var fieldCount: Swift.Int {
+    get
+  }
+  public var fieldNames: Swift.Array<Swift.String> {
+    get
+  }
+  public func value(ofField name: Swift.String) -> CoconutData.CNValue?
+  public func setValue(value val: CoconutData.CNValue, forField name: Swift.String) -> Swift.Bool
+  public func load(value dval: Swift.Dictionary<Swift.String, CoconutData.CNValue>, from filename: Swift.String?) -> Foundation.NSError?
+  @objc deinit
+}
+public class CNVirtualRecord : CoconutData.CNRecord {
+  public typealias VirtualFieldFunction = (_ fld: Swift.String) -> CoconutData.CNValue
+  public var sourceRecord: any CoconutData.CNRecord {
+    get
+  }
+  public init(sourceRecord src: any CoconutData.CNRecord, virtualFields vflds: Swift.Array<CoconutData.CNInterfaceType.Member>, virtualFieldFunction vfunc: @escaping CoconutData.CNVirtualRecord.VirtualFieldFunction)
+  public var type: CoconutData.CNInterfaceType {
+    get
+  }
+  public var fieldNames: Swift.Array<Swift.String> {
+    get
+  }
+  public var fieldCount: Swift.Int {
+    get
+  }
+  public func value(ofField name: Swift.String) -> CoconutData.CNValue?
+  public func setValue(value val: CoconutData.CNValue, forField name: Swift.String) -> Swift.Bool
+  public func load(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>, from filename: Swift.String?) -> Foundation.NSError?
+  @objc deinit
+}
+public class CNValueTable : CoconutData.CNTable {
+  public static let InterfaceName: Swift.String
+  public typealias SelectedEvent = (_ rec: any CoconutData.CNRecord) -> Swift.Void
+  public static func baseInterfaceMembers() -> Swift.Array<CoconutData.CNInterfaceType.Member>
+  public static func subInterfaceMembers(recordIF recif: CoconutData.CNInterfaceType) -> Swift.Array<CoconutData.CNInterfaceType.Member>
+  public init(recordType rtype: CoconutData.CNInterfaceType)
+  public var recordCount: Swift.Int {
+    get
+  }
+  public var recordType: CoconutData.CNInterfaceType {
+    get
+  }
+  public func fieldName(at index: Swift.Int) -> Swift.String?
+  public func fieldNames() -> Swift.Array<Swift.String>
+  public func newRecord() -> any CoconutData.CNRecord
+  public func record(at row: Swift.Int) -> (any CoconutData.CNRecord)?
+  public func records() -> Swift.Array<any CoconutData.CNRecord>
+  public var selectedEvent: CoconutData.CNValueTable.SelectedEvent? {
+    get
+    set(newfunc)
+  }
+  public func select(value val: CoconutData.CNValue, forField field: Swift.String) -> Swift.Bool
+  public var current: (any CoconutData.CNRecord)? {
+    get
+  }
+  public func search(value val: CoconutData.CNValue, forField field: Swift.String) -> Swift.Array<any CoconutData.CNRecord>
+  public func append(record rcd: any CoconutData.CNRecord)
+  public func remove(at row: Swift.Int) -> Swift.Bool
+  public func forEach(callback cbfunc: (any CoconutData.CNRecord) -> Swift.Void)
+  public func load(value vals: Swift.Array<CoconutData.CNValue>, from filename: Swift.String?) -> Foundation.NSError?
+  public func save(to url: Foundation.URL) -> Swift.Bool
+  @objc deinit
+}
+public class CNVirtualTable : CoconutData.CNTable {
+  public typealias VirtualFieldFunction = (_ fld: Swift.String, _ recidx: Swift.Int) -> CoconutData.CNValue
+  public typealias RecordFilterFunction = (_ rec: any CoconutData.CNRecord) -> Swift.Bool
+  public typealias CompareRecordFunction = (_ rec0: any CoconutData.CNRecord, _ rec1: any CoconutData.CNRecord) -> Foundation.ComparisonResult
+  public typealias SelectedEvent = CoconutData.CNValueTable.SelectedEvent
+  public init(sourceTable src: any CoconutData.CNTable)
+  public func setVirtualFields(fields flds: Swift.Array<CoconutData.CNInterfaceType.Member>, fieldFunc ffunc: @escaping CoconutData.CNVirtualTable.VirtualFieldFunction)
+  public func setRecordFilterFunction(function ffunc: @escaping CoconutData.CNVirtualTable.RecordFilterFunction)
+  public func setSortOrder(order ord: CoconutData.CNSortOrder)
+  public func setCompareRecordFunction(function comp: @escaping CoconutData.CNVirtualTable.CompareRecordFunction)
+  public var recordType: CoconutData.CNInterfaceType {
+    get
+  }
+  public var recordCount: Swift.Int {
+    get
+  }
+  public func fieldNames() -> Swift.Array<Swift.String>
+  public func fieldName(at index: Swift.Int) -> Swift.String?
+  public func newRecord() -> any CoconutData.CNRecord
+  public var selectedEvent: CoconutData.CNVirtualTable.SelectedEvent? {
+    get
+    set(newfunc)
+  }
+  public func select(value val: CoconutData.CNValue, forField name: Swift.String) -> Swift.Bool
+  public var current: (any CoconutData.CNRecord)? {
+    get
+  }
+  public func append(record rcd: any CoconutData.CNRecord)
+  public func record(at row: Swift.Int) -> (any CoconutData.CNRecord)?
+  public func records() -> Swift.Array<any CoconutData.CNRecord>
+  public func remove(at row: Swift.Int) -> Swift.Bool
+  public func search(value val: CoconutData.CNValue, forField field: Swift.String) -> Swift.Array<any CoconutData.CNRecord>
+  public func forEach(callback cbfunc: (any CoconutData.CNRecord) -> Swift.Void)
+  public func load(value vals: Swift.Array<CoconutData.CNValue>, from filename: Swift.String?) -> Foundation.NSError?
+  public func save(to url: Foundation.URL) -> Swift.Bool
+  @objc deinit
+}
+public enum CNAccessType {
+  case ReadOnlyAccess
+  case WriteOnlyAccess
+  case ReadWriteAccess
+  public var isReadable: Swift.Bool {
+    get
+  }
+  public var isWritable: Swift.Bool {
+    get
+  }
+  public static func == (a: CoconutData.CNAccessType, b: CoconutData.CNAccessType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CNEscapeCode {
+  case string(Swift.String)
+  case eot
+  case newline
+  case tab
+  case backspace
+  case delete
+  case insertSpace(Swift.Int)
+  case cursorUp(Swift.Int)
+  case cursorDown(Swift.Int)
+  case cursorForward(Swift.Int)
+  case cursorBackward(Swift.Int)
+  case cursorNextLine(Swift.Int)
+  case cursorPreviousLine(Swift.Int)
+  case cursorHolizontalAbsolute(Swift.Int)
+  case cursorVisible(Swift.Bool)
+  case saveCursorPosition
+  case restoreCursorPosition
+  case cursorPosition(Swift.Int, Swift.Int)
+  case eraceFromCursorToEnd
+  case eraceFromCursorToBegin
+  case eraceEntireBuffer
+  case eraceFromCursorToRight
+  case eraceFromCursorToLeft
+  case eraceEntireLine
+  case scrollUp(Swift.Int)
+  case scrollDown(Swift.Int)
+  case resetAll
+  case resetCharacterAttribute
+  case boldCharacter(Swift.Bool)
+  case underlineCharacter(Swift.Bool)
+  case blinkCharacter(Swift.Bool)
+  case reverseCharacter(Swift.Bool)
+  case foregroundColor(CoconutData.CNColor)
+  case defaultForegroundColor
+  case backgroundColor(CoconutData.CNColor)
+  case defaultBackgroundColor
+  case requestScreenSize
+  case screenSize(Swift.Int, Swift.Int)
+  case selectAltScreen(Swift.Bool)
+  case setFontStyle(Swift.Int)
+  case setFontSize(Swift.Int)
+  public func description() -> Swift.String
+  public func encode() -> Swift.String
+  public func compare(code src: CoconutData.CNEscapeCode) -> Swift.Bool
+  public enum DecodeResult {
+    case ok(Swift.Array<CoconutData.CNEscapeCode>)
+    case error(Foundation.NSError)
+  }
+  public static func decode(string src: Swift.String) -> CoconutData.CNEscapeCode.DecodeResult
+}
+public class CNValueParser {
+  public struct Property {
+    public var name: Swift.String
+    public var value: CoconutData.CNValue
+    public init(name nm: Swift.String, value val: CoconutData.CNValue)
+  }
+  public init()
+  public func parse(source src: Swift.String) -> Swift.Result<CoconutData.CNValue, Foundation.NSError>
+  public func parseEnumValue(typeName tname: Swift.String, tokenStream stream: CoconutData.CNTokenStream) -> Swift.Result<CoconutData.CNValue, Foundation.NSError>
+  public func parseEnumValue(typeName tnamep: Swift.String?, memberName mname: Swift.String, tokenStream stream: CoconutData.CNTokenStream) -> Swift.Result<CoconutData.CNValue, Foundation.NSError>
+  @objc deinit
+}
+public enum CNKeyCode : Swift.UInt16 {
+  case a
+  case s
+  case d
+  case f
+  case h
+  case g
+  case z
+  case x
+  case c
+  case v
+  case b
+  case q
+  case w
+  case e
+  case r
+  case y
+  case t
+  case _1
+  case _2
+  case _3
+  case _4
+  case _6
+  case _5
+  case equal
+  case _9
+  case _7
+  case minus
+  case _8
+  case _0
+  case rightBracket
+  case o
+  case u
+  case leftBracket
+  case i
+  case p
+  case returnKey
+  case l
+  case j
+  case quote
+  case k
+  case semicolon
+  case backslash
+  case comma
+  case slash
+  case n
+  case m
+  case period
+  case tab
+  case space
+  case grave
+  case delete
+  case escape
+  case leftCommand
+  case leftShift
+  case capsLock
+  case leftOption
+  case leftControl
+  case rightShift
+  case rightOption
+  case rightControl
+  case function
+  case F17
+  case keypadDecimal
+  case keypadMultiply
+  case keypadPlus
+  case keypadClear
+  case volumeUp
+  case volumeDown
+  case mute
+  case keypadDivide
+  case keypadEnter
+  case keypadMinus
+  case F18
+  case F19
+  case keypadEqual
+  case keypad0
+  case keypad1
+  case keypad2
+  case keypad3
+  case keypad4
+  case keypad5
+  case keypad6
+  case keypad7
+  case F20
+  case keypad8
+  case keypad9
+  case F5
+  case F6
+  case F7
+  case F3
+  case F8
+  case F9
+  case F11
+  case F13
+  case F16
+  case F14
+  case F10
+  case F12
+  case F15
+  case help
+  case home
+  case pageUp
+  case forwardDelete
+  case F4
+  case end
+  case F2
+  case pageDown
+  case F1
+  case leftArrow
+  case rightArrow
+  case downArrow
+  case upArrow
+  public init?(rawValue: Swift.UInt16)
+  public typealias RawValue = Swift.UInt16
+  public var rawValue: Swift.UInt16 {
+    get
+  }
+}
+public enum CNSpecialKey {
+  case shift
+  case control
+  case command
+  case option
+  case capsLock
+  case delete
+  case forwardDelete
+  case escape
+  case leftArrow
+  case rightArrow
+  case upArrow
+  case downArrow
+  case home
+  case end
+  case pageUp
+  case pageDown
+  case clear
+  case fn
+  case decimal
+  case volumeUp
+  case volumeDown
+  case mute
+  case help
+  public static func == (a: CoconutData.CNSpecialKey, b: CoconutData.CNSpecialKey) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CNKeyCategory {
+  case space(Swift.Character)
+  case digit(Swift.Int)
+  case alphabet(Swift.Character)
+  case symbol(Swift.Character)
+  case function(Swift.Int)
+  case special(CoconutData.CNSpecialKey)
+  public static func category(from code: CoconutData.CNKeyCode) -> CoconutData.CNKeyCategory
+}
+public class CNCollection {
+  public init()
+  public var sectionCount: Swift.Int {
+    get
+  }
+  public func itemCount(inSection sec: Swift.Int) -> Swift.Int
+  public func totalCount() -> Swift.Int
+  public func maxItemCount() -> Swift.Int
+  public func header(ofSection sec: Swift.Int) -> Swift.String
+  public func footer(ofSection sec: Swift.Int) -> Swift.String
+  public func value(section sec: Swift.Int, item itm: Swift.Int) -> CoconutData.CNSymbol?
+  public func add(header hdr: Swift.String, footer ftr: Swift.String, items itms: Swift.Array<CoconutData.CNSymbol>)
+  public func toText() -> any CoconutData.CNText
+  @objc deinit
+}
+extension CoreFoundation.CGRect {
+  public static let InterfaceName: Swift.String
+  public static func allocateInterfaceType() -> CoconutData.CNInterfaceType
+  public static func fromValue(value val: CoconutData.CNInterfaceValue) -> CoreFoundation.CGRect?
+  public func toValue() -> CoconutData.CNInterfaceValue
+  public var center: CoreFoundation.CGPoint {
+    get
+  }
+  public var upperLeftPoint: CoreFoundation.CGPoint {
+    get
+  }
+  public var upperRightPoint: CoreFoundation.CGPoint {
+    get
+  }
+  public var lowerLeftPoint: CoreFoundation.CGPoint {
+    get
+  }
+  public var lowerRightPoint: CoreFoundation.CGPoint {
+    get
+  }
+  public func centeringIn(bounds bnds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  public func resize(size s: CoreFoundation.CGSize) -> CoreFoundation.CGRect
+  public func move(dx x: CoreFoundation.CGFloat, dy y: CoreFoundation.CGFloat) -> CoreFoundation.CGRect
+  public func splitByHorizontally() -> (CoreFoundation.CGRect, CoreFoundation.CGRect)
+  public func splitByVertically() -> (CoreFoundation.CGRect, CoreFoundation.CGRect)
+  public static func insideRect(rect rct: CoreFoundation.CGRect, spacing space: CoreFoundation.CGFloat) -> CoreFoundation.CGRect
+  public static func outsideRect(rect rct: CoreFoundation.CGRect, spacing space: CoreFoundation.CGFloat) -> CoreFoundation.CGRect
+  public static func pointsToRect(fromPoint fp: CoreFoundation.CGPoint, toPoint tp: CoreFoundation.CGPoint) -> CoreFoundation.CGRect
+  public var description: Swift.String {
+    get
+  }
+}
+public struct CNEnum {
+  public static let ClassName: Swift.String
+  public typealias Value = CoconutData.CNEnumType.Value
+  public var enumType: CoconutData.CNEnumType? {
+    get
+  }
+  public var memberName: Swift.String {
+    get
+  }
+  public init(type t: CoconutData.CNEnumType, member n: Swift.String)
+  public var typeName: Swift.String {
+    get
+  }
+  public var value: CoconutData.CNEnum.Value {
+    get
+  }
+  public static func fromValue(typeName tname: Swift.String, memberName mname: Swift.String) -> CoconutData.CNEnum?
+  public static func fromValue(value val: CoconutData.CNValue) -> CoconutData.CNEnum?
+  public static func fromValue(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> CoconutData.CNEnum?
+  public func toValue() -> Swift.Dictionary<Swift.String, CoconutData.CNValue>
+}
+public class CNEnumType {
+  public static let typeName: Swift.String
+  public enum Value {
+    case intValue(Swift.Int)
+    case stringValue(Swift.String)
+    public func toValue() -> CoconutData.CNValue
+    public func toScript() -> Swift.String
+    public static func compare(_ val0: CoconutData.CNEnumType.Value, _ val1: CoconutData.CNEnumType.Value) -> Foundation.ComparisonResult
+  }
+  public var typeName: Swift.String {
+    get
+  }
+  public var members: Swift.Dictionary<Swift.String, CoconutData.CNEnumType.Value> {
+    get
+  }
+  public init(typeName name: Swift.String)
+  public func allocate(name nm: Swift.String) -> CoconutData.CNEnum?
+  public func add(name nm: Swift.String, value val: CoconutData.CNEnumType.Value)
+  public func add(members membs: Swift.Dictionary<Swift.String, CoconutData.CNEnumType.Value>)
+  public var names: Swift.Array<Swift.String> {
+    get
+  }
+  public func value(forMember name: Swift.String) -> CoconutData.CNEnumType.Value?
+  public func search(byValue targ: CoconutData.CNEnumType.Value) -> CoconutData.CNEnum?
+  public static func compare(_ s0: CoconutData.CNEnumType, _ s1: CoconutData.CNEnumType) -> Foundation.ComparisonResult
+  public func toValue(isInside inside: Swift.Bool) -> Swift.Dictionary<Swift.String, CoconutData.CNValue>
+  public static func fromValue(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>, isInside inside: Swift.Bool) -> Swift.Result<CoconutData.CNValueType, Foundation.NSError>
+  @objc deinit
+}
+public enum CNDevice : Swift.Int, Swift.Comparable {
+  public static let TypeName: Swift.String
+  case mac
+  case phone
+  case ipad
+  case tv
+  case carPlay
+  case vision
+  public static func device() -> CoconutData.CNDevice
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public static func < (lhs: CoconutData.CNDevice, rhs: CoconutData.CNDevice) -> Swift.Bool
+  public static func > (lhs: CoconutData.CNDevice, rhs: CoconutData.CNDevice) -> Swift.Bool
+  public static func == (lhs: CoconutData.CNDevice, rhs: CoconutData.CNDevice) -> Swift.Bool
+  public static func != (lhs: CoconutData.CNDevice, rhs: CoconutData.CNDevice) -> Swift.Bool
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+open class CNResource {
+  public enum DataType {
+    case string
+    case image
+    case value
+    case type
+    case property
+    case table
+    public static func == (a: CoconutData.CNResource.DataType, b: CoconutData.CNResource.DataType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Value {
+    case string(Swift.String)
+    case image(CoconutData.CNImage)
+    case value(CoconutData.CNValue)
+    case types(Swift.Array<CoconutData.CNValueType>)
+    case properties(any CoconutData.CNProperties)
+    case table(any CoconutData.CNTable)
+    public var string: Swift.String? {
+      get
+    }
+    public var image: CoconutData.CNImage? {
+      get
+    }
+    public var value: CoconutData.CNValue? {
+      get
+    }
+    public var types: Swift.Array<CoconutData.CNValueType>? {
+      get
+    }
+    public var properties: (any CoconutData.CNProperties)? {
+      get
+    }
+    public var table: (any CoconutData.CNTable)? {
+      get
+    }
+  }
+  public var packageDirectory: Foundation.URL {
+    get
+  }
+  public init(packageDirectory url: Foundation.URL)
+  public func allocate(category cat: Swift.String, dataType dtype: CoconutData.CNResource.DataType)
+  public func add(category cat: Swift.String, identifier ident: Swift.String, path pathstr: Swift.String, withCache cache: Swift.Bool)
+  public func set(category cat: Swift.String, identifier ident: Swift.String, path pathstr: Swift.String, withCache cache: Swift.Bool)
+  public func store(category cat: Swift.String, identifier ident: Swift.String, index idx: Swift.Int, content vcnt: CoconutData.CNResource.Value)
+  public func count(category cat: Swift.String, identifier ident: Swift.String) -> Swift.Int?
+  public func pathString(category cat: Swift.String, identifier ident: Swift.String, index idx: Swift.Int) -> Swift.String?
+  public func fileURL(category cat: Swift.String, identifier ident: Swift.String, index idx: Swift.Int) -> Foundation.URL?
+  public func load(category cat: Swift.String, identifier ident: Swift.String, index idx: Swift.Int) -> CoconutData.CNResource.Value?
+  public func loadString(category cat: Swift.String, identifier ident: Swift.String, index idx: Swift.Int) -> Swift.String?
+  public func loadImage(category cat: Swift.String, identifier ident: Swift.String, index idx: Swift.Int) -> CoconutData.CNImage?
+  public func loadValue(category cat: Swift.String, identifier ident: Swift.String, index idx: Swift.Int) -> CoconutData.CNValue?
+  public func loadTypes(category cat: Swift.String, identifier ident: Swift.String, index idx: Swift.Int) -> Swift.Array<CoconutData.CNValueType>?
+  public func loadProperties(category cat: Swift.String, identifier ident: Swift.String, index idx: Swift.Int) -> (any CoconutData.CNProperties)?
+  public func loadTable(category cat: Swift.String, identifier ident: Swift.String, index idx: Swift.Int) -> (any CoconutData.CNTable)?
+  public func save(category cat: Swift.String, identifier ident: Swift.String, index idx: Swift.Int) -> Swift.Bool
+  public func identifiers(category cat: Swift.String) -> Swift.Array<Swift.String>?
+  public func toText() -> CoconutData.CNTextSection
+  @objc deinit
+}
+public enum CNFileType : Swift.Int {
+  public static let TypeName: Swift.String
+  case NotExist
+  case File
+  case Directory
+  public var description: Swift.String {
+    get
+  }
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum CNFileOpenResult {
+  case ok(_: CoconutData.CNFile)
+  case error(_: Foundation.NSError)
+}
+public enum CNFileAccessType : Swift.Int {
+  public static let TypeName: Swift.String
+  case ReadAccess
+  case WriteAccess
+  case AppendAccess
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension Foundation.FileManager {
+  public static let InterfaceName: Swift.String
+  public static func allocateInterfaceType(fileIF flif: CoconutData.CNInterfaceType, urlIF urlif: CoconutData.CNInterfaceType) -> CoconutData.CNInterfaceType
+  public func fullPath(pathString path: Swift.String, baseURL base: Foundation.URL) -> Foundation.URL
+  public func fileExists(atURL url: Foundation.URL) -> Swift.Bool
+  public func isReadableFile(atURL url: Foundation.URL) -> Swift.Bool
+  public func isWritableFile(atURL url: Foundation.URL) -> Swift.Bool
+  public func isDeletableFile(atURL url: Foundation.URL) -> Swift.Bool
+  public func createFile(atURL url: Foundation.URL, contents data: Foundation.Data?, attributes attr: [Foundation.FileAttributeKey : Any]?) -> Swift.Bool
+  public func removeFile(atURL url: Foundation.URL) -> Foundation.NSError?
+  public func createDirectories(directory dir: Foundation.URL) -> Foundation.NSError?
+  public func checkFileType(pathString pathstr: Swift.String) -> CoconutData.CNFileType
+  public func openFile(URL url: Foundation.URL, accessType acctyp: CoconutData.CNFileAccessType) -> Swift.Result<CoconutData.CNFile, Foundation.NSError>
+  public func openFile(forReadingFrom url: Foundation.URL) -> Swift.Result<CoconutData.CNFile, Foundation.NSError>
+  public func openFile(forWritingFrom url: Foundation.URL) -> Swift.Result<CoconutData.CNFile, Foundation.NSError>
+  public func openFile(forAppendingFrom url: Foundation.URL) -> Swift.Result<CoconutData.CNFile, Foundation.NSError>
+  public func schemeInPath(pathString str: Swift.String) -> Swift.String?
+  public func isAbsolutePath(pathString path: Swift.String) -> Swift.Bool
+  public func isAccessible(pathString path: Swift.String, accessType type: CoconutData.CNFileAccessType) -> Swift.Bool
+  public func copyFile(sourceFile srcurl: Foundation.URL, destinationFile dsturl: Foundation.URL, doReplace dorep: Swift.Bool) -> Swift.Bool
+  public var defaultHomeDirectory: Foundation.URL {
+    get
+  }
+  public var documentDirectory: Foundation.URL {
+    get
+  }
+  public var libraryDirectory: Foundation.URL {
+    get
+  }
+  public var applicationSupportDirectory: Foundation.URL {
+    get
+  }
+  public var resourceDirectory: Foundation.URL? {
+    get
+  }
+}
+extension Foundation.URL {
+  public static let InterfaceName: Swift.String
+  public static func null() -> Foundation.URL
+  public static func allocateInterfaceType() -> CoconutData.CNInterfaceType
+  public var isNull: Swift.Bool {
+    get
+  }
+  public func loadContents() -> Foundation.NSString?
+  public func loadValue() -> Swift.Result<CoconutData.CNValue, Foundation.NSError>
+  public func save(string str: Swift.String) -> Swift.Bool
+  public func save(value val: CoconutData.CNValue) -> Swift.Bool
+  public func save(image img: CoconutData.CNImage) -> Swift.Bool
+}
+public protocol CNText {
+  func append(string src: Swift.String)
+  func prepend(string src: Swift.String)
+  func isEmpty() -> Swift.Bool
+  func toStrings(indent idt: Swift.Int) -> Swift.Array<Swift.String>
+}
+extension CoconutData.CNText {
+  public func toStrings() -> Swift.Array<Swift.String>
+  public func indentString(indent idt: Swift.Int) -> Swift.String
+}
+public class CNTextLine : CoconutData.CNText {
+  public init()
+  public init(string src: Swift.String)
+  public var line: Swift.String {
+    get
+  }
+  public func set(string src: Swift.String)
+  public func append(string src: Swift.String)
+  public func prepend(string src: Swift.String)
+  public func isEmpty() -> Swift.Bool
+  public var width: Swift.Int {
+    get
+  }
+  public func toStrings(indent idt: Swift.Int) -> Swift.Array<Swift.String>
+  @objc deinit
+}
+public class CNLabeledText : CoconutData.CNText {
+  public var mLabel: Swift.String
+  public var mText: any CoconutData.CNText
+  public init(label lab: Swift.String, text txt: any CoconutData.CNText)
+  public func append(string src: Swift.String)
+  public func prepend(string src: Swift.String)
+  public func isEmpty() -> Swift.Bool
+  public func toStrings(indent idt: Swift.Int) -> Swift.Array<Swift.String>
+  @objc deinit
+}
+public class CNTextList : CoconutData.CNText {
+  public var separator: Swift.String
+  public init()
+  public func add(text src: any CoconutData.CNText)
+  public func append(string src: Swift.String)
+  public func insert(text src: any CoconutData.CNText, at pos: Swift.Int)
+  public func prepend(string src: Swift.String)
+  public func isEmpty() -> Swift.Bool
+  public func toStrings(indent idt: Swift.Int) -> Swift.Array<Swift.String>
+  @objc deinit
+}
+public class CNTextSection : CoconutData.CNText {
+  public var header: Swift.String
+  public var footer: Swift.String
+  public var separator: Swift.String?
+  public init()
+  public var contentCount: Swift.Int {
+    get
+  }
+  public func add(text src: any CoconutData.CNText)
+  public func insert(text src: any CoconutData.CNText)
+  public func append(string src: Swift.String)
+  public func prepend(string src: Swift.String)
+  public func isEmpty() -> Swift.Bool
+  public func toStrings(indent idt: Swift.Int) -> Swift.Array<Swift.String>
+  @objc deinit
+}
+public class CNTextRecord {
+  public init()
+  public var columnCount: Swift.Int {
+    get
+  }
+  public var columns: Swift.Array<CoconutData.CNTextLine> {
+    get
+  }
+  public func append(string src: Swift.String)
+  public func append(line src: CoconutData.CNTextLine)
+  public func prepend(string src: Swift.String)
+  public func prepend(line src: CoconutData.CNTextLine)
+  public var widths: Swift.Array<Swift.Int> {
+    get
+  }
+  public func toStrings(widths widthvals: Swift.Array<Swift.Int>) -> Swift.Array<Swift.String>
+  @objc deinit
+}
+public class CNTextTable : CoconutData.CNText {
+  public var mRecords: Swift.Array<CoconutData.CNTextRecord>
+  public init()
+  public var count: Swift.Int {
+    get
+  }
+  public var records: Swift.Array<CoconutData.CNTextRecord> {
+    get
+    set(recs)
+  }
+  public func add(record src: CoconutData.CNTextRecord)
+  public func insert(record src: CoconutData.CNTextRecord)
+  public func append(string src: Swift.String)
+  public func prepend(string src: Swift.String)
+  public func isEmpty() -> Swift.Bool
+  public var maxColumnCount: Swift.Int {
+    get
+  }
+  public func toStrings(indent idt: Swift.Int) -> Swift.Array<Swift.String>
+  @objc deinit
+}
+public enum CNProcessStatus : Swift.Int {
+  public static let TypeName: Swift.String
+  case idle
+  case running
+  case finished
+  case cancelled
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public var isRunning: Swift.Bool {
+    get
+  }
+  public var isStopped: Swift.Bool {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol CNProcessProtocol {
+  var processId: Swift.Int { get }
+  var console: CoconutData.CNFileConsole { get }
+  var status: CoconutData.CNProcessStatus { get }
+  var terminationStatus: Swift.Int32 { get }
+  func terminate()
+}
+public class CNValuePath {
+  public enum Element {
+    case member(Swift.String)
+    case index(Swift.Int)
+    case keyAndValue(Swift.String, CoconutData.CNValue)
+  }
+  public var identifier: Swift.String? {
+    get
+  }
+  public var elements: Swift.Array<CoconutData.CNValuePath.Element> {
+    get
+  }
+  public var expression: Swift.String {
+    get
+  }
+  public init(identifier ident: Swift.String?, elements elms: Swift.Array<CoconutData.CNValuePath.Element>)
+  public init(identifier ident: Swift.String?, member memb: Swift.String)
+  public init(path pth: CoconutData.CNValuePath, subPath subs: Swift.Array<CoconutData.CNValuePath.Element>)
+  public func isIncluded(in targ: CoconutData.CNValuePath) -> Swift.Bool
+  public var description: Swift.String {
+    get
+  }
+  public static func toExpression(identifier ident: Swift.String?, elements elms: Swift.Array<CoconutData.CNValuePath.Element>) -> Swift.String
+  public static func pathExpression(string str: Swift.String) -> Swift.Result<CoconutData.CNValuePath, Foundation.NSError>
+  public static func description(of val: Swift.Dictionary<Swift.String, Swift.Array<CoconutData.CNValuePath.Element>>) -> any CoconutData.CNText
+  public func compare(_ val: CoconutData.CNValuePath) -> Foundation.ComparisonResult
+  @objc deinit
+}
+public typealias CNColor = UIKit.UIColor
+@_hasMissingDesignatedInitializers public class CNColors {
+  public static var black: CoconutData.CNColor {
+    get
+  }
+  public static var red: CoconutData.CNColor {
+    get
+  }
+  public static var green: CoconutData.CNColor {
+    get
+  }
+  public static var yellow: CoconutData.CNColor {
+    get
+  }
+  public static var blue: CoconutData.CNColor {
+    get
+  }
+  public static var magenta: CoconutData.CNColor {
+    get
+  }
+  public static var cyan: CoconutData.CNColor {
+    get
+  }
+  public static var white: CoconutData.CNColor {
+    get
+  }
+  @objc deinit
+}
+extension UIKit.UIColor {
+  public static let InterfaceName: Swift.String
+  public static func allocateInterfaceType() -> CoconutData.CNInterfaceType
+  public static func color(withEscapeCode code: Swift.Int32) -> CoconutData.CNColor?
+  public var isClear: Swift.Bool {
+    get
+  }
+  public func escapeCode() -> Swift.Int32
+  public var redComponent: CoreFoundation.CGFloat {
+    get
+  }
+  public var greenComponent: CoreFoundation.CGFloat {
+    get
+  }
+  public var blueComponent: CoreFoundation.CGFloat {
+    get
+  }
+  public var alphaComponent: CoreFoundation.CGFloat {
+    get
+  }
+  public func toRGBA() -> (CoreFoundation.CGFloat, CoreFoundation.CGFloat, CoreFoundation.CGFloat, CoreFoundation.CGFloat)
+  public static func fromValue(dictionary val: Swift.Dictionary<Swift.String, Any>) -> CoconutData.CNColor?
+  public static func fromValue(value val: CoconutData.CNInterfaceValue) -> CoconutData.CNColor?
+  public static func fromValue(r rnum: Foundation.NSNumber, g gnum: Foundation.NSNumber, b bnum: Foundation.NSNumber, a anum: Foundation.NSNumber) -> CoconutData.CNColor?
+  public func toValue() -> CoconutData.CNInterfaceValue
+  public func toData() -> Foundation.Data?
+  public static func decode(fromData data: Foundation.Data) -> CoconutData.CNColor?
+  public var rgbName: Swift.String {
+    get
+  }
+}
+public protocol CNProperties {
+  var type: CoconutData.CNInterfaceType { get }
+  var count: Swift.Int { get }
+  var properties: Swift.Dictionary<Swift.String, CoconutData.CNValue> { get }
+  var names: Swift.Array<Swift.String> { get }
+  func name(at index: Swift.Int) -> Swift.String?
+  func value(byName name: Swift.String) -> CoconutData.CNValue?
+  func set(value val: CoconutData.CNValue, forName name: Swift.String) -> Swift.Bool
+  func load(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>, from filename: Swift.String?) -> Foundation.NSError?
+  func save(to url: Foundation.URL) -> Swift.Bool
+}
+extension CoconutData.CNProperties {
+  public func toValue() -> Swift.Dictionary<Swift.String, CoconutData.CNValue>
+}
+public func pow(base b: Swift.Int, power p: Swift.UInt) -> Swift.Int
+public func clip<T>(value v: T, max mx: T, min mn: T) -> T where T : Swift.Comparable
+public func random(between val0: Swift.UInt32, and val1: Swift.UInt32) -> Swift.UInt32
+public func round(value v: Swift.Double, atPoint p: Swift.Int) -> Swift.Double
+public func degreeToRadian(degree deg: Swift.Double) -> Swift.Double
+public func radianToDegree(radian rad: Swift.Double) -> Swift.Double
+public enum CNTokenType {
+  case ReservedWordToken(Swift.Int)
+  case SymbolToken(Swift.Character)
+  case IdentifierToken(Swift.String)
+  case BoolToken(Swift.Bool)
+  case UIntToken(Swift.UInt)
+  case IntToken(Swift.Int)
+  case DoubleToken(Swift.Double)
+  case StringToken(Swift.String)
+  case TextToken(Swift.String)
+  case CommentToken(Swift.String)
+  public var original: Swift.String {
+    get
+  }
+}
+public enum CNTokenId : Swift.Int {
+  public static let TypeName: Swift.String
+  case reservedWord
+  case symbol
+  case identifier
+  case bool
+  case int
+  case float
+  case text
+  public static let enumTypes: [Swift.String : Swift.Int]
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public static func from(tokenType type: CoconutData.CNTokenType) -> CoconutData.CNTokenId
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct CNToken {
+  public static let InterfaceName: Swift.String
+  public init(type t: CoconutData.CNTokenType, lineNo no: Swift.Int)
+  public var type: CoconutData.CNTokenType {
+    get
+  }
+  public var lineNo: Swift.Int {
+    get
+  }
+  public var original: Swift.String {
+    get
+  }
+  public func getReservedWord() -> Swift.Int?
+  public func getSymbol() -> Swift.Character?
+  public func getIdentifier() -> Swift.String?
+  public func getBool() -> Swift.Bool?
+  public func getInt() -> Swift.Int?
+  public func getUInt() -> Swift.UInt?
+  public func getDouble() -> Swift.Double?
+  public func getNumber() -> Foundation.NSNumber?
+  public func getString() -> Swift.String?
+  public func getText() -> Swift.String?
+  public func getComment() -> Swift.String?
+}
+public enum CNTokenizeResult {
+  case ok(Swift.Array<CoconutData.CNToken>)
+  case error(Foundation.NSError)
+}
+public func CNStringToToken(string srcstr: Swift.String, config conf: CoconutData.CNParserConfig) -> CoconutData.CNTokenizeResult
+public func CNStringStreamToToken(stream srcstrm: CoconutData.CNStringStream, config conf: CoconutData.CNParserConfig) -> CoconutData.CNTokenizeResult
+extension Foundation.NSAttributedString {
+  convenience public init(string str: Swift.String, font fnt: CoconutData.CNFont)
+  convenience public init(string str: Swift.String, font fnt: CoconutData.CNFont, terminalInfo terminfo: CoconutData.CNTerminalInfo)
+  public func character(at index: Swift.Int) -> Swift.Character?
+  public func lineCount(from start: Swift.Int, to end: Swift.Int) -> Swift.Int
+  public func lineCountFromCursorToTextStart(from index: Swift.Int) -> Swift.Int
+  public func lineCountFromCursorToTextEnd(from index: Swift.Int) -> Swift.Int
+  public func distanceFromLineStart(to index: Swift.Int) -> Swift.Int
+  public func distanceToLineEnd(from index: Swift.Int) -> Swift.Int
+  public func moveCursorForward(from index: Swift.Int) -> Swift.Int?
+  public func moveCursorForward(from index: Swift.Int, number num: Swift.Int) -> Swift.Int
+  public func moveCursorToLineEnd(from index: Swift.Int) -> Swift.Int
+  public func moveCursorToTextEnd(from index: Swift.Int) -> Swift.Int
+  public func moveCursorBackward(from index: Swift.Int) -> Swift.Int?
+  public func moveCursorBackward(from index: Swift.Int, number num: Swift.Int) -> Swift.Int
+  public func moveCursorToLineStart(from index: Swift.Int) -> Swift.Int
+  public func moveCursorToTextStart(from index: Swift.Int) -> Swift.Int
+  public func moveCursorToPreviousLineEnd(from index: Swift.Int) -> Swift.Int?
+  public func moveCursorToNextLineStart(from index: Swift.Int) -> Swift.Int?
+  public func moveCursorToPreviousLineStart(from index: Swift.Int, number num: Swift.Int) -> Swift.Int
+  public func moveCursorToNextLineStart(from index: Swift.Int, number num: Swift.Int) -> (Swift.Int, Swift.Bool)
+  public func moveCursorUpOrDown(from idx: Swift.Int, doUp doup: Swift.Bool, number num: Swift.Int) -> Swift.Int
+  public func moveCursorTo(from index: Swift.Int, x xpos: Swift.Int) -> Swift.Int
+  public func moveCursorTo(x xpos: Swift.Int, y ypos: Swift.Int) -> Swift.Int
+}
+extension Foundation.NSMutableAttributedString {
+  public func write(string str: Swift.String, at index: Swift.Int, font fnt: CoconutData.CNFont, terminalInfo terminfo: CoconutData.CNTerminalInfo) -> Swift.Int
+  public func insert(string str: Swift.String, at index: Swift.Int, font fnt: CoconutData.CNFont, terminalInfo terminfo: CoconutData.CNTerminalInfo) -> Swift.Int
+  public func delete(at index: Swift.Int, number num: Swift.Int) -> Swift.Int
+  public func append(string str: Swift.String, font fnt: CoconutData.CNFont, terminalInfo terminfo: CoconutData.CNTerminalInfo) -> Swift.Int
+  public func clear(font fnt: CoconutData.CNFont, terminalInfo terminfo: CoconutData.CNTerminalInfo)
+  public func deleteForwardCharacters(from index: Swift.Int, number num: Swift.Int) -> Swift.Int
+  public func deleteFromCursorToLineEnd(from index: Swift.Int) -> Swift.Int
+  public func deleteFromCursorToTextEnd(from index: Swift.Int) -> Swift.Int
+  public func deleteBackwardCharacters(from index: Swift.Int, number num: Swift.Int) -> Swift.Int
+  public func deleteFromCursorToLineStart(from index: Swift.Int) -> Swift.Int
+  public func deleteFromCursorToTextStart(from index: Swift.Int) -> Swift.Int
+  public func deleteEntireLine(from index: Swift.Int) -> Swift.Int
+  public func changeOverallFont(font newfont: CoconutData.CNFont)
+  public func resize(width newwidth: Swift.Int, height newheight: Swift.Int, font fnt: CoconutData.CNFont, terminalInfo terminfo: CoconutData.CNTerminalInfo)
+  public func changeOverallTextColor(targetColor curcol: CoconutData.CNColor, newColor newcol: CoconutData.CNColor)
+  public func changeOverallBackgroundColor(targetColor curcol: CoconutData.CNColor, newColor newcol: CoconutData.CNColor)
+}
+public protocol CNRecord {
+  var type: CoconutData.CNInterfaceType { get }
+  var fieldCount: Swift.Int { get }
+  var fieldNames: Swift.Array<Swift.String> { get }
+  func value(ofField name: Swift.String) -> CoconutData.CNValue?
+  func setValue(value val: CoconutData.CNValue, forField name: Swift.String) -> Swift.Bool
+  func load(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>, from filename: Swift.String?) -> Foundation.NSError?
+}
+extension CoconutData.CNRecord {
+  public var description: Swift.String {
+    get
+  }
+  public func toValue() -> Swift.Dictionary<Swift.String, CoconutData.CNValue>
+}
+extension Foundation.ComparisonResult {
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public func toString() -> Swift.String
+}
+public func CNCompareValue(nativeValue0 ival0: CoconutData.CNValue, nativeValue1 ival1: CoconutData.CNValue) -> Foundation.ComparisonResult
+public func CNIsSameValue(nativeValue0 val0: CoconutData.CNValue, nativeValue1 val1: CoconutData.CNValue) -> Swift.Bool
+@_hasMissingDesignatedInitializers public class CNValueFile {
+  public static let TypeSectionName: Swift.String
+  public static let ValueSectionName: Swift.String
+  public static func load(from url: Foundation.URL) -> Swift.Result<Swift.Dictionary<Swift.String, CoconutData.CNValue>, Foundation.NSError>
+  public static func load(from url: Foundation.URL, forClassName name: Swift.String) -> Swift.Result<Swift.Dictionary<Swift.String, CoconutData.CNValue>, Foundation.NSError>
+  @objc deinit
+}
+public class CNSortDescriptors {
+  public struct SortDescriptor {
+    public var key: Swift.String
+    public var ascending: Swift.Bool
+    public init(key kstr: Swift.String, ascending asc: Swift.Bool)
+  }
+  public var descriptors: Swift.Array<CoconutData.CNSortDescriptors.SortDescriptor> {
+    get
+  }
+  public init()
+  public func add(key kstr: Swift.String, ascending asc: Swift.Bool)
+  public func ascending(for key: Swift.String) -> Swift.Bool?
+  public func sort<T>(source src: Swift.Array<T>, comparator comp: (_ s0: T, _ s1: T, _ key: Swift.String) -> Foundation.ComparisonResult) -> Swift.Array<T>
+  public func toText() -> CoconutData.CNTextSection
+  @objc deinit
+}
+public class CNTimer {
+  public typealias TimerHandler = (_ time: Swift.Int) -> Swift.Bool
+  public init(interval intvl: Foundation.TimeInterval)
+  @objc deinit
+  public var interval: Foundation.TimeInterval {
+    get
+    set(newval)
+  }
+  public var isActive: Swift.Bool {
+    get
+  }
+  public func addTimerHandler(handler hdlr: @escaping CoconutData.CNTimer.TimerHandler)
+  public func start()
+  public func stop()
+}
+@_hasMissingDesignatedInitializers public class CNProcessManager {
+  public static var shared: CoconutData.CNProcessManager {
+    get
+  }
+  public func addProcess(process proc: any CoconutData.CNProcessProtocol) -> Swift.Int
+  public func remove(processId pid: Swift.Int)
+  @objc deinit
+}
+public class CNStringStream {
+  public static let InterfaceName: Swift.String
+  required public init(string src: Swift.String)
+  public func getc() -> Swift.Character?
+  public func gets(count cnt: Swift.Int) -> Swift.String?
+  public func getl() -> Swift.String?
+  public func getident() -> Swift.String?
+  public func getword() -> Swift.String?
+  public func getint() -> Swift.Int?
+  public func ungetc() -> Swift.Character?
+  public func reqc(_ rc: Swift.String) -> Swift.Bool
+  public func peek(offset ofst: Swift.Int) -> Swift.Character?
+  public func skip(count cnt: Swift.Int)
+  public func skipspaces()
+  public func eof() -> Swift.Bool
+  public func splitByFirstCharacter(characters chars: Swift.Array<Swift.Character>) -> (CoconutData.CNStringStream, CoconutData.CNStringStream)?
+  public func toString() -> Swift.String?
+  public func trace(trace trc: (Swift.Character) -> Swift.Bool) -> Swift.String
+  public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CNFilePath {
+  public enum FilePathError {
+    case ok(_: Foundation.URL)
+    case error(_: Foundation.NSError)
+  }
+  public enum FilePathsError {
+    case ok(_: [Foundation.URL])
+    case error(_: Foundation.NSError)
+  }
+  public class func URLForBundleFile(bundleName bname: Swift.String?, fileName fname: Swift.String?, ofType type: Swift.String?) -> CoconutData.CNFilePath.FilePathError
+  public class func URLForResourceFile(fileName fname: Swift.String, fileExtension fext: Swift.String, subdirectory subdir: Swift.String?, forClass fclass: Swift.AnyClass?) -> Foundation.URL?
+  public class func URLForResourceDirectory(directoryName dname: Swift.String, subdirectory subdir: Swift.String?, forClass fclass: Swift.AnyClass?) -> Foundation.URL?
+  public class func URLsForResourceFiles(fileExtension fext: Swift.String, subdirectory subdir: Swift.String?, forClass fclass: Swift.AnyClass?) -> CoconutData.CNFilePath.FilePathsError
+  public class func URLsForResourceFiles(fileExtension fext: Swift.String, subdirectory subdir: Swift.String?, bundleName bname: Swift.String) -> CoconutData.CNFilePath.FilePathsError
+  public class func URLforApplicationSupportDirectory(subDirectory subdir: Swift.String?) -> Foundation.URL
+  public class func URLForApplicationSupportFile(fileName fname: Swift.String, fileExtension fext: Swift.String, subdirectory subdir: Swift.String?) -> Foundation.URL
+  public class func UTIForFile(URL url: Foundation.URL) -> Swift.String?
+  public class func relativePathUnderBaseURL(fullPath fpath: Foundation.URL, basePath bpath: Foundation.URL) -> Swift.String?
+  @objc deinit
+}
+public class CNCommandLineParser {
+  public typealias QString = CoconutData.CNQuoteParser.QString
+  public struct CommandLine {
+    public var pipes: Swift.Array<CoconutData.CNCommandLineParser.CommandPipe>
+    public init(pipes pp: Swift.Array<CoconutData.CNCommandLineParser.CommandPipe>)
+    public func allCommandNames() -> Swift.Array<Swift.String>
+    public func toText() -> CoconutData.CNTextSection
+  }
+  public struct CommandPipe {
+    public var commands: Swift.Array<CoconutData.CNCommandLineParser.Command>
+    public init(commands cmds: Swift.Array<CoconutData.CNCommandLineParser.Command>)
+    public func allCommandNames() -> Swift.Array<Swift.String>
+    public func toText() -> CoconutData.CNTextSection
+  }
+  public struct Command {
+    public var uniqueId: Swift.Int
+    public var commandName: Swift.String
+    public var arguments: Swift.Array<Swift.String>
+    public init(uniqueId uid: Swift.Int, commandName cmdname: Swift.String, arguments args: Swift.Array<Swift.String>)
+    public func toText() -> CoconutData.CNTextSection
+  }
+  public init()
+  public func parse(lines lns: Swift.Array<Swift.String>) -> Swift.Result<CoconutData.CNCommandLineParser.CommandLine, Foundation.NSError>
+  @objc deinit
+}
+extension CoreFoundation.CGSize {
+  public static let InterfaceName: Swift.String
+  public static func allocateInterfaceType() -> CoconutData.CNInterfaceType
+  public static func fromValue(value val: CoconutData.CNInterfaceValue) -> CoreFoundation.CGSize?
+  public func toValue() -> CoconutData.CNInterfaceValue
+  public func resizeWithKeepingAscpect(inWidth dstwidth: CoreFoundation.CGFloat) -> CoreFoundation.CGSize
+  public func resizeWithKeepingAscpect(inSize dst: CoreFoundation.CGSize) -> CoreFoundation.CGSize
+  public var description: Swift.String {
+    get
+  }
+  public static func maxSize(_ s0: CoreFoundation.CGSize, _ s1: CoreFoundation.CGSize) -> CoreFoundation.CGSize
+  public static func minSize(_ s0: CoreFoundation.CGSize, _ s1: CoreFoundation.CGSize) -> CoreFoundation.CGSize
+}
+public func CNIsSameSize(_ a: CoreFoundation.CGSize, _ b: CoreFoundation.CGSize) -> Swift.Bool
+public func CNExpandSize(_ sz: CoreFoundation.CGSize, byInsets insets: CoconutData.CNEdgeInsets) -> CoreFoundation.CGSize
+public func CNExpandSize(_ sz: CoreFoundation.CGSize, space spc: CoreFoundation.CGFloat) -> CoreFoundation.CGSize
+public func CNScaledSize(size sz: CoreFoundation.CGSize, scale scl: CoreFoundation.CGFloat) -> CoreFoundation.CGSize
+public func CNShrinkSize(size sz: CoreFoundation.CGSize, delta dlt: CoreFoundation.CGFloat) -> CoreFoundation.CGSize
+public func CNUnionSize(_ a: CoreFoundation.CGSize, _ b: CoreFoundation.CGSize, doVertical vert: Swift.Bool, spacing space: CoreFoundation.CGFloat) -> CoreFoundation.CGSize
+extension Foundation.Pipe {
+  public static let InterfaceName: Swift.String
+  public static func allocateInterfaceType(fileIF flif: CoconutData.CNInterfaceType) -> CoconutData.CNInterfaceType
+  public func fileForReading(fileType ftype: CoconutData.CNFile.FileType) -> CoconutData.CNInputFile
+  public func fileForWriting(fileType ftype: CoconutData.CNFile.FileType) -> CoconutData.CNOutputFile
+}
+public enum CNLanguage : Swift.Int {
+  case chinese
+  case deutsch
+  case english
+  case french
+  case italian
+  case japanese
+  case korean
+  case russian
+  case spanish
+  case others
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public var enumValue: CoconutData.CNEnum {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public var code: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class CNPropertyList {
+  public static var shared: CoconutData.CNPropertyList {
+    get
+  }
+  public static func load(bundleName name: Swift.String) -> CoconutData.CNPropertyList
+  public struct ExportedTypeDeclaration {
+    public var typeIdentigier: Swift.String
+    public var fileNameExtensions: Swift.Array<Swift.String>
+    public init(typeIdentifier ident: Swift.String, fileExtensions exts: Swift.Array<Swift.String>)
+  }
+  public var version: Swift.String? {
+    get
+  }
+  public var exportedTypeDeclarations: Swift.Array<CoconutData.CNPropertyList.ExportedTypeDeclaration> {
+    get
+  }
+  @objc deinit
+}
+public class CNSpriteNodeRef {
+  public static let InterfaceName: Swift.String
+  public static let MaterialItem: Swift.String
+  public static let NodeIdItem: Swift.String
+  public static let PositionItem: Swift.String
+  public static func allocateInterfaceType(pointIF pointif: CoconutData.CNInterfaceType) -> CoconutData.CNInterfaceType
+  public var material: CoconutData.CNSpriteMaterial {
+    get
+  }
+  public var nodeId: Swift.Int {
+    get
+  }
+  public var position: CoreFoundation.CGPoint {
+    get
+  }
+  public init(material m: CoconutData.CNSpriteMaterial, nodeId nid: Swift.Int, position pos: CoreFoundation.CGPoint)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class CNSpriteField : ObjectiveC.NSObject {
+  public static let InterfaceName: Swift.String
+  public var nodes: Swift.Array<CoconutData.CNSpriteNodeRef> {
+    get
+  }
+  public var size: CoreFoundation.CGSize {
+    get
+    set(newsz)
+  }
+  @objc override dynamic public init()
+  public func clearNodes()
+  public func appendNode(nodeRef nref: CoconutData.CNSpriteNodeRef)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CNValueTypeManager {
+  public static var shared: CoconutData.CNValueTypeManager {
+    get
+  }
+  public init(parent par: CoconutData.CNValueTypeManager)
+  public var typeNames: Swift.Array<Swift.String> {
+    get
+  }
+  public func search(byName name: Swift.String) -> CoconutData.CNValueType?
+  public func searchEnumType(byTypeName name: Swift.String) -> CoconutData.CNEnumType?
+  public func searchEnums(byMemberName name: Swift.String) -> Swift.Array<CoconutData.CNEnum>
+  public func searchInterfaceType(byTypeName name: Swift.String) -> CoconutData.CNInterfaceType?
+  public func add(enumType etype: CoconutData.CNEnumType)
+  public func add(interfaceType iftype: CoconutData.CNInterfaceType)
+  @objc deinit
+}
+public func CNExecuteInMainThread(doSync sync: Swift.Bool, execute exec: @escaping () -> Swift.Void)
+public enum CNUserThreadLevel {
+  case thread
+  case event
+  public static func == (a: CoconutData.CNUserThreadLevel, b: CoconutData.CNUserThreadLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public func CNExecuteInUserThread(level lvl: CoconutData.CNUserThreadLevel, execute exec: @escaping () -> Swift.Void)
+public protocol CNThreadProtocol {
+  func start(arguments: Swift.Array<CoconutData.CNValue>)
+  var status: CoconutData.CNProcessStatus { get }
+  var exitCode: CoconutData.CNExitCode { get }
+}
+open class CNThread : CoconutData.CNThreadProtocol {
+  public static let InterfaceName: Swift.String
+  public var console: CoconutData.CNFileConsole {
+    get
+  }
+  public var status: CoconutData.CNProcessStatus {
+    get
+  }
+  public var exitCode: CoconutData.CNExitCode {
+    get
+  }
+  public var environment: CoconutData.CNEnvironment {
+    get
+  }
+  public init(console cons: CoconutData.CNFileConsole, environment env: CoconutData.CNEnvironment)
+  open func start(arguments args: Swift.Array<CoconutData.CNValue>)
+  open func mainFunction(arguments args: Swift.Array<CoconutData.CNValue>, environment env: CoconutData.CNEnvironment) -> CoconutData.CNExitCode
+  @objc deinit
+}
+public enum CNErrorCode : Swift.Int {
+  case noError
+  case information
+  case internalError
+  case parseError
+  case parameterError
+  case execError
+  case fileError
+  case dataError
+  case unknownError
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension Foundation.NSError {
+  public class func domain() -> Swift.String
+  public class func errorLocationKey() -> Swift.String
+  public class func informationNotice(message m: Swift.String) -> Foundation.NSError
+  public class func internalError(message m: Swift.String) -> Foundation.NSError
+  public class func internalError(message m: Swift.String, location l: Foundation.NSString) -> Foundation.NSError
+  public class func parseError(message m: Swift.String) -> Foundation.NSError
+  public class func parseError(message m: Swift.String, location l: Foundation.NSString) -> Foundation.NSError
+  public class func fileError(message m: Swift.String) -> Foundation.NSError
+  public class func fileError(message m: Swift.String, location l: Foundation.NSString) -> Foundation.NSError
+  public class func unknownError() -> Foundation.NSError
+  public class func unknownError(location l: Foundation.NSString) -> Foundation.NSError
+  public var errorCode: CoconutData.CNErrorCode {
+    get
+  }
+  public func toString() -> Swift.String
+}
+public enum CNSortOrder : Swift.Int {
+  case none
+  case increasing
+  case decreasing
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public func CNCompare<T>(_ s0: T, _ s1: T) -> Foundation.ComparisonResult where T : Swift.Comparable
+@objc public class CNTrigger : ObjectiveC.NSObject {
+  public static func allocateInterfaceType() -> CoconutData.CNInterfaceType
+  public var name: Swift.String {
+    get
+  }
+  public init(name nm: Swift.String)
+  public func trigger()
+  public func isRunning() -> Swift.Bool
+  public func ack()
+  @objc deinit
+}
+public struct CNVector3D : Swift.Comparable {
+  public var values: [CoreFoundation.CGFloat]
+  public init()
+  public init(scalars scls: [CoreFoundation.CGFloat])
+  public var scalars: (CoreFoundation.CGFloat, CoreFoundation.CGFloat, CoreFoundation.CGFloat) {
+    get
+  }
+  public var description: Swift.String {
+    get
+  }
+  public static func < (lhs: CoconutData.CNVector3D, rhs: CoconutData.CNVector3D) -> Swift.Bool
+  public static func > (lhs: CoconutData.CNVector3D, rhs: CoconutData.CNVector3D) -> Swift.Bool
+  public static func == (lhs: CoconutData.CNVector3D, rhs: CoconutData.CNVector3D) -> Swift.Bool
+  public static func != (lhs: CoconutData.CNVector3D, rhs: CoconutData.CNVector3D) -> Swift.Bool
+}
+public struct CNMatrix3D : Swift.Comparable {
+  public var values: [[CoreFoundation.CGFloat]]
+  public static var unit: CoconutData.CNMatrix3D {
+    get
+  }
+  public init()
+  public init(scalars scls: [[CoreFoundation.CGFloat]])
+  public var description: Swift.String {
+    get
+  }
+  public static func < (lhs: CoconutData.CNMatrix3D, rhs: CoconutData.CNMatrix3D) -> Swift.Bool
+  public static func > (lhs: CoconutData.CNMatrix3D, rhs: CoconutData.CNMatrix3D) -> Swift.Bool
+  public static func == (lhs: CoconutData.CNMatrix3D, rhs: CoconutData.CNMatrix3D) -> Swift.Bool
+  public static func != (lhs: CoconutData.CNMatrix3D, rhs: CoconutData.CNMatrix3D) -> Swift.Bool
+}
+public func * (lhs: CoconutData.CNMatrix3D, rhs: CoconutData.CNMatrix3D) -> CoconutData.CNMatrix3D
+public func * (lhs: CoconutData.CNMatrix3D, rhs: CoconutData.CNVector3D) -> CoconutData.CNVector3D
+public func * (lhs: CoconutData.CNMatrix3D, rhs: CoreFoundation.CGFloat) -> CoconutData.CNMatrix3D
+public func distance(pointA pa: CoreFoundation.CGPoint, pointB pb: CoreFoundation.CGPoint) -> CoreFoundation.CGFloat
+public enum CNAxis : Swift.Int {
+  case horizontal
+  case vertical
+  public static var TypeName: Swift.String
+  public var description: Swift.String {
+    get
+  }
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum CNAlignment : Swift.Int {
+  case leading
+  case trailing
+  case fill
+  case center
+  public static var TypeName: Swift.String
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum CNVerticalPosition {
+  case top
+  case middle
+  case bottom
+  public static func == (a: CoconutData.CNVerticalPosition, b: CoconutData.CNVerticalPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CNHorizontalPosition {
+  case left
+  case center
+  case right
+  public static func == (a: CoconutData.CNHorizontalPosition, b: CoconutData.CNHorizontalPosition) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CNButtonState : Swift.Int {
+  case hidden
+  case disable
+  case off
+  case on
+  public static let TypeName: Swift.String
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct CNPosition {
+  public var horizontal: CoconutData.CNHorizontalPosition
+  public var vertical: CoconutData.CNVerticalPosition
+  public init()
+  public init(horizontal hpos: CoconutData.CNHorizontalPosition, vertical vpos: CoconutData.CNVerticalPosition)
+}
+public enum CNDistribution : Swift.Int {
+  case fill
+  case fillProportinally
+  case fillEqually
+  case equalSpacing
+  public static let TypeName: Swift.String
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum CNAnimationState : Swift.Int {
+  case idle
+  case run
+  case pause
+  public static var TypeName: Swift.String
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum CNKeyBinding {
+  public enum LeaveMode {
+    case Leave
+    case DoNotLeave
+    public static func == (a: CoconutData.CNKeyBinding.LeaveMode, b: CoconutData.CNKeyBinding.LeaveMode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum DeleteUnit {
+    case character
+    case word
+    case paragraph
+    public static func == (a: CoconutData.CNKeyBinding.DeleteUnit, b: CoconutData.CNKeyBinding.DeleteUnit) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum CursorDirection {
+    case left
+    case right
+    case up
+    case down
+    public static func == (a: CoconutData.CNKeyBinding.CursorDirection, b: CoconutData.CNKeyBinding.CursorDirection) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ScrollDirection {
+    case up
+    case down
+    public static func == (a: CoconutData.CNKeyBinding.ScrollDirection, b: CoconutData.CNKeyBinding.ScrollDirection) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ScrollUnit {
+    case page
+    case document
+    public static func == (a: CoconutData.CNKeyBinding.ScrollUnit, b: CoconutData.CNKeyBinding.ScrollUnit) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum DocumentDirection {
+    case forward
+    case backward
+    public static func == (a: CoconutData.CNKeyBinding.DocumentDirection, b: CoconutData.CNKeyBinding.DocumentDirection) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum DocumentUnit {
+    case word
+    case line
+    case paragraph
+    case document
+    public static func == (a: CoconutData.CNKeyBinding.DocumentUnit, b: CoconutData.CNKeyBinding.DocumentUnit) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  case insertNewline(CoconutData.CNKeyBinding.LeaveMode)
+  case insertTab(CoconutData.CNKeyBinding.LeaveMode)
+  case insertBackTab
+  case cycleToNextInputScript
+  case togglePlatformInputSystem
+  case cycleToNextInputKeyboardLayout
+  case deleteBackward(CoconutData.CNKeyBinding.DeleteUnit)
+  case deleteForward(CoconutData.CNKeyBinding.DeleteUnit)
+  case cancel
+  case moveCursor(CoconutData.CNKeyBinding.CursorDirection)
+  case moveTo(CoconutData.CNKeyBinding.DocumentDirection, CoconutData.CNKeyBinding.DocumentUnit)
+  case scroll(CoconutData.CNKeyBinding.ScrollDirection, CoconutData.CNKeyBinding.ScrollUnit)
+  public static func decode(selectorName name: Swift.String) -> CoconutData.CNKeyBinding?
+  public func toEscapeCode() -> [CoconutData.CNEscapeCode]?
+}
+public class CNVectorManager {
+  public enum SelectedGraphics {
+    case none
+    case selectCurrentGrip(CoconutData.CNGripPoint, CoconutData.CNVectorGraphics)
+    case selectCurrentObject(CoconutData.CNVectorGraphics)
+    case selectOtherObject(Swift.Int)
+  }
+  public init()
+  convenience public init?(objects objs: Swift.Array<CoconutData.CNValue>)
+  public var count: Swift.Int {
+    get
+  }
+  public var objects: Swift.Array<CoconutData.CNVectorGraphics> {
+    get
+  }
+  public var lineWidth: CoreFoundation.CGFloat {
+    get
+    set(newval)
+  }
+  public var strokeColor: CoconutData.CNColor {
+    get
+    set(newval)
+  }
+  public var fillColor: CoconutData.CNColor {
+    get
+    set(newval)
+  }
+  public var font: CoconutData.CNFont {
+    get
+    set(newval)
+  }
+  public func currentObject() -> CoconutData.CNVectorGraphics?
+  public func selectObject(index idx: Swift.Int)
+  public func addObject(location loc: CoreFoundation.CGPoint, type gtype: CoconutData.CNVectorGraphicsType) -> CoconutData.CNVectorGraphics
+  public func moveObject(diffPoint dpoint: CoreFoundation.CGPoint, object gobj: CoconutData.CNVectorGraphics)
+  public func deleteCurrentObject() -> Swift.Bool
+  public func selectNextObject() -> Swift.Bool
+  public func resize(from fsize: CoreFoundation.CGSize, to tsize: CoreFoundation.CGSize)
+  public func addPointToObject(nextPoint npoint: CoreFoundation.CGPoint, object gobj: CoconutData.CNVectorGraphics)
+  public func reshapeObject(nextPoint nextpt: CoreFoundation.CGPoint, grip gpoint: CoconutData.CNGripPoint, object gobj: CoconutData.CNVectorGraphics)
+  public func contains(point pt: CoreFoundation.CGPoint) -> CoconutData.CNVectorManager.SelectedGraphics
+  public func loadString() -> Swift.String?
+  public func storeString(string str: Swift.String)
+  public func toValue() -> Swift.Array<CoconutData.CNValue>
+  public func load(objects objs: Swift.Array<CoconutData.CNValue>) -> Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class CNValueTypeCoder {
+  public static func encode(valueType vtype: CoconutData.CNValueType) -> Swift.String
+  public static func decode(code str: Swift.String) -> Swift.Result<CoconutData.CNValueType, Foundation.NSError>
+  public static func decode(stream strm: CoconutData.CNTokenStream) -> Swift.Result<CoconutData.CNValueType, Foundation.NSError>
+  public static func decodeEnumType(stream strm: CoconutData.CNTokenStream) -> Swift.Result<CoconutData.CNEnumType, Foundation.NSError>
+  public static func decodeElementType(stream strm: CoconutData.CNTokenStream) -> Swift.Result<CoconutData.CNValueType, Foundation.NSError>
+  public static func decodeClassName(stream strm: CoconutData.CNTokenStream) -> Swift.Result<Swift.String?, Foundation.NSError>
+  public static func decodeInterfaceName(stream strm: CoconutData.CNTokenStream) -> Swift.Result<Swift.String, Foundation.NSError>
+  public static func decodeRecordType(stream strm: CoconutData.CNTokenStream) -> Swift.Result<Swift.Dictionary<Swift.String, CoconutData.CNValueType>, Foundation.NSError>
+  public static func decodeFunctionType(stream strm: CoconutData.CNTokenStream) -> Swift.Result<(CoconutData.CNValueType, Swift.Array<CoconutData.CNValueType>), Foundation.NSError>
+  public static func decodeNullableType(stream strm: CoconutData.CNTokenStream) -> Swift.Result<CoconutData.CNValueType, Foundation.NSError>
+  @objc deinit
+}
+public struct CNOval {
+  public static let InterfaceName: Swift.String
+  public init(center ctr: CoreFoundation.CGPoint, radius rad: CoreFoundation.CGFloat)
+  public static func fromValue(value val: CoconutData.CNInterfaceValue) -> CoconutData.CNOval?
+  public func toValue() -> CoconutData.CNInterfaceValue
+  public var center: CoreFoundation.CGPoint {
+    get
+  }
+  public var radius: CoreFoundation.CGFloat {
+    get
+  }
+  public var upperCenter: CoreFoundation.CGPoint {
+    get
+  }
+  public var lowerCenter: CoreFoundation.CGPoint {
+    get
+  }
+  public var middleLeft: CoreFoundation.CGPoint {
+    get
+  }
+  public var middleRight: CoreFoundation.CGPoint {
+    get
+  }
+}
+extension Foundation.NSNumber {
+  public var hasBoolValue: Swift.Bool {
+    get
+  }
+  public func negating() -> Foundation.NSNumber
+}
+public enum CNAlertType : Swift.Int {
+  public static let TypeName: Swift.String
+  case informational
+  case warning
+  case critical
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc open class CNOperationExecutor : Foundation.Operation {
+  public init(context ctxt: CoconutData.CNOperationContext)
+  @objc deinit
+  public var context: CoconutData.CNOperationContext {
+    get
+  }
+  @objc override dynamic open func main()
+  @objc override dynamic open func cancel()
+}
+open class CNOperationQueue {
+  public init()
+  public var operationCount: Swift.Int {
+    get
+  }
+  public func execute(operations ctxts: Swift.Array<CoconutData.CNOperationContext>, timeLimit limitp: Foundation.TimeInterval?) -> Swift.Array<CoconutData.CNOperationContext>
+  public func waitOperations()
+  @objc deinit
+}
+extension CoreFoundation.CGVector {
+  public static let InterfaceName: Swift.String
+  public static func allocateInterfaceType() -> CoconutData.CNInterfaceType
+  public static func fromValue(value val: CoconutData.CNInterfaceValue) -> CoreFoundation.CGVector?
+  public var description: Swift.String {
+    get
+  }
+}
+public class CNInterfaceType {
+  public static let typeName: Swift.String
+  public struct Member {
+    public var name: Swift.String
+    public var type: CoconutData.CNValueType
+    public init(name nm: Swift.String, type typ: CoconutData.CNValueType)
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var base: CoconutData.CNInterfaceType? {
+    get
+  }
+  public var members: Swift.Array<CoconutData.CNInterfaceType.Member> {
+    get
+  }
+  public static var mNilType: CoconutData.CNInterfaceType
+  public static var nilType: CoconutData.CNInterfaceType {
+    get
+  }
+  public init(name nm: Swift.String, base bs: CoconutData.CNInterfaceType?, members src: Swift.Array<CoconutData.CNInterfaceType.Member>)
+  public func add(members membs: Swift.Array<CoconutData.CNInterfaceType.Member>)
+  public var allTypes: Swift.Array<CoconutData.CNInterfaceType.Member> {
+    get
+  }
+  public func member(for name: Swift.String) -> CoconutData.CNInterfaceType.Member?
+  public func type(for name: Swift.String) -> CoconutData.CNValueType?
+  public static func compare(_ s0: CoconutData.CNInterfaceType, _ s1: CoconutData.CNInterfaceType) -> Foundation.ComparisonResult
+  public static func temporaryName() -> Swift.String
+  @objc deinit
+}
+public class CNInterfaceValue {
+  public var values: Swift.Dictionary<Swift.String, CoconutData.CNValue> {
+    get
+  }
+  public init(types tsrc: CoconutData.CNInterfaceType?, values vsrc: Swift.Dictionary<Swift.String, CoconutData.CNValue>)
+  public func get(name nm: Swift.String) -> CoconutData.CNValue?
+  public func set(name nm: Swift.String, value val: CoconutData.CNValue)
+  public var type: CoconutData.CNInterfaceType {
+    get
+  }
+  public static func fromValue(className clsname: Swift.String, value dict: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> CoconutData.CNInterfaceValue?
+  @objc deinit
+}
+public class CNValueTypeParser {
+  public init()
+  public func parse(source src: Swift.String) -> Swift.Result<Swift.Array<CoconutData.CNValueType>, Foundation.NSError>
+  @objc deinit
+}
+public class CNArrayStream<T> {
+  public init()
+  public init(source src: Swift.Array<T>)
+  public func get() -> T?
+  public func get(count cnt: Swift.Int) -> Swift.Array<T>
+  public func unget() -> T?
+  public func peek(offset ofst: Swift.Int) -> T?
+  public func isEmpty() -> Swift.Bool
+  public func append(item newitem: T)
+  public func trace(trace trc: (_ src: T) -> Swift.Bool) -> Swift.Array<T>
+  public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+public class CNDocumentTypeManager {
+  public static let shared: CoconutData.CNDocumentTypeManager
+  public init()
+  public var UTIs: Swift.Array<Swift.String> {
+    get
+  }
+  public func fileExtensions(forUTIs utis: [Swift.String]) -> [Swift.String]
+  public func UTIs(forExtensions exts: [Swift.String]) -> [Swift.String]
+  @objc deinit
+}
+public class CNGripPoint {
+  public init()
+  public var bezierPath: CoconutData.CNBezierPath? {
+    get
+  }
+  public var position: CoconutData.CNPosition {
+    get
+  }
+  public func setBezierPath(bezierPath path: CoconutData.CNBezierPath)
+  public func setPosition(position pos: CoconutData.CNPosition)
+  public func contains(point pt: CoreFoundation.CGPoint) -> Swift.Bool
+  public func clear()
+  public static func setColors()
+  @objc deinit
+}
+open class CNVectorObject {
+  public var lineWidth: CoreFoundation.CGFloat
+  public var doFill: Swift.Bool
+  public var strokeColor: CoconutData.CNColor
+  public var fillColor: CoconutData.CNColor
+  public init(lineWidth width: CoreFoundation.CGFloat, doFill fill: Swift.Bool, strokeColor scolor: CoconutData.CNColor, fillColor fcolor: CoconutData.CNColor)
+  public var gripPoints: Swift.Array<CoconutData.CNGripPoint> {
+    get
+  }
+  public func allocateGripPoint() -> CoconutData.CNGripPoint
+  public func clearGripPoints()
+  public func setColors()
+  open func reshape(position pos: CoconutData.CNPosition, nextPoint point: CoreFoundation.CGPoint)
+  open func contains(point pt: CoreFoundation.CGPoint) -> Swift.Bool
+  open func move(_ dx: CoreFoundation.CGFloat, _ dy: CoreFoundation.CGFloat)
+  open func resize(ratio r: CoreFoundation.CGFloat)
+  public func toValue() -> Swift.Dictionary<Swift.String, CoconutData.CNValue>
+  public static func decode(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> (CoreFoundation.CGFloat, Swift.Bool, CoconutData.CNColor, CoconutData.CNColor)?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class CNPathObject : CoconutData.CNVectorObject {
+  override public init(lineWidth width: CoreFoundation.CGFloat, doFill fill: Swift.Bool, strokeColor scolor: CoconutData.CNColor, fillColor fcolor: CoconutData.CNColor)
+  public var bezierPath: CoconutData.CNBezierPath? {
+    get
+  }
+  public func setBezierPath(bezierPath path: CoconutData.CNBezierPath)
+  override public func contains(point pt: CoreFoundation.CGPoint) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class CNVectorPath : CoconutData.CNPathObject {
+  public static let ClassName: Swift.String
+  override public init(lineWidth width: CoreFoundation.CGFloat, doFill fill: Swift.Bool, strokeColor scolor: CoconutData.CNColor, fillColor fcolor: CoconutData.CNColor)
+  public static func fromValue(value val: CoconutData.CNValue) -> CoconutData.CNVectorPath?
+  public static func fromValue(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> CoconutData.CNVectorPath?
+  public var points: Swift.Array<CoreFoundation.CGPoint> {
+    get
+  }
+  public func add(point pt: CoreFoundation.CGPoint)
+  override open func reshape(position pos: CoconutData.CNPosition, nextPoint point: CoreFoundation.CGPoint)
+  override open func move(_ dx: CoreFoundation.CGFloat, _ dy: CoreFoundation.CGFloat)
+  override open func resize(ratio r: CoreFoundation.CGFloat)
+  override public func toValue() -> Swift.Dictionary<Swift.String, CoconutData.CNValue>
+  @objc deinit
+}
+public class CNVectorRect : CoconutData.CNPathObject {
+  public static let ClassName: Swift.String
+  public var originPoint: CoreFoundation.CGPoint
+  public var endPoint: CoreFoundation.CGPoint
+  public var isRounded: Swift.Bool
+  public init(lineWidth width: CoreFoundation.CGFloat, doFill fill: Swift.Bool, isRounded isrnd: Swift.Bool, strokeColor scolor: CoconutData.CNColor, fillColor fcolor: CoconutData.CNColor)
+  public static func fromValue(value val: CoconutData.CNValue) -> CoconutData.CNVectorRect?
+  public static func fromValue(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> CoconutData.CNVectorRect?
+  override public func toValue() -> Swift.Dictionary<Swift.String, CoconutData.CNValue>
+  public var roundValue: CoreFoundation.CGFloat {
+    get
+  }
+  override open func reshape(position pos: CoconutData.CNPosition, nextPoint point: CoreFoundation.CGPoint)
+  public func toRect() -> CoreFoundation.CGRect
+  override open func move(_ dx: CoreFoundation.CGFloat, _ dy: CoreFoundation.CGFloat)
+  override open func resize(ratio r: CoreFoundation.CGFloat)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class CNVectorOval : CoconutData.CNPathObject {
+  public static let ClassName: Swift.String
+  public var centerPoint: CoreFoundation.CGPoint
+  public var endPoint: CoreFoundation.CGPoint
+  override public init(lineWidth width: CoreFoundation.CGFloat, doFill fill: Swift.Bool, strokeColor scolor: CoconutData.CNColor, fillColor fcolor: CoconutData.CNColor)
+  public static func fromValue(value val: CoconutData.CNValue) -> CoconutData.CNVectorOval?
+  public static func fromValue(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> CoconutData.CNVectorOval?
+  override public func toValue() -> Swift.Dictionary<Swift.String, CoconutData.CNValue>
+  public var radius: CoreFoundation.CGFloat {
+    get
+  }
+  override open func reshape(position pos: CoconutData.CNPosition, nextPoint point: CoreFoundation.CGPoint)
+  public func toOval() -> (CoreFoundation.CGPoint, CoreFoundation.CGFloat)
+  override open func move(_ dx: CoreFoundation.CGFloat, _ dy: CoreFoundation.CGFloat)
+  override open func resize(ratio r: CoreFoundation.CGFloat)
+  @objc deinit
+}
+public class CNVectorString : CoconutData.CNVectorObject {
+  public static let ClassName: Swift.String
+  public var originPoint: CoreFoundation.CGPoint
+  public var string: Swift.String
+  public var font: CoconutData.CNFont
+  public init(font fnt: CoconutData.CNFont, color col: CoconutData.CNColor)
+  public static func fromValue(value val: CoconutData.CNValue) -> CoconutData.CNVectorString?
+  public static func fromValue(value val: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> CoconutData.CNVectorString?
+  override public func toValue() -> Swift.Dictionary<Swift.String, CoconutData.CNValue>
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  override open func reshape(position pos: CoconutData.CNPosition, nextPoint point: CoreFoundation.CGPoint)
+  public func attributedString() -> Foundation.NSAttributedString
+  override public func contains(point pt: CoreFoundation.CGPoint) -> Swift.Bool
+  override open func move(_ dx: CoreFoundation.CGFloat, _ dy: CoreFoundation.CGFloat)
+  override open func resize(ratio r: CoreFoundation.CGFloat)
+  @objc deinit
+}
+public enum CNVectorGraphics {
+  case path(CoconutData.CNVectorPath)
+  case rect(CoconutData.CNVectorRect)
+  case oval(CoconutData.CNVectorOval)
+  case string(CoconutData.CNVectorString)
+}
+public enum CNVectorGraphicsType {
+  case path(Swift.Bool)
+  case rect(Swift.Bool, Swift.Bool)
+  case oval(Swift.Bool)
+  case string
+  public var description: Swift.String {
+    get
+  }
+}
+public class CNStack<T> {
+  public init()
+  public var count: Swift.Int {
+    get
+  }
+  open func push(_ data: T)
+  public func peek() -> T?
+  open func pop() -> T?
+  public func peekAll(doReverseOrder dorev: Swift.Bool) -> Swift.Array<T>
+  @objc deinit
+}
+@_inheritsConvenienceInitializers public class CNMutexStack<T> : CoconutData.CNStack<T> {
+  override public init()
+  override open func push(_ data: T)
+  override open func pop() -> T?
+  @objc deinit
+}
+extension Swift.Character {
+  public static let InterfaceName: Swift.String
+  public static func allocateInterfaceType() -> CoconutData.CNInterfaceType
+  public static var ETX: Swift.Character
+  public static var EOT: Swift.Character
+  public static var BEL: Swift.Character
+  public static var BS: Swift.Character
+  public static var TAB: Swift.Character
+  public static var LF: Swift.Character
+  public static var VT: Swift.Character
+  public static var CR: Swift.Character
+  public static var ESC: Swift.Character
+  public static var DEL: Swift.Character
+  public var isLetterOrNumber: Swift.Bool {
+    get
+  }
+  public var isIdentifier: Swift.Bool {
+    get
+  }
+  public func toInt() -> Swift.UInt32?
+  public static func asciiCodeName(code value: Swift.Int) -> Swift.String?
+}
+public class CNResourceInstaller {
+  public init(console cons: any CoconutData.CNConsole)
+  public func install(destinationDirectory dstdir: Foundation.URL, sourceDirectoryNames srcdirs: Swift.Array<Swift.String>) -> Swift.Bool
+  @objc deinit
+}
+public enum CNExitCode : Swift.Int {
+  public static let TypeName: Swift.String
+  case noError
+  case internalError
+  case commandLineError
+  case fileError
+  case compileError
+  case runtimeError
+  case exception
+  public var description: Swift.String {
+    get
+  }
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol CNTerminalController {
+  func execute(escapeCode ecode: CoconutData.CNEscapeCode)
+  func execute(escapeCodes ecodes: Swift.Array<CoconutData.CNEscapeCode>)
+  func screenSize() -> (Swift.Int, Swift.Int)
+}
+public class CNFileTerminalController : CoconutData.CNTerminalController {
+  public var console: CoconutData.CNFileConsole {
+    get
+  }
+  public init(console cons: CoconutData.CNFileConsole)
+  public func execute(escapeCode ecode: CoconutData.CNEscapeCode)
+  public func execute(escapeCodes ecodes: Swift.Array<CoconutData.CNEscapeCode>)
+  public func screenSize() -> (Swift.Int, Swift.Int)
+  @objc deinit
+}
+extension Foundation._NSRange {
+  public static let InterfaceName: Swift.String
+  public static func allocateInterfaceType() -> CoconutData.CNInterfaceType
+  public static func fromValue(value val: CoconutData.CNInterfaceValue) -> Foundation.NSRange?
+  public func toValue() -> CoconutData.CNInterfaceValue
+}
+extension Foundation.Date {
+  public static let InterfaceName: Swift.String
+  public static func allocateInterfaceType(sizeIF szif: CoconutData.CNInterfaceType) -> CoconutData.CNInterfaceType
+  public func toString() -> Swift.String
+  public var year: Swift.Int {
+    get
+  }
+  public var month: Swift.Int {
+    get
+  }
+  public var day: Swift.Int {
+    get
+  }
+}
+public func CNDictionaryToValue(dictionary dict: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> CoconutData.CNValue?
+open class CNValueToAnyObject {
+  public init()
+  open func convert(value src: CoconutData.CNValue) -> Swift.AnyObject
+  open func convert(arrayValue src: Swift.Array<CoconutData.CNValue>) -> Swift.AnyObject
+  open func convert(dictionaryValue src: Swift.Dictionary<Swift.String, CoconutData.CNValue>) -> Swift.AnyObject
+  open func convert(enumValue src: CoconutData.CNEnum) -> Swift.AnyObject
+  @objc deinit
+}
+open class CNAnyObjecToValue {
+  public init()
+  open func convert(anyObject src: Swift.AnyObject) -> CoconutData.CNValue
+  open func convert(arrayObject src: Swift.Array<Swift.AnyObject>) -> CoconutData.CNValue
+  open func convert(dictionaryObject src: Swift.Dictionary<Swift.String, Swift.AnyObject>) -> CoconutData.CNValue
+  @objc deinit
+}
+extension UIKit.UIImage {
+  public static let ClassName: Swift.String
+  public static let InterfaceName: Swift.String
+  convenience public init?(symbolName name: Swift.String)
+  public static func allocateInterfaceType(sizeIF szif: CoconutData.CNInterfaceType, frameIF frmif: CoconutData.CNInterfaceType) -> CoconutData.CNInterfaceType
+  convenience public init?(contentsOf url: Foundation.URL)
+  public func toValue() -> Swift.Dictionary<Swift.String, CoconutData.CNValue>
+}
+extension UIKit.UIImage {
+  public func resize(to _size: CoreFoundation.CGSize) -> UIKit.UIImage?
+}
+public class CNBitmapData {
+  public var width: Swift.Int {
+    get
+  }
+  public var height: Swift.Int {
+    get
+  }
+  public init(width w: Swift.Int, height h: Swift.Int)
+  public init(colorData cdata: Swift.Array<Swift.Array<CoconutData.CNColor>>)
+  public func resize(width wid: Swift.Int, height hgt: Swift.Int)
+  public func set(x posx: Swift.Int, y posy: Swift.Int, color col: CoconutData.CNColor)
+  public func set(x posx: Swift.Int, y posy: Swift.Int, bitmap bm: CoconutData.CNBitmapData)
+  public func clean()
+  public func get(x posx: Swift.Int, y posy: Swift.Int) -> CoconutData.CNColor?
+  public func toText() -> any CoconutData.CNText
+  @objc deinit
+}
+public protocol CNEscapeCoding {
+  func execute() -> Any?
+  func string(_ str: Swift.String)
+  func newline()
+  func tab()
+  func backspace()
+  func delete()
+  func insertSpace(_ num: Swift.Int)
+  func cursorUp(_ line: Swift.Int)
+  func cursorDown(_ line: Swift.Int)
+  func cursorForward(_ line: Swift.Int)
+  func cursorBackward(_ line: Swift.Int)
+  func cursorNextLine(_ line: Swift.Int)
+  func cursorPreviousLine(_ line: Swift.Int)
+  func cursorHolizontalAbsolute(_ line: Swift.Int)
+  func cursorVisible(_ vis: Swift.Bool)
+  func saveCursorPosition()
+  func restoreCursorPosition()
+  func cursorPosition(_ row: Swift.Int, _ column: Swift.Int)
+  func eraceFromCursorToEnd()
+  func eraceFromCursorToBegin()
+  func eraceEntireBuffer()
+  func eraceFromCursorToRight()
+  func eraceFromCursorToLeft()
+  func eraceEntireLine()
+  func scrollUp(_ line: Swift.Int)
+  func scrollDown(_ line: Swift.Int)
+  func resetAll()
+  func resetCharacterAttribute()
+  func boldCharacter(_ enable: Swift.Bool)
+  func underlineCharacter(_ enable: Swift.Bool)
+  func blinkCharacter(_ enable: Swift.Bool)
+  func reverseCharacter(_ enable: Swift.Bool)
+  func foregroundColor(_ color: CoconutData.CNColor)
+  func defaultForegroundColor()
+  func backgroundColor(_ color: CoconutData.CNColor)
+  func defaultBackgroundColor()
+  func requestScreenSize()
+  func screenSize(_ width: Swift.Int, _ height: Swift.Int)
+  func selectAltScreen(_ enable: Swift.Bool)
+  func setFontStyle(_ style: CoconutData.CNFont.Style)
+  func setFontSize(_ size: CoconutData.CNFont.Size)
+}
+open class CNEscapeCodes : CoconutData.CNEscapeCoding {
+  public static let InterfaceName: Swift.String
+  public var codes: Swift.Array<CoconutData.CNEscapeCode> {
+    get
+  }
+  public init()
+  public func clear()
+  public func execute() -> Any?
+  public func append(escapeCode ecode: CoconutData.CNEscapeCode)
+  public func string(_ str: Swift.String)
+  public func newline()
+  public func tab()
+  public func backspace()
+  public func delete()
+  public func insertSpace(_ num: Swift.Int)
+  public func cursorUp(_ line: Swift.Int)
+  public func cursorDown(_ line: Swift.Int)
+  public func cursorForward(_ line: Swift.Int)
+  public func cursorBackward(_ line: Swift.Int)
+  public func cursorNextLine(_ num: Swift.Int)
+  public func cursorPreviousLine(_ num: Swift.Int)
+  public func cursorHolizontalAbsolute(_ num: Swift.Int)
+  public func cursorVisible(_ dovis: Swift.Bool)
+  public func saveCursorPosition()
+  public func restoreCursorPosition()
+  public func cursorPosition(_ num0: Swift.Int, _ num1: Swift.Int)
+  public func eraceFromCursorToEnd()
+  public func eraceFromCursorToBegin()
+  public func eraceEntireBuffer()
+  public func eraceFromCursorToRight()
+  public func eraceFromCursorToLeft()
+  public func eraceEntireLine()
+  public func scrollUp(_ num: Swift.Int)
+  public func scrollDown(_ num: Swift.Int)
+  public func resetAll()
+  public func resetCharacterAttribute()
+  public func boldCharacter(_ flag: Swift.Bool)
+  public func underlineCharacter(_ flag: Swift.Bool)
+  public func blinkCharacter(_ flag: Swift.Bool)
+  public func reverseCharacter(_ flag: Swift.Bool)
+  public func foregroundColor(_ col: CoconutData.CNColor)
+  public func defaultForegroundColor()
+  public func backgroundColor(_ col: CoconutData.CNColor)
+  public func defaultBackgroundColor()
+  public func requestScreenSize()
+  public func screenSize(_ num0: Swift.Int, _ num1: Swift.Int)
+  public func selectAltScreen(_ flag: Swift.Bool)
+  public func setFontStyle(_ style: CoconutData.CNFont.Style)
+  public func setFontSize(_ size: CoconutData.CNFont.Size)
+  @objc deinit
+}
+public typealias CNApplicationBase = UIKit.UIApplication
+public typealias CNApplicationDelegateBase = UIKit.UIApplicationDelegate
+public typealias CNApplicationDelegateSuper = UIKit.UIResponder
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CNApplicationDelegate : CoconutData.CNApplicationDelegateSuper, CoconutData.CNApplicationDelegateBase {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc open func application(_ application: UIKit.UIApplication, willFinishLaunchingWithOptions launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]? = nil) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func applicationDidFinishLaunching(_ application: UIKit.UIApplication)
+  @_Concurrency.MainActor(unsafe) @objc open func applicationWillTerminate(_ application: UIKit.UIApplication)
+  @objc deinit
+}
+public typealias CNBezierPath = UIKit.UIBezierPath
+extension UIKit.UIBezierPath {
+  public func appendRect(_ rt: CoreFoundation.CGRect)
+  public func appendRoundedRect(_ rt: CoreFoundation.CGRect, xRadius xrad: CoreFoundation.CGFloat, yRadius yrad: CoreFoundation.CGFloat)
+  public func appendOval(center c: CoreFoundation.CGPoint, radius r: CoreFoundation.CGFloat)
+}
+public class CNTermios {
+  public init(forFileHandle hdl: Foundation.FileHandle)
+  public func restore()
+  public func echo(enable en: Swift.Bool)
+  @objc deinit
+}
+public class CNQuoteParser {
+  public enum QString {
+    case normal(Swift.String)
+    case quoted(Swift.String)
+  }
+  public init()
+  public func clear()
+  public func parse(source src: Swift.String) -> Swift.Result<Swift.Array<CoconutData.CNQuoteParser.QString>, Foundation.NSError>
+  @objc deinit
+}
+public enum CNAuthorizeState : Swift.Int {
+  public static let TypeName: Swift.String
+  case Undetermined
+  case Examinating
+  case Denied
+  case Authorized
+  public static func allocateEnumType() -> CoconutData.CNEnumType
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public class CNValueTypeGenerator {
+  public init()
+  public func generateValueType(valueType vtype: CoconutData.CNValueType, isInside inside: Swift.Bool) -> Swift.Array<Swift.String>
+  public func generateEnumType(enumType vtype: CoconutData.CNEnumType, isInside inside: Swift.Bool) -> Swift.Array<Swift.String>
+  public func generateInterfaceType(interfaceType vtype: CoconutData.CNInterfaceType, isInside inside: Swift.Bool) -> Swift.Array<Swift.String>
+  public func generateFunctionType(name nm: Swift.String, returnType rettype: CoconutData.CNValueType, parameterTypes ptypes: Swift.Array<CoconutData.CNValueType>) -> Swift.String
+  @objc deinit
+}
+open class CNConfig {
+  public enum LogLevel : Swift.Int {
+    public static let TypeName: Swift.String
+    case nolog
+    case error
+    case warning
+    case debug
+    case detail
+    public static let min: Swift.Int
+    public static let max: Swift.Int
+    public var description: Swift.String {
+      get
+    }
+    public static func allocateEnumType() -> CoconutData.CNEnumType
+    public func isIncluded(in level: CoconutData.CNConfig.LogLevel) -> Swift.Bool
+    public static var defaultLevel: CoconutData.CNConfig.LogLevel {
+      get
+    }
+    public static func decode(string str: Swift.String) -> CoconutData.CNConfig.LogLevel?
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public var logLevel: CoconutData.CNConfig.LogLevel
+  public init(logLevel log: CoconutData.CNConfig.LogLevel)
+  @objc deinit
+}
+public enum CNInterfaceStyle : Swift.Int {
+  case light
+  case dark
+  public var description: Swift.String {
+    get
+  }
+  public static func decode(name nm: Swift.String) -> CoconutData.CNInterfaceStyle?
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class CNPreference {
+  public static let InterfaceName: Swift.String
+  public static var mShared: CoconutData.CNPreference?
+  public static var shared: CoconutData.CNPreference {
+    get
+  }
+  public func get<T>(name nm: Swift.String, allocator alloc: () -> T) -> T where T : CoconutData.CNPreferenceTable
+  public func peekTable(name nm: Swift.String) -> CoconutData.CNPreferenceTable?
+  public func pokeTable(name nm: Swift.String, table tbl: CoconutData.CNPreferenceTable)
+  @objc deinit
+}
+public class CNSystemPreference : CoconutData.CNPreferenceTable {
+  public typealias LogLevel = CoconutData.CNConfig.LogLevel
+  public static let InterfaceName: Swift.String
+  public static let LogLevelItem: Swift.String
+  public static let InterfaceStyleItem: Swift.String
+  public init()
+  @objc deinit
+  @objc public func interfaceModeChanged(sender: Foundation.NSNotification)
+  open func set(config conf: CoconutData.CNConfig)
+  public var device: CoconutData.CNDevice {
+    get
+  }
+  public var version: Swift.String {
+    get
+  }
+  public var interfaceStyle: CoconutData.CNInterfaceStyle {
+    get
+  }
+  public var logLevel: CoconutData.CNSystemPreference.LogLevel {
+    get
+    set(level)
+  }
+}
+public class CNUserPreference : CoconutData.CNPreferenceTable {
+  public static let InterfaceName: Swift.String
+  public static let HomeDirectoryItem: Swift.String
+  public static let LanguageItem: Swift.String
+  public init()
+  public var homeDirectory: Foundation.URL {
+    get
+    set(newval)
+  }
+  public var language: CoconutData.CNLanguage {
+    get
+  }
+  @objc deinit
+}
+public class CNBookmarkPreference : CoconutData.CNPreferenceTable {
+  final public let BookmarkItem: Swift.String
+  public init()
+  public func add(URL url: Foundation.URL)
+  public func search(pathString path: Swift.String) -> Foundation.URL?
+  public func clear()
+  @objc deinit
+}
+public class CNViewPreference : CoconutData.CNPreferenceTable {
+  public static let InterfaceName: Swift.String
+  final public let ForegroundColorItem: Swift.String
+  final public let BackgroundColorItem: Swift.String
+  final public let TextFieldColorItem: Swift.String
+  public init()
+  public var foregroundColor: CoconutData.CNColor {
+    get
+    set(newcol)
+  }
+  public var backgroundColor: CoconutData.CNColor {
+    get
+    set(newcol)
+  }
+  public var textFieldColor: CoconutData.CNColor {
+    get
+    set(newcol)
+  }
+  @objc deinit
+}
+public class CNTerminalPreference : CoconutData.CNPreferenceTable {
+  final public let WidthItem: Swift.String
+  final public let HeightItem: Swift.String
+  final public let ForegroundTextColorItem: Swift.String
+  final public let BackgroundTextColorItem: Swift.String
+  final public let FontItem: Swift.String
+  public init()
+  public var width: Swift.Int {
+    get
+    set(newval)
+  }
+  public var height: Swift.Int {
+    get
+    set(newval)
+  }
+  public var foregroundTextColor: CoconutData.CNColor {
+    get
+    set(newcol)
+  }
+  public var backgroundTextColor: CoconutData.CNColor {
+    get
+    set(newcol)
+  }
+  public var font: CoconutData.CNFont {
+    get
+    set(newfont)
+  }
+  @objc deinit
+}
+extension CoconutData.CNPreference {
+  public var systemPreference: CoconutData.CNSystemPreference {
+    get
+  }
+  public var userPreference: CoconutData.CNUserPreference {
+    get
+  }
+  public var bookmarkPreference: CoconutData.CNBookmarkPreference {
+    get
+  }
+  public var viewPreference: CoconutData.CNViewPreference {
+    get
+  }
+  public var terminalPreference: CoconutData.CNTerminalPreference {
+    get
+  }
+}
+extension UIKit.UIFont.Style : Swift.Equatable {}
+extension UIKit.UIFont.Style : Swift.Hashable {}
+extension UIKit.UIFont.Style : Swift.RawRepresentable {}
+extension UIKit.UIFont.Size : Swift.Equatable {}
+extension UIKit.UIFont.Size : Swift.Hashable {}
+extension UIKit.UIFont.Size : Swift.RawRepresentable {}
+extension CoconutData.CNSymbolSize : Swift.Hashable {}
+extension CoconutData.CNSymbolSize : Swift.RawRepresentable {}
+extension CoconutData.CNSymbol : Swift.Equatable {}
+extension CoconutData.CNSymbol : Swift.Hashable {}
+extension CoconutData.CNSymbol : Swift.RawRepresentable {}
+extension CoconutData.CNFile.FileType : Swift.Equatable {}
+extension CoconutData.CNFile.FileType : Swift.Hashable {}
+extension CoconutData.CNSpriteMaterial : Swift.Equatable {}
+extension CoconutData.CNSpriteMaterial : Swift.Hashable {}
+extension CoconutData.CNSpriteMaterial : Swift.RawRepresentable {}
+extension CoconutData.CNAccessType : Swift.Equatable {}
+extension CoconutData.CNAccessType : Swift.Hashable {}
+extension CoconutData.CNKeyCode : Swift.Equatable {}
+extension CoconutData.CNKeyCode : Swift.Hashable {}
+extension CoconutData.CNKeyCode : Swift.RawRepresentable {}
+extension CoconutData.CNSpecialKey : Swift.Equatable {}
+extension CoconutData.CNSpecialKey : Swift.Hashable {}
+extension CoconutData.CNDevice : Swift.Hashable {}
+extension CoconutData.CNDevice : Swift.RawRepresentable {}
+extension CoconutData.CNResource.DataType : Swift.Equatable {}
+extension CoconutData.CNResource.DataType : Swift.Hashable {}
+extension CoconutData.CNFileType : Swift.Equatable {}
+extension CoconutData.CNFileType : Swift.Hashable {}
+extension CoconutData.CNFileType : Swift.RawRepresentable {}
+extension CoconutData.CNFileAccessType : Swift.Equatable {}
+extension CoconutData.CNFileAccessType : Swift.Hashable {}
+extension CoconutData.CNFileAccessType : Swift.RawRepresentable {}
+extension CoconutData.CNProcessStatus : Swift.Equatable {}
+extension CoconutData.CNProcessStatus : Swift.Hashable {}
+extension CoconutData.CNProcessStatus : Swift.RawRepresentable {}
+extension CoconutData.CNTokenId : Swift.Equatable {}
+extension CoconutData.CNTokenId : Swift.Hashable {}
+extension CoconutData.CNTokenId : Swift.RawRepresentable {}
+extension CoconutData.CNLanguage : Swift.Equatable {}
+extension CoconutData.CNLanguage : Swift.Hashable {}
+extension CoconutData.CNLanguage : Swift.RawRepresentable {}
+extension CoconutData.CNUserThreadLevel : Swift.Equatable {}
+extension CoconutData.CNUserThreadLevel : Swift.Hashable {}
+extension CoconutData.CNErrorCode : Swift.Equatable {}
+extension CoconutData.CNErrorCode : Swift.Hashable {}
+extension CoconutData.CNErrorCode : Swift.RawRepresentable {}
+extension CoconutData.CNSortOrder : Swift.Equatable {}
+extension CoconutData.CNSortOrder : Swift.Hashable {}
+extension CoconutData.CNSortOrder : Swift.RawRepresentable {}
+extension CoconutData.CNAxis : Swift.Equatable {}
+extension CoconutData.CNAxis : Swift.Hashable {}
+extension CoconutData.CNAxis : Swift.RawRepresentable {}
+extension CoconutData.CNAlignment : Swift.Equatable {}
+extension CoconutData.CNAlignment : Swift.Hashable {}
+extension CoconutData.CNAlignment : Swift.RawRepresentable {}
+extension CoconutData.CNVerticalPosition : Swift.Equatable {}
+extension CoconutData.CNVerticalPosition : Swift.Hashable {}
+extension CoconutData.CNHorizontalPosition : Swift.Equatable {}
+extension CoconutData.CNHorizontalPosition : Swift.Hashable {}
+extension CoconutData.CNButtonState : Swift.Equatable {}
+extension CoconutData.CNButtonState : Swift.Hashable {}
+extension CoconutData.CNButtonState : Swift.RawRepresentable {}
+extension CoconutData.CNDistribution : Swift.Equatable {}
+extension CoconutData.CNDistribution : Swift.Hashable {}
+extension CoconutData.CNDistribution : Swift.RawRepresentable {}
+extension CoconutData.CNAnimationState : Swift.Equatable {}
+extension CoconutData.CNAnimationState : Swift.Hashable {}
+extension CoconutData.CNAnimationState : Swift.RawRepresentable {}
+extension CoconutData.CNKeyBinding.LeaveMode : Swift.Equatable {}
+extension CoconutData.CNKeyBinding.LeaveMode : Swift.Hashable {}
+extension CoconutData.CNKeyBinding.DeleteUnit : Swift.Equatable {}
+extension CoconutData.CNKeyBinding.DeleteUnit : Swift.Hashable {}
+extension CoconutData.CNKeyBinding.CursorDirection : Swift.Equatable {}
+extension CoconutData.CNKeyBinding.CursorDirection : Swift.Hashable {}
+extension CoconutData.CNKeyBinding.ScrollDirection : Swift.Equatable {}
+extension CoconutData.CNKeyBinding.ScrollDirection : Swift.Hashable {}
+extension CoconutData.CNKeyBinding.ScrollUnit : Swift.Equatable {}
+extension CoconutData.CNKeyBinding.ScrollUnit : Swift.Hashable {}
+extension CoconutData.CNKeyBinding.DocumentDirection : Swift.Equatable {}
+extension CoconutData.CNKeyBinding.DocumentDirection : Swift.Hashable {}
+extension CoconutData.CNKeyBinding.DocumentUnit : Swift.Equatable {}
+extension CoconutData.CNKeyBinding.DocumentUnit : Swift.Hashable {}
+extension CoconutData.CNAlertType : Swift.Equatable {}
+extension CoconutData.CNAlertType : Swift.Hashable {}
+extension CoconutData.CNAlertType : Swift.RawRepresentable {}
+extension CoconutData.CNExitCode : Swift.Equatable {}
+extension CoconutData.CNExitCode : Swift.Hashable {}
+extension CoconutData.CNExitCode : Swift.RawRepresentable {}
+extension CoconutData.CNAuthorizeState : Swift.Equatable {}
+extension CoconutData.CNAuthorizeState : Swift.Hashable {}
+extension CoconutData.CNAuthorizeState : Swift.RawRepresentable {}
+extension CoconutData.CNConfig.LogLevel : Swift.Equatable {}
+extension CoconutData.CNConfig.LogLevel : Swift.Hashable {}
+extension CoconutData.CNConfig.LogLevel : Swift.RawRepresentable {}
+extension CoconutData.CNInterfaceStyle : Swift.Equatable {}
+extension CoconutData.CNInterfaceStyle : Swift.Hashable {}
+extension CoconutData.CNInterfaceStyle : Swift.RawRepresentable {}

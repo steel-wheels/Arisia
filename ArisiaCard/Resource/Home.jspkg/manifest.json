@@ -1,0 +1,13 @@
+{
+  application: "main.js",
+  images: {
+      arisia_icon: "images/arisia-icon.png"
+    },
+  views: {
+      game: "game.js",
+      home: "home.js",
+      paint: "paint.js",
+      preference: "pref.js",
+      terminal: "terminal.js"
+    }
+}

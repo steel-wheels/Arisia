@@ -1,0 +1,6 @@
+{
+  application: "main.js",
+  views: {
+      buttons: "radio-buttons.js"
+    }
+}

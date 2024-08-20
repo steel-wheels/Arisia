@@ -1,0 +1,14 @@
+# `Collection` component
+
+## Introduction
+Display multiple images. You cange callback by clicking the image.
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`class-Collection.d.ts')
+</pre>
+
+m4_include(`footer.md')
+

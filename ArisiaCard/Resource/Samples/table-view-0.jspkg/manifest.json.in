@@ -1,0 +1,13 @@
+{
+  application: "main.ts"
+  views: {
+   table: "table.as"
+  }
+  tables: {
+    table0: {
+      type: "table-0.d.ts"
+      data: "table-0.json"
+    }
+  }
+}
+

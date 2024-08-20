@@ -1,0 +1,15 @@
+{
+  application: "main.ts"
+  views: {
+    sprite: "sprite.as"
+  }
+  images: {
+    background: "images/background.png"
+    car:        "images/car.png"
+  }
+  threads: {
+    car:   "car.ts"
+    scene: "scene.ts"
+  }
+}
+

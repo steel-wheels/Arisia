@@ -1,0 +1,22 @@
+# `TextField` component
+
+## Introduction
+Text field
+![TextField ScreemnShot](./Images/textfield-component-macos.png)
+
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`class-TextField.d.ts')
+</pre>
+
+## Example
+You can get the value of the text field by refering <code>text</code> property.
+<pre>
+m4_include(`textfield.jspkg/textfield.as')
+</pre>
+
+m4_include(`footer.md')
+

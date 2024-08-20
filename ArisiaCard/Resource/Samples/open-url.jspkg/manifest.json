@@ -1,0 +1,6 @@
+{
+  application: "main.js",
+  views: {
+      open_url: "open_url.js"
+    }
+}

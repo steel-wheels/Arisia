@@ -1,0 +1,7 @@
+{
+  application: "main.ts"
+  views: {
+    open_url: "open_url.as"
+  }
+}
+

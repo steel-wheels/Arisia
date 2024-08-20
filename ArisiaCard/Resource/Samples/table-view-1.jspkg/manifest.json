@@ -1,0 +1,15 @@
+{
+  application: "main.js",
+  definitions: [
+      "site-list.d.ts"
+    ],
+  tables: {
+      site_list: {
+          data: "site-list.json",
+          type: "site-list.d.ts"
+        }
+    },
+  views: {
+      table: "table.js"
+    }
+}

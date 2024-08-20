@@ -1,0 +1,9 @@
+{
+  application: "main.js",
+  images: {
+      card: "images/card.png"
+    },
+  views: {
+      hello: "image.js"
+    }
+}

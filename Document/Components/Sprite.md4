@@ -1,0 +1,19 @@
+# `Sprite` component
+
+## Introduction
+The view to display scrite node objects.
+[sample-view](./Images/sprite-macos.png)
+
+## Interface
+This is the interface definition for TypeScript:
+<pre>
+m4_include(class-Sprite.d.ts)
+</pre>
+
+## Sample script
+<pre>
+m4_include(sprite.jspkg/sprite.as)
+</pre>
+
+m4_include(`footer.md')
+

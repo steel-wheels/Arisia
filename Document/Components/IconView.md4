@@ -1,0 +1,29 @@
+# `IconView` component
+
+## Introduction
+Clickable IconView.
+
+This is sample view of IconView:
+(The "OK" button is NOT an icon component.)
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`class-IconView.d.ts')
+</pre>
+
+## Sample Views and Script
+### For macOS
+![Sample IconView](./Images/icon-component-macos.png)
+
+### For iOS
+![Sample IconView](./Images/icon-component-ios.png)
+
+### Sample script
+<pre>
+m4_include(`icon.jspkg/icon.as')
+</pre>
+
+m4_include(`footer.md')
+

@@ -1,0 +1,7 @@
+{
+	application: "main.ts"
+	views: {
+	  button: "button.as"
+	}
+}
+

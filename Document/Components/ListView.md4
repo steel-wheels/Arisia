@@ -1,0 +1,22 @@
+# `ListView` component
+
+## Introduction
+Text table
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`class-ListView.d.ts')
+</pre>
+
+## Example
+You can find the sample script at
+[table-view-0.jspkg](ARISIA_SAMPLE/list-view.jspkg) .
+
+<pre>
+m4_include(`list-view.jspkg/list.as')
+</pre>
+
+m4_include(`footer.md')
+

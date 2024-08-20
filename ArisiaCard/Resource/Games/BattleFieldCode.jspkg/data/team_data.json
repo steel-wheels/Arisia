@@ -1,0 +1,11 @@
+{
+  blue: {
+    script: "",
+    count:  1
+  }
+  green: {
+    script: "",
+    count:  1
+  }
+}
+

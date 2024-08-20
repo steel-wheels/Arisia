@@ -1,0 +1,7 @@
+{
+  application: "main.ts"
+  views: {
+    buttons: "radio-buttons.as"
+  }
+}
+

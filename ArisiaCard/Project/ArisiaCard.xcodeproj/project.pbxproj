@@ -1,0 +1,983 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05279BB72BC58025005C15F7 /* ArisiaComponents.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE0D2BC2792B004AFAE6 /* ArisiaComponents.xcframework */; };
+		05279BB82BC58025005C15F7 /* ArisiaComponents.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE0D2BC2792B004AFAE6 /* ArisiaComponents.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05279BBA2BC58027005C15F7 /* ArisiaLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE0C2BC2792B004AFAE6 /* ArisiaLibrary.xcframework */; };
+		05279BBB2BC58027005C15F7 /* ArisiaLibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE0C2BC2792B004AFAE6 /* ArisiaLibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05279BBC2BC58029005C15F7 /* CoconutData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADF62BC27736004AFAE6 /* CoconutData.xcframework */; };
+		05279BBD2BC58029005C15F7 /* CoconutData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADF62BC27736004AFAE6 /* CoconutData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05279BBE2BC5802A005C15F7 /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADFA2BC27836004AFAE6 /* CoconutDatabase.xcframework */; };
+		05279BBF2BC5802A005C15F7 /* CoconutDatabase.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADFA2BC27836004AFAE6 /* CoconutDatabase.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05279BC02BC5802C005C15F7 /* KiwiControls.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE002BC27869004AFAE6 /* KiwiControls.xcframework */; };
+		05279BC12BC5802C005C15F7 /* KiwiControls.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE002BC27869004AFAE6 /* KiwiControls.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05279BC22BC5802D005C15F7 /* KiwiEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE032BC27911004AFAE6 /* KiwiEngine.xcframework */; };
+		05279BC32BC5802D005C15F7 /* KiwiEngine.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE032BC27911004AFAE6 /* KiwiEngine.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05279BC42BC5802F005C15F7 /* KiwiLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE042BC27911004AFAE6 /* KiwiLibrary.xcframework */; };
+		05279BC52BC5802F005C15F7 /* KiwiLibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE042BC27911004AFAE6 /* KiwiLibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05279BC62BC58030005C15F7 /* KiwiShell.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE052BC27911004AFAE6 /* KiwiShell.xcframework */; };
+		05279BC72BC58030005C15F7 /* KiwiShell.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE052BC27911004AFAE6 /* KiwiShell.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0531123A2BC281B3009CDB1B /* button.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112392BC28197009CDB1B /* button.jspkg */; };
+		0531123B2BC281B3009CDB1B /* console-view.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112242BC28197009CDB1B /* console-view.jspkg */; };
+		0531123C2BC281B3009CDB1B /* console-view2.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112282BC28197009CDB1B /* console-view2.jspkg */; };
+		0531123D2BC281B3009CDB1B /* hello.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112232BC28197009CDB1B /* hello.jspkg */; };
+		0531123E2BC281B3009CDB1B /* icon.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112312BC28197009CDB1B /* icon.jspkg */; };
+		0531123F2BC281B3009CDB1B /* iife.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531122F2BC28197009CDB1B /* iife.jspkg */; };
+		053112402BC281B3009CDB1B /* image.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531121F2BC28197009CDB1B /* image.jspkg */; };
+		053112412BC281B3009CDB1B /* label.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112302BC28197009CDB1B /* label.jspkg */; };
+		053112422BC281B3009CDB1B /* list-view.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112262BC28197009CDB1B /* list-view.jspkg */; };
+		053112432BC281B3009CDB1B /* Makefile in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531122A2BC28197009CDB1B /* Makefile */; };
+		053112442BC281B3009CDB1B /* open-url.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112372BC28197009CDB1B /* open-url.jspkg */; };
+		053112452BC281B3009CDB1B /* panel.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531122B2BC28197009CDB1B /* panel.jspkg */; };
+		053112462BC281B3009CDB1B /* popup-menu.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112272BC28197009CDB1B /* popup-menu.jspkg */; };
+		053112472BC281B3009CDB1B /* proc-0.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112342BC28197009CDB1B /* proc-0.jspkg */; };
+		053112482BC281B3009CDB1B /* properties.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112252BC28197009CDB1B /* properties.jspkg */; };
+		053112492BC281B3009CDB1B /* radio-buttons.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112382BC28197009CDB1B /* radio-buttons.jspkg */; };
+		0531124A2BC281B3009CDB1B /* shell.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112352BC28197009CDB1B /* shell.jspkg */; };
+		0531124B2BC281B3009CDB1B /* sprite.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531122C2BC28197009CDB1B /* sprite.jspkg */; };
+		0531124C2BC281B3009CDB1B /* stepper.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112292BC28197009CDB1B /* stepper.jspkg */; };
+		0531124D2BC281B3009CDB1B /* table-data-0.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531122E2BC28197009CDB1B /* table-data-0.jspkg */; };
+		0531124E2BC281B3009CDB1B /* table-data-1.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112202BC28197009CDB1B /* table-data-1.jspkg */; };
+		0531124F2BC281B3009CDB1B /* table-view-0.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112222BC28197009CDB1B /* table-view-0.jspkg */; };
+		053112502BC281B3009CDB1B /* terminal.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531122D2BC28197009CDB1B /* terminal.jspkg */; };
+		053112512BC281B3009CDB1B /* textedit.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112212BC28197009CDB1B /* textedit.jspkg */; };
+		053112522BC281B3009CDB1B /* textfield.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112322BC28197009CDB1B /* textfield.jspkg */; };
+		053112532BC281B3009CDB1B /* timer.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112362BC28197009CDB1B /* timer.jspkg */; };
+		053112582BC28202009CDB1B /* Home.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112172BC27FC2009CDB1B /* Home.jspkg */; };
+		0537BE0A2BC21F2C00C92172 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0537BE092BC21F2C00C92172 /* AppDelegate.swift */; };
+		0537BE0C2BC21F2C00C92172 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0537BE0B2BC21F2C00C92172 /* ViewController.swift */; };
+		0537BE0E2BC21F2D00C92172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0537BE0D2BC21F2D00C92172 /* Assets.xcassets */; };
+		0537BE112BC21F2D00C92172 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0537BE102BC21F2D00C92172 /* Base */; };
+		053C73932C02BC67004E32EB /* resource.jspkg in Resources */ = {isa = PBXBuildFile; fileRef = 053C73922C02BC67004E32EB /* resource.jspkg */; };
+		053C73952C02BC79004E32EB /* resource.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053C73922C02BC67004E32EB /* resource.jspkg */; };
+		053C73962C02BC87004E32EB /* resource.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053C73922C02BC67004E32EB /* resource.jspkg */; };
+		0556FB972C4BEF84001E8F6C /* Search.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0556FB942C4BEF6D001E8F6C /* Search.jspkg */; };
+		0556FB982C4BEF94001E8F6C /* Search.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0556FB942C4BEF6D001E8F6C /* Search.jspkg */; };
+		055DDC592BC296EE005440D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DDC582BC296EE005440D0 /* AppDelegate.swift */; };
+		055DDC5B2BC296EE005440D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DDC5A2BC296EE005440D0 /* SceneDelegate.swift */; };
+		055DDC602BC296EE005440D0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 055DDC5F2BC296EE005440D0 /* Base */; };
+		055DDC622BC296EF005440D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 055DDC612BC296EF005440D0 /* Assets.xcassets */; };
+		055DDC652BC296F0005440D0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 055DDC642BC296F0005440D0 /* Base */; };
+		055DDC6B2BC297B5005440D0 /* Home.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112172BC27FC2009CDB1B /* Home.jspkg */; };
+		055DDC6F2BC297E0005440D0 /* button.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112392BC28197009CDB1B /* button.jspkg */; };
+		055DDC702BC297E0005440D0 /* console-view.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112242BC28197009CDB1B /* console-view.jspkg */; };
+		055DDC712BC297E0005440D0 /* console-view2.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112282BC28197009CDB1B /* console-view2.jspkg */; };
+		055DDC722BC297E0005440D0 /* hello.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112232BC28197009CDB1B /* hello.jspkg */; };
+		055DDC732BC297E0005440D0 /* icon.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112312BC28197009CDB1B /* icon.jspkg */; };
+		055DDC742BC297E0005440D0 /* iife.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531122F2BC28197009CDB1B /* iife.jspkg */; };
+		055DDC752BC297E0005440D0 /* image.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531121F2BC28197009CDB1B /* image.jspkg */; };
+		055DDC762BC297E0005440D0 /* label.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112302BC28197009CDB1B /* label.jspkg */; };
+		055DDC772BC297E0005440D0 /* list-view.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112262BC28197009CDB1B /* list-view.jspkg */; };
+		055DDC782BC297E0005440D0 /* Makefile in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531122A2BC28197009CDB1B /* Makefile */; };
+		055DDC792BC297E0005440D0 /* open-url.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112372BC28197009CDB1B /* open-url.jspkg */; };
+		055DDC7A2BC297E0005440D0 /* panel.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531122B2BC28197009CDB1B /* panel.jspkg */; };
+		055DDC7B2BC297E0005440D0 /* popup-menu.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112272BC28197009CDB1B /* popup-menu.jspkg */; };
+		055DDC7C2BC297E0005440D0 /* proc-0.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112342BC28197009CDB1B /* proc-0.jspkg */; };
+		055DDC7D2BC297E0005440D0 /* properties.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112252BC28197009CDB1B /* properties.jspkg */; };
+		055DDC7E2BC297E0005440D0 /* radio-buttons.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112382BC28197009CDB1B /* radio-buttons.jspkg */; };
+		055DDC7F2BC297E0005440D0 /* shell.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112352BC28197009CDB1B /* shell.jspkg */; };
+		055DDC802BC297E0005440D0 /* sprite.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531122C2BC28197009CDB1B /* sprite.jspkg */; };
+		055DDC812BC297E0005440D0 /* stepper.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112292BC28197009CDB1B /* stepper.jspkg */; };
+		055DDC822BC297E0005440D0 /* table-data-0.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531122E2BC28197009CDB1B /* table-data-0.jspkg */; };
+		055DDC832BC297E0005440D0 /* table-data-1.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112202BC28197009CDB1B /* table-data-1.jspkg */; };
+		055DDC842BC297E0005440D0 /* table-view-0.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112222BC28197009CDB1B /* table-view-0.jspkg */; };
+		055DDC852BC297E0005440D0 /* terminal.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0531122D2BC28197009CDB1B /* terminal.jspkg */; };
+		055DDC862BC297E0005440D0 /* textedit.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112212BC28197009CDB1B /* textedit.jspkg */; };
+		055DDC872BC297E0005440D0 /* textfield.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112322BC28197009CDB1B /* textfield.jspkg */; };
+		055DDC882BC297E0005440D0 /* timer.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112362BC28197009CDB1B /* timer.jspkg */; };
+		055DDC8A2BC2981A005440D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0537BE0B2BC21F2C00C92172 /* ViewController.swift */; };
+		05BAADF72BC27736004AFAE6 /* CoconutData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADF62BC27736004AFAE6 /* CoconutData.xcframework */; };
+		05BAADF82BC27736004AFAE6 /* CoconutData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADF62BC27736004AFAE6 /* CoconutData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05BAADFB2BC27836004AFAE6 /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADFA2BC27836004AFAE6 /* CoconutDatabase.xcframework */; };
+		05BAADFC2BC27836004AFAE6 /* CoconutDatabase.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADFA2BC27836004AFAE6 /* CoconutDatabase.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05BAADFE2BC2784B004AFAE6 /* Cobalt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADFD2BC2784B004AFAE6 /* Cobalt.xcframework */; };
+		05BAADFF2BC2784B004AFAE6 /* Cobalt.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADFD2BC2784B004AFAE6 /* Cobalt.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05BAAE012BC27869004AFAE6 /* KiwiControls.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE002BC27869004AFAE6 /* KiwiControls.xcframework */; };
+		05BAAE022BC27869004AFAE6 /* KiwiControls.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE002BC27869004AFAE6 /* KiwiControls.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05BAAE062BC27911004AFAE6 /* KiwiEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE032BC27911004AFAE6 /* KiwiEngine.xcframework */; };
+		05BAAE072BC27911004AFAE6 /* KiwiEngine.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE032BC27911004AFAE6 /* KiwiEngine.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05BAAE082BC27911004AFAE6 /* KiwiLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE042BC27911004AFAE6 /* KiwiLibrary.xcframework */; };
+		05BAAE092BC27911004AFAE6 /* KiwiLibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE042BC27911004AFAE6 /* KiwiLibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05BAAE0A2BC27911004AFAE6 /* KiwiShell.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE052BC27911004AFAE6 /* KiwiShell.xcframework */; };
+		05BAAE0B2BC27911004AFAE6 /* KiwiShell.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE052BC27911004AFAE6 /* KiwiShell.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05BAAE0E2BC2792B004AFAE6 /* ArisiaLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE0C2BC2792B004AFAE6 /* ArisiaLibrary.xcframework */; };
+		05BAAE0F2BC2792B004AFAE6 /* ArisiaLibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE0C2BC2792B004AFAE6 /* ArisiaLibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05BAAE102BC2792B004AFAE6 /* ArisiaComponents.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE0D2BC2792B004AFAE6 /* ArisiaComponents.xcframework */; };
+		05BAAE112BC2792B004AFAE6 /* ArisiaComponents.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE0D2BC2792B004AFAE6 /* ArisiaComponents.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05F4CA032BC568DD006087B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0537BDFE2BC21F2C00C92172 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0537BE052BC21F2C00C92172;
+			remoteInfo = ArisiaCard_macOS;
+		};
+		05F4CA052BC56BB3006087B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0537BDFE2BC21F2C00C92172 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 055DDC552BC296EE005440D0;
+			remoteInfo = ArisiaCard_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05279BB92BC58025005C15F7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05279BC72BC58030005C15F7 /* KiwiShell.xcframework in Embed Frameworks */,
+				05279BBD2BC58029005C15F7 /* CoconutData.xcframework in Embed Frameworks */,
+				05279BBB2BC58027005C15F7 /* ArisiaLibrary.xcframework in Embed Frameworks */,
+				05279BC12BC5802C005C15F7 /* KiwiControls.xcframework in Embed Frameworks */,
+				05279BBF2BC5802A005C15F7 /* CoconutDatabase.xcframework in Embed Frameworks */,
+				05279BB82BC58025005C15F7 /* ArisiaComponents.xcframework in Embed Frameworks */,
+				05279BC52BC5802F005C15F7 /* KiwiLibrary.xcframework in Embed Frameworks */,
+				05279BC32BC5802D005C15F7 /* KiwiEngine.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		053112182BC27FC9009CDB1B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Samples;
+			dstSubfolderSpec = 7;
+			files = (
+				053C73952C02BC79004E32EB /* resource.jspkg in CopyFiles */,
+				0531123A2BC281B3009CDB1B /* button.jspkg in CopyFiles */,
+				0531123B2BC281B3009CDB1B /* console-view.jspkg in CopyFiles */,
+				0531123C2BC281B3009CDB1B /* console-view2.jspkg in CopyFiles */,
+				0531123D2BC281B3009CDB1B /* hello.jspkg in CopyFiles */,
+				0531123E2BC281B3009CDB1B /* icon.jspkg in CopyFiles */,
+				0531123F2BC281B3009CDB1B /* iife.jspkg in CopyFiles */,
+				053112402BC281B3009CDB1B /* image.jspkg in CopyFiles */,
+				053112412BC281B3009CDB1B /* label.jspkg in CopyFiles */,
+				053112422BC281B3009CDB1B /* list-view.jspkg in CopyFiles */,
+				053112432BC281B3009CDB1B /* Makefile in CopyFiles */,
+				053112442BC281B3009CDB1B /* open-url.jspkg in CopyFiles */,
+				053112452BC281B3009CDB1B /* panel.jspkg in CopyFiles */,
+				053112462BC281B3009CDB1B /* popup-menu.jspkg in CopyFiles */,
+				053112472BC281B3009CDB1B /* proc-0.jspkg in CopyFiles */,
+				053112482BC281B3009CDB1B /* properties.jspkg in CopyFiles */,
+				053112492BC281B3009CDB1B /* radio-buttons.jspkg in CopyFiles */,
+				0531124A2BC281B3009CDB1B /* shell.jspkg in CopyFiles */,
+				0531124B2BC281B3009CDB1B /* sprite.jspkg in CopyFiles */,
+				0531124C2BC281B3009CDB1B /* stepper.jspkg in CopyFiles */,
+				0531124D2BC281B3009CDB1B /* table-data-0.jspkg in CopyFiles */,
+				0531124E2BC281B3009CDB1B /* table-data-1.jspkg in CopyFiles */,
+				0531124F2BC281B3009CDB1B /* table-view-0.jspkg in CopyFiles */,
+				053112502BC281B3009CDB1B /* terminal.jspkg in CopyFiles */,
+				053112512BC281B3009CDB1B /* textedit.jspkg in CopyFiles */,
+				053112522BC281B3009CDB1B /* textfield.jspkg in CopyFiles */,
+				053112532BC281B3009CDB1B /* timer.jspkg in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		053112572BC281F5009CDB1B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				0556FB972C4BEF84001E8F6C /* Search.jspkg in CopyFiles */,
+				053112582BC28202009CDB1B /* Home.jspkg in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055DDC6A2BC297AC005440D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				0556FB982C4BEF94001E8F6C /* Search.jspkg in CopyFiles */,
+				055DDC6B2BC297B5005440D0 /* Home.jspkg in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055DDC6E2BC297D3005440D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Samples;
+			dstSubfolderSpec = 7;
+			files = (
+				053C73962C02BC87004E32EB /* resource.jspkg in CopyFiles */,
+				055DDC6F2BC297E0005440D0 /* button.jspkg in CopyFiles */,
+				055DDC702BC297E0005440D0 /* console-view.jspkg in CopyFiles */,
+				055DDC712BC297E0005440D0 /* console-view2.jspkg in CopyFiles */,
+				055DDC722BC297E0005440D0 /* hello.jspkg in CopyFiles */,
+				055DDC732BC297E0005440D0 /* icon.jspkg in CopyFiles */,
+				055DDC742BC297E0005440D0 /* iife.jspkg in CopyFiles */,
+				055DDC752BC297E0005440D0 /* image.jspkg in CopyFiles */,
+				055DDC762BC297E0005440D0 /* label.jspkg in CopyFiles */,
+				055DDC772BC297E0005440D0 /* list-view.jspkg in CopyFiles */,
+				055DDC782BC297E0005440D0 /* Makefile in CopyFiles */,
+				055DDC792BC297E0005440D0 /* open-url.jspkg in CopyFiles */,
+				055DDC7A2BC297E0005440D0 /* panel.jspkg in CopyFiles */,
+				055DDC7B2BC297E0005440D0 /* popup-menu.jspkg in CopyFiles */,
+				055DDC7C2BC297E0005440D0 /* proc-0.jspkg in CopyFiles */,
+				055DDC7D2BC297E0005440D0 /* properties.jspkg in CopyFiles */,
+				055DDC7E2BC297E0005440D0 /* radio-buttons.jspkg in CopyFiles */,
+				055DDC7F2BC297E0005440D0 /* shell.jspkg in CopyFiles */,
+				055DDC802BC297E0005440D0 /* sprite.jspkg in CopyFiles */,
+				055DDC812BC297E0005440D0 /* stepper.jspkg in CopyFiles */,
+				055DDC822BC297E0005440D0 /* table-data-0.jspkg in CopyFiles */,
+				055DDC832BC297E0005440D0 /* table-data-1.jspkg in CopyFiles */,
+				055DDC842BC297E0005440D0 /* table-view-0.jspkg in CopyFiles */,
+				055DDC852BC297E0005440D0 /* terminal.jspkg in CopyFiles */,
+				055DDC862BC297E0005440D0 /* textedit.jspkg in CopyFiles */,
+				055DDC872BC297E0005440D0 /* textfield.jspkg in CopyFiles */,
+				055DDC882BC297E0005440D0 /* timer.jspkg in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BAADF92BC27736004AFAE6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05BAAE072BC27911004AFAE6 /* KiwiEngine.xcframework in Embed Frameworks */,
+				05BAADFC2BC27836004AFAE6 /* CoconutDatabase.xcframework in Embed Frameworks */,
+				05BAADF82BC27736004AFAE6 /* CoconutData.xcframework in Embed Frameworks */,
+				05BAAE092BC27911004AFAE6 /* KiwiLibrary.xcframework in Embed Frameworks */,
+				05BAAE112BC2792B004AFAE6 /* ArisiaComponents.xcframework in Embed Frameworks */,
+				05BAADFF2BC2784B004AFAE6 /* Cobalt.xcframework in Embed Frameworks */,
+				05BAAE022BC27869004AFAE6 /* KiwiControls.xcframework in Embed Frameworks */,
+				05BAAE0F2BC2792B004AFAE6 /* ArisiaLibrary.xcframework in Embed Frameworks */,
+				05BAAE0B2BC27911004AFAE6 /* KiwiShell.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		053112172BC27FC2009CDB1B /* Home.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Home.jspkg; path = ../Resource/Home.jspkg; sourceTree = "<group>"; };
+		0531121F2BC28197009CDB1B /* image.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = image.jspkg; sourceTree = "<group>"; };
+		053112202BC28197009CDB1B /* table-data-1.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "table-data-1.jspkg"; sourceTree = "<group>"; };
+		053112212BC28197009CDB1B /* textedit.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = textedit.jspkg; sourceTree = "<group>"; };
+		053112222BC28197009CDB1B /* table-view-0.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "table-view-0.jspkg"; sourceTree = "<group>"; };
+		053112232BC28197009CDB1B /* hello.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = hello.jspkg; sourceTree = "<group>"; };
+		053112242BC28197009CDB1B /* console-view.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "console-view.jspkg"; sourceTree = "<group>"; };
+		053112252BC28197009CDB1B /* properties.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = properties.jspkg; sourceTree = "<group>"; };
+		053112262BC28197009CDB1B /* list-view.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "list-view.jspkg"; sourceTree = "<group>"; };
+		053112272BC28197009CDB1B /* popup-menu.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "popup-menu.jspkg"; sourceTree = "<group>"; };
+		053112282BC28197009CDB1B /* console-view2.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "console-view2.jspkg"; sourceTree = "<group>"; };
+		053112292BC28197009CDB1B /* stepper.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = stepper.jspkg; sourceTree = "<group>"; };
+		0531122A2BC28197009CDB1B /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		0531122B2BC28197009CDB1B /* panel.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = panel.jspkg; sourceTree = "<group>"; };
+		0531122C2BC28197009CDB1B /* sprite.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = sprite.jspkg; sourceTree = "<group>"; };
+		0531122D2BC28197009CDB1B /* terminal.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = terminal.jspkg; sourceTree = "<group>"; };
+		0531122E2BC28197009CDB1B /* table-data-0.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "table-data-0.jspkg"; sourceTree = "<group>"; };
+		0531122F2BC28197009CDB1B /* iife.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = iife.jspkg; sourceTree = "<group>"; };
+		053112302BC28197009CDB1B /* label.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = label.jspkg; sourceTree = "<group>"; };
+		053112312BC28197009CDB1B /* icon.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = icon.jspkg; sourceTree = "<group>"; };
+		053112322BC28197009CDB1B /* textfield.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = textfield.jspkg; sourceTree = "<group>"; };
+		053112342BC28197009CDB1B /* proc-0.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "proc-0.jspkg"; sourceTree = "<group>"; };
+		053112352BC28197009CDB1B /* shell.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = shell.jspkg; sourceTree = "<group>"; };
+		053112362BC28197009CDB1B /* timer.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = timer.jspkg; sourceTree = "<group>"; };
+		053112372BC28197009CDB1B /* open-url.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "open-url.jspkg"; sourceTree = "<group>"; };
+		053112382BC28197009CDB1B /* radio-buttons.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "radio-buttons.jspkg"; sourceTree = "<group>"; };
+		053112392BC28197009CDB1B /* button.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = button.jspkg; sourceTree = "<group>"; };
+		0537BE062BC21F2C00C92172 /* ArisiaCard_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArisiaCard_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0537BE092BC21F2C00C92172 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0537BE0B2BC21F2C00C92172 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0537BE0D2BC21F2D00C92172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0537BE102BC21F2D00C92172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0537BE122BC21F2D00C92172 /* ArisiaCard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArisiaCard.entitlements; sourceTree = "<group>"; };
+		053A8BA52BE46F4400BE862D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		053C73922C02BC67004E32EB /* resource.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = resource.jspkg; sourceTree = "<group>"; };
+		0556FB942C4BEF6D001E8F6C /* Search.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Search.jspkg; path = ../Resource/Search.jspkg; sourceTree = "<group>"; };
+		055DDC562BC296EE005440D0 /* ArisiaCard_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArisiaCard_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		055DDC582BC296EE005440D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		055DDC5A2BC296EE005440D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		055DDC5C2BC296EE005440D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		055DDC5F2BC296EE005440D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		055DDC612BC296EF005440D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		055DDC642BC296F0005440D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		055DDC662BC296F0005440D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05BAADF62BC27736004AFAE6 /* CoconutData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutData.xcframework; path = ../../../../Library/Frameworks/CoconutData.xcframework; sourceTree = "<group>"; };
+		05BAADFA2BC27836004AFAE6 /* CoconutDatabase.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutDatabase.xcframework; path = ../../../../Library/Frameworks/CoconutDatabase.xcframework; sourceTree = "<group>"; };
+		05BAADFD2BC2784B004AFAE6 /* Cobalt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cobalt.xcframework; path = ../../../../Library/Frameworks/Cobalt.xcframework; sourceTree = "<group>"; };
+		05BAAE002BC27869004AFAE6 /* KiwiControls.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiControls.xcframework; path = ../../../../Library/Frameworks/KiwiControls.xcframework; sourceTree = "<group>"; };
+		05BAAE032BC27911004AFAE6 /* KiwiEngine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiEngine.xcframework; path = ../../../../Library/Frameworks/KiwiEngine.xcframework; sourceTree = "<group>"; };
+		05BAAE042BC27911004AFAE6 /* KiwiLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiLibrary.xcframework; path = ../../../../Library/Frameworks/KiwiLibrary.xcframework; sourceTree = "<group>"; };
+		05BAAE052BC27911004AFAE6 /* KiwiShell.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiShell.xcframework; path = ../../../../Library/Frameworks/KiwiShell.xcframework; sourceTree = "<group>"; };
+		05BAAE0C2BC2792B004AFAE6 /* ArisiaLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ArisiaLibrary.xcframework; path = ../../../../Library/Frameworks/ArisiaLibrary.xcframework; sourceTree = "<group>"; };
+		05BAAE0D2BC2792B004AFAE6 /* ArisiaComponents.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ArisiaComponents.xcframework; path = ../../../../Library/Frameworks/ArisiaComponents.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0537BE032BC21F2C00C92172 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BAAE062BC27911004AFAE6 /* KiwiEngine.xcframework in Frameworks */,
+				05BAADFB2BC27836004AFAE6 /* CoconutDatabase.xcframework in Frameworks */,
+				05BAADF72BC27736004AFAE6 /* CoconutData.xcframework in Frameworks */,
+				05BAAE082BC27911004AFAE6 /* KiwiLibrary.xcframework in Frameworks */,
+				05BAAE102BC2792B004AFAE6 /* ArisiaComponents.xcframework in Frameworks */,
+				05BAADFE2BC2784B004AFAE6 /* Cobalt.xcframework in Frameworks */,
+				05BAAE012BC27869004AFAE6 /* KiwiControls.xcframework in Frameworks */,
+				05BAAE0E2BC2792B004AFAE6 /* ArisiaLibrary.xcframework in Frameworks */,
+				05BAAE0A2BC27911004AFAE6 /* KiwiShell.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055DDC532BC296EE005440D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05279BC62BC58030005C15F7 /* KiwiShell.xcframework in Frameworks */,
+				05279BB72BC58025005C15F7 /* ArisiaComponents.xcframework in Frameworks */,
+				05279BBE2BC5802A005C15F7 /* CoconutDatabase.xcframework in Frameworks */,
+				05279BBC2BC58029005C15F7 /* CoconutData.xcframework in Frameworks */,
+				05279BBA2BC58027005C15F7 /* ArisiaLibrary.xcframework in Frameworks */,
+				05279BC02BC5802C005C15F7 /* KiwiControls.xcframework in Frameworks */,
+				05279BC22BC5802D005C15F7 /* KiwiEngine.xcframework in Frameworks */,
+				05279BC42BC5802F005C15F7 /* KiwiLibrary.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		053112152BC27EC3009CDB1B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0531121A2BC27FF9009CDB1B /* Samples */,
+				0556FB942C4BEF6D001E8F6C /* Search.jspkg */,
+				053112172BC27FC2009CDB1B /* Home.jspkg */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		0531121A2BC27FF9009CDB1B /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				053C73922C02BC67004E32EB /* resource.jspkg */,
+				053112392BC28197009CDB1B /* button.jspkg */,
+				053112242BC28197009CDB1B /* console-view.jspkg */,
+				053112282BC28197009CDB1B /* console-view2.jspkg */,
+				053112232BC28197009CDB1B /* hello.jspkg */,
+				053112312BC28197009CDB1B /* icon.jspkg */,
+				0531122F2BC28197009CDB1B /* iife.jspkg */,
+				0531121F2BC28197009CDB1B /* image.jspkg */,
+				053112302BC28197009CDB1B /* label.jspkg */,
+				053112262BC28197009CDB1B /* list-view.jspkg */,
+				0531122A2BC28197009CDB1B /* Makefile */,
+				053112372BC28197009CDB1B /* open-url.jspkg */,
+				0531122B2BC28197009CDB1B /* panel.jspkg */,
+				053112272BC28197009CDB1B /* popup-menu.jspkg */,
+				053112342BC28197009CDB1B /* proc-0.jspkg */,
+				053112252BC28197009CDB1B /* properties.jspkg */,
+				053112382BC28197009CDB1B /* radio-buttons.jspkg */,
+				053112352BC28197009CDB1B /* shell.jspkg */,
+				0531122C2BC28197009CDB1B /* sprite.jspkg */,
+				053112292BC28197009CDB1B /* stepper.jspkg */,
+				0531122E2BC28197009CDB1B /* table-data-0.jspkg */,
+				053112202BC28197009CDB1B /* table-data-1.jspkg */,
+				053112222BC28197009CDB1B /* table-view-0.jspkg */,
+				0531122D2BC28197009CDB1B /* terminal.jspkg */,
+				053112212BC28197009CDB1B /* textedit.jspkg */,
+				053112322BC28197009CDB1B /* textfield.jspkg */,
+				053112362BC28197009CDB1B /* timer.jspkg */,
+			);
+			name = Samples;
+			path = ../Resource/Samples;
+			sourceTree = "<group>";
+		};
+		0537BDFD2BC21F2C00C92172 = {
+			isa = PBXGroup;
+			children = (
+				0537BE182BC21F5800C92172 /* Source */,
+				053112152BC27EC3009CDB1B /* Resource */,
+				0537BE082BC21F2C00C92172 /* ArisiaCard.macOS */,
+				055DDC572BC296EE005440D0 /* ArisiaCard.iOS */,
+				0537BE072BC21F2C00C92172 /* Products */,
+				05BAADF52BC27736004AFAE6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0537BE072BC21F2C00C92172 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0537BE062BC21F2C00C92172 /* ArisiaCard_macOS.app */,
+				055DDC562BC296EE005440D0 /* ArisiaCard_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0537BE082BC21F2C00C92172 /* ArisiaCard.macOS */ = {
+			isa = PBXGroup;
+			children = (
+				053A8BA52BE46F4400BE862D /* Info.plist */,
+				0537BE092BC21F2C00C92172 /* AppDelegate.swift */,
+				0537BE0D2BC21F2D00C92172 /* Assets.xcassets */,
+				0537BE0F2BC21F2D00C92172 /* Main.storyboard */,
+				0537BE122BC21F2D00C92172 /* ArisiaCard.entitlements */,
+			);
+			path = ArisiaCard.macOS;
+			sourceTree = "<group>";
+		};
+		0537BE182BC21F5800C92172 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0537BE0B2BC21F2C00C92172 /* ViewController.swift */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+		055DDC572BC296EE005440D0 /* ArisiaCard.iOS */ = {
+			isa = PBXGroup;
+			children = (
+				055DDC582BC296EE005440D0 /* AppDelegate.swift */,
+				055DDC5A2BC296EE005440D0 /* SceneDelegate.swift */,
+				055DDC5C2BC296EE005440D0 /* ViewController.swift */,
+				055DDC5E2BC296EE005440D0 /* Main.storyboard */,
+				055DDC612BC296EF005440D0 /* Assets.xcassets */,
+				055DDC632BC296F0005440D0 /* LaunchScreen.storyboard */,
+				055DDC662BC296F0005440D0 /* Info.plist */,
+			);
+			path = ArisiaCard.iOS;
+			sourceTree = "<group>";
+		};
+		05BAADF52BC27736004AFAE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05BAAE0D2BC2792B004AFAE6 /* ArisiaComponents.xcframework */,
+				05BAAE0C2BC2792B004AFAE6 /* ArisiaLibrary.xcframework */,
+				05BAAE032BC27911004AFAE6 /* KiwiEngine.xcframework */,
+				05BAAE042BC27911004AFAE6 /* KiwiLibrary.xcframework */,
+				05BAAE052BC27911004AFAE6 /* KiwiShell.xcframework */,
+				05BAAE002BC27869004AFAE6 /* KiwiControls.xcframework */,
+				05BAADFD2BC2784B004AFAE6 /* Cobalt.xcframework */,
+				05BAADFA2BC27836004AFAE6 /* CoconutDatabase.xcframework */,
+				05BAADF62BC27736004AFAE6 /* CoconutData.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		05F4C9FF2BC568D3006087B0 /* Install */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f  ../../Script/install_app.mk macos";
+			buildConfigurationList = 05F4CA022BC568D3006087B0 /* Build configuration list for PBXLegacyTarget "Install" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				05F4CA062BC56BB3006087B0 /* PBXTargetDependency */,
+				05F4CA042BC568DD006087B0 /* PBXTargetDependency */,
+			);
+			name = Install;
+			passBuildSettingsInEnvironment = 1;
+			productName = Install;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		0537BE052BC21F2C00C92172 /* ArisiaCard_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0537BE152BC21F2D00C92172 /* Build configuration list for PBXNativeTarget "ArisiaCard_macOS" */;
+			buildPhases = (
+				0537BE022BC21F2C00C92172 /* Sources */,
+				0537BE032BC21F2C00C92172 /* Frameworks */,
+				0537BE042BC21F2C00C92172 /* Resources */,
+				05BAADF92BC27736004AFAE6 /* Embed Frameworks */,
+				053112182BC27FC9009CDB1B /* CopyFiles */,
+				053112572BC281F5009CDB1B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArisiaCard_macOS;
+			productName = ArisiaCard;
+			productReference = 0537BE062BC21F2C00C92172 /* ArisiaCard_macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		055DDC552BC296EE005440D0 /* ArisiaCard_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 055DDC692BC296F0005440D0 /* Build configuration list for PBXNativeTarget "ArisiaCard_iOS" */;
+			buildPhases = (
+				055DDC522BC296EE005440D0 /* Sources */,
+				055DDC532BC296EE005440D0 /* Frameworks */,
+				055DDC542BC296EE005440D0 /* Resources */,
+				055DDC6A2BC297AC005440D0 /* CopyFiles */,
+				055DDC6E2BC297D3005440D0 /* CopyFiles */,
+				05279BB92BC58025005C15F7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArisiaCard_iOS;
+			productName = ArisiaCard_iOS;
+			productReference = 055DDC562BC296EE005440D0 /* ArisiaCard_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0537BDFE2BC21F2C00C92172 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					0537BE052BC21F2C00C92172 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					055DDC552BC296EE005440D0 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					05F4C9FF2BC568D3006087B0 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 0537BE012BC21F2C00C92172 /* Build configuration list for PBXProject "ArisiaCard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0537BDFD2BC21F2C00C92172;
+			productRefGroup = 0537BE072BC21F2C00C92172 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0537BE052BC21F2C00C92172 /* ArisiaCard_macOS */,
+				055DDC552BC296EE005440D0 /* ArisiaCard_iOS */,
+				05F4C9FF2BC568D3006087B0 /* Install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0537BE042BC21F2C00C92172 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				053C73932C02BC67004E32EB /* resource.jspkg in Resources */,
+				0537BE0E2BC21F2D00C92172 /* Assets.xcassets in Resources */,
+				0537BE112BC21F2D00C92172 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055DDC542BC296EE005440D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				055DDC622BC296EF005440D0 /* Assets.xcassets in Resources */,
+				055DDC652BC296F0005440D0 /* Base in Resources */,
+				055DDC602BC296EE005440D0 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0537BE022BC21F2C00C92172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0537BE0C2BC21F2C00C92172 /* ViewController.swift in Sources */,
+				0537BE0A2BC21F2C00C92172 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		055DDC522BC296EE005440D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				055DDC8A2BC2981A005440D0 /* ViewController.swift in Sources */,
+				055DDC592BC296EE005440D0 /* AppDelegate.swift in Sources */,
+				055DDC5B2BC296EE005440D0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05F4CA042BC568DD006087B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0537BE052BC21F2C00C92172 /* ArisiaCard_macOS */;
+			targetProxy = 05F4CA032BC568DD006087B0 /* PBXContainerItemProxy */;
+		};
+		05F4CA062BC56BB3006087B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 055DDC552BC296EE005440D0 /* ArisiaCard_iOS */;
+			targetProxy = 05F4CA052BC56BB3006087B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0537BE0F2BC21F2D00C92172 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0537BE102BC21F2D00C92172 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		055DDC5E2BC296EE005440D0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				055DDC5F2BC296EE005440D0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		055DDC632BC296F0005440D0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				055DDC642BC296F0005440D0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0537BE132BC21F2D00C92172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0537BE142BC21F2D00C92172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		0537BE162BC21F2D00C92172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ArisiaCard.macOS/ArisiaCard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArisiaCard.macOS/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INSTALL_PATH = /Applications;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitlab.steewheels.ArisiaCard.macOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0537BE172BC21F2D00C92172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ArisiaCard.macOS/ArisiaCard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArisiaCard.macOS/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INSTALL_PATH = /Applications;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitlab.steewheels.ArisiaCard.macOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		055DDC672BC296F0005440D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ArisiaCard_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArisiaCard.iOS/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steewheels.ArisiaCard.iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		055DDC682BC296F0005440D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ArisiaCard_iOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ArisiaCard.iOS/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steewheels.ArisiaCard.iOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05F4CA002BC568D3006087B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05F4CA012BC568D3006087B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0537BE012BC21F2C00C92172 /* Build configuration list for PBXProject "ArisiaCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0537BE132BC21F2D00C92172 /* Debug */,
+				0537BE142BC21F2D00C92172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0537BE152BC21F2D00C92172 /* Build configuration list for PBXNativeTarget "ArisiaCard_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0537BE162BC21F2D00C92172 /* Debug */,
+				0537BE172BC21F2D00C92172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		055DDC692BC296F0005440D0 /* Build configuration list for PBXNativeTarget "ArisiaCard_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				055DDC672BC296F0005440D0 /* Debug */,
+				055DDC682BC296F0005440D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05F4CA022BC568D3006087B0 /* Build configuration list for PBXLegacyTarget "Install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05F4CA002BC568D3006087B0 /* Debug */,
+				05F4CA012BC568D3006087B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0537BDFE2BC21F2C00C92172 /* Project object */;
+}

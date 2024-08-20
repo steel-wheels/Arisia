@@ -1,0 +1,14 @@
+# `CheckBox` component
+
+## Introduction
+Check box is used to select the parameter status (true or false).
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`class-CheckBox.d.ts')
+</pre>
+
+m4_include(`footer.md')
+

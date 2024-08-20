@@ -1,0 +1,7 @@
+{
+  application: "main.ts"
+  views: {
+    hello: "icon.as"
+  }
+}
+

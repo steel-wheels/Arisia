@@ -1,0 +1,16 @@
+{
+  application: "main.ts"
+  views: {
+    table: "table.as"
+  }
+  definitions: [
+    "types/basic.d.ts"
+  ]
+  tables: {
+    table0: {
+      type: "data/table_data.d.ts"
+      data: "data/table_data.json"
+    }
+  }
+}
+

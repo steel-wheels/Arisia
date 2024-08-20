@@ -1,0 +1,54 @@
+/// <reference path="types/ArisiaPlatform.d.ts"/>
+/// <reference path="types/hello.frame.d.ts"/>
+/* allocate function for frame: Box */
+let root = _alloc_Box() as root_BoxIF  ;
+/* define type for all properties */
+root._definePropertyType("label", "o(Label)") ;
+root._definePropertyType("ok_button", "o(Button)") ;
+root._definePropertyType("axis", "e(Axis)") ;
+root._definePropertyType("alignment", "e(Alignment)") ;
+root._definePropertyType("distribution", "e(Distribution)") ;
+/* define getter/setter for all properties */
+_definePropertyIF(root, ["label","ok_button","axis","alignment","distribution"]) ;
+{
+  /* allocate function for frame: Label */
+  let label = _alloc_Label() as root_label_LabelIF  ;
+  /* define type for all properties */
+  label._definePropertyType("text", "s") ;
+  label._definePropertyType("a", "n") ;
+  label._definePropertyType("b", "n") ;
+  label._definePropertyType("c", "n") ;
+  label._definePropertyType("number", "n") ;
+  /* define getter/setter for all properties */
+  _definePropertyIF(label, ["text","a","b","c","number"]) ;
+  /* assign user declared properties */
+  label.text = "Hello, World !!";
+  label.a = 1;
+  label.b = 2;
+  root.label = label ;
+}
+{
+  /* allocate function for frame: Button */
+  let ok_button = _alloc_Button() as root_ok_button_ButtonIF  ;
+  /* define type for all properties */
+  ok_button._definePropertyType("title", "s") ;
+  ok_button._definePropertyType("pressed", "f(v,[o(root_ok_button_ButtonIF)])") ;
+  ok_button._definePropertyType("isEnabled", "b") ;
+  /* define getter/setter for all properties */
+  _definePropertyIF(ok_button, ["title","pressed","isEnabled"]) ;
+  /* assign user declared properties */
+  ok_button.title = "OK";
+  ok_button.pressed = function(self: root_ok_button_ButtonIF): void {
+  	    	leaveView(0) ;
+          };
+  root.ok_button = ok_button ;
+}
+/* Define immediately involked functions */
+root.label.c = (function() {
+ return root.label.a + root.label.b ; 
+})()
+/* Define listner functions */
+/* Setup the component */
+_setup_component(root) ;
+/* This value will be return value of evaluateScript() */
+root ;

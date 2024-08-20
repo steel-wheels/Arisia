@@ -1,0 +1,16 @@
+{
+	application: "main.ts"
+	views: {
+		search: "search.as"
+	}
+	tables: {
+		site_list: {
+			type: "data/site-list.d.ts"
+			data: "data/site-list.json"
+		}
+	}
+	libraries: [
+		"search-lib.ts"
+	]
+}
+

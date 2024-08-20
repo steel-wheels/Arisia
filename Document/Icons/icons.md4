@@ -1,0 +1,10 @@
+# Icons
+
+## Source image
+[icons.key](icons.lkey)
+
+## Icon generator
+<code>Icon set create</code> is used.
+
+m4_include(footer.md)
+

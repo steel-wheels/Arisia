@@ -1,0 +1,7 @@
+{
+	application: "main.ts"
+	views: {
+		alert: "alert.as"
+	}
+}
+

@@ -1,0 +1,10 @@
+# Document type
+
+THis is contents of Info.plist file.
+
+~~~
+m4_include(`Info.plist')
+~~~
+
+m4_include(`footer.md')
+

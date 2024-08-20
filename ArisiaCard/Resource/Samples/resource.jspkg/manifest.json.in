@@ -1,0 +1,10 @@
+{
+  application: "main.ts"
+  views: {
+    hello: "label.as"
+  }
+  definitions: [
+    "typedef.d.ts"
+  ]
+}
+

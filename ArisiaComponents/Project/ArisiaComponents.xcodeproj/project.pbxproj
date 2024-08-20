@@ -1,0 +1,1100 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0501410D2BED1535008BC58F /* AMCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0501410C2BED1535008BC58F /* AMCheckBox.swift */; };
+		0501410E2BED1535008BC58F /* AMCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0501410C2BED1535008BC58F /* AMCheckBox.swift */; };
+		051405B128D9E61C00C3E2BD /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051405AA28D9E61B00C3E2BD /* CoconutDatabase.xcframework */; };
+		051405B328D9E61C00C3E2BD /* CoconutData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051405AB28D9E61B00C3E2BD /* CoconutData.xcframework */; };
+		051405B528D9E61C00C3E2BD /* KiwiLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051405AC28D9E61B00C3E2BD /* KiwiLibrary.xcframework */; };
+		051405B728D9E61C00C3E2BD /* KiwiControls.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051405AD28D9E61B00C3E2BD /* KiwiControls.xcframework */; };
+		051405BD28D9E61C00C3E2BD /* KiwiEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051405B028D9E61C00C3E2BD /* KiwiEngine.xcframework */; };
+		051405C128D9E63200C3E2BD /* CoconutData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051405AB28D9E61B00C3E2BD /* CoconutData.xcframework */; };
+		051405C328D9E63200C3E2BD /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051405AA28D9E61B00C3E2BD /* CoconutDatabase.xcframework */; };
+		051405C728D9E63200C3E2BD /* KiwiControls.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051405AD28D9E61B00C3E2BD /* KiwiControls.xcframework */; };
+		051405C928D9E63200C3E2BD /* KiwiEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051405B028D9E61C00C3E2BD /* KiwiEngine.xcframework */; };
+		051405CB28D9E63200C3E2BD /* KiwiLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051405AC28D9E61B00C3E2BD /* KiwiLibrary.xcframework */; };
+		0515435C29583FF80042D041 /* panel.ts in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0515435A29583DC20042D041 /* panel.ts */; };
+		0515435D29583FF80042D041 /* panel.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0515435B29583FE50042D041 /* panel.js */; };
+		0515435E295840030042D041 /* panel.ts in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0515435A29583DC20042D041 /* panel.ts */; };
+		0515435F295840030042D041 /* panel.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0515435B29583FE50042D041 /* panel.js */; };
+		0517EEDD2A01C23E004EB2A0 /* AMProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0517EEDC2A01C23E004EB2A0 /* AMProperties.swift */; };
+		0517EEDE2A01C23E004EB2A0 /* AMProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0517EEDC2A01C23E004EB2A0 /* AMProperties.swift */; };
+		0532CDE32A5EE676002D7032 /* AMSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0532CDE22A5EE676002D7032 /* AMSprite.swift */; };
+		0532CDE42A5EE676002D7032 /* AMSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0532CDE22A5EE676002D7032 /* AMSprite.swift */; };
+		053E09992B52D7640019CE61 /* AMConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E09982B52D7640019CE61 /* AMConsole.swift */; };
+		053E099A2B52D7640019CE61 /* AMConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053E09982B52D7640019CE61 /* AMConsole.swift */; };
+		053EA5282A861D1200953C65 /* AMTerminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053EA5272A861D1200953C65 /* AMTerminal.swift */; };
+		053EA5292A861D1200953C65 /* AMTerminal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053EA5272A861D1200953C65 /* AMTerminal.swift */; };
+		053FF24828FD98D1005A888D /* AMCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053FF24728FD98D1005A888D /* AMCollection.swift */; };
+		053FF24928FD98D1005A888D /* AMCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053FF24728FD98D1005A888D /* AMCollection.swift */; };
+		0554C65C2A23755000B10EB0 /* AMFrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554C65B2A23755000B10EB0 /* AMFrameManager.swift */; };
+		0554C65D2A23755000B10EB0 /* AMFrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0554C65B2A23755000B10EB0 /* AMFrameManager.swift */; };
+		0556618728E090B200FC4CF2 /* AMTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556618628E090B200FC4CF2 /* AMTableData.swift */; };
+		0556618828E090B200FC4CF2 /* AMTableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0556618628E090B200FC4CF2 /* AMTableData.swift */; };
+		055D8A152B3EA6E000E956D9 /* AMDeclarationLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D8A142B3EA6E000E956D9 /* AMDeclarationLoader.swift */; };
+		055D8A162B3EA6E000E956D9 /* AMDeclarationLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055D8A142B3EA6E000E956D9 /* AMDeclarationLoader.swift */; };
+		055FE1ED28DD76380007B215 /* AMBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055FE1EC28DD76380007B215 /* AMBox.swift */; };
+		055FE1EE28DD76380007B215 /* AMBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055FE1EC28DD76380007B215 /* AMBox.swift */; };
+		0563631928D9E73C00F09A3E /* AMComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0563631828D9E73C00F09A3E /* AMComponentViewController.swift */; };
+		0563631A28D9E73C00F09A3E /* AMComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0563631828D9E73C00F09A3E /* AMComponentViewController.swift */; };
+		0563631C28D9E9B400F09A3E /* ArisiaLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0563631B28D9E9B400F09A3E /* ArisiaLibrary.xcframework */; };
+		0563631E28D9E9C800F09A3E /* ArisiaLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0563631B28D9E9B400F09A3E /* ArisiaLibrary.xcframework */; };
+		0563632228D9EB1C00F09A3E /* AMLibraryCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0563632128D9EB1C00F09A3E /* AMLibraryCompiler.swift */; };
+		0563632328D9EB1C00F09A3E /* AMLibraryCompiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0563632128D9EB1C00F09A3E /* AMLibraryCompiler.swift */; };
+		0563632528D9EB9000F09A3E /* AMMultiComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0563632428D9EB9000F09A3E /* AMMultiComponentViewController.swift */; };
+		0563632628D9EB9000F09A3E /* AMMultiComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0563632428D9EB9000F09A3E /* AMMultiComponentViewController.swift */; };
+		0563632828D9EBF300F09A3E /* AMAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0563632728D9EBF300F09A3E /* AMAlert.swift */; };
+		0563632928D9EBF300F09A3E /* AMAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0563632728D9EBF300F09A3E /* AMAlert.swift */; };
+		0563632F28D9ECAE00F09A3E /* AMThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0563632E28D9ECAE00F09A3E /* AMThread.swift */; };
+		0563633028D9ECAE00F09A3E /* AMThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0563632E28D9ECAE00F09A3E /* AMThread.swift */; };
+		05699B27298F296F00169C25 /* AMTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05699B26298F296F00169C25 /* AMTimer.swift */; };
+		05699B28298F296F00169C25 /* AMTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05699B26298F296F00169C25 /* AMTimer.swift */; };
+		056B44CD2A0B0B48007E416E /* AMPopupMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056B44CC2A0B0B48007E416E /* AMPopupMenu.swift */; };
+		056B44CE2A0B0B48007E416E /* AMPopupMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056B44CC2A0B0B48007E416E /* AMPopupMenu.swift */; };
+		0573B5FA29FCB66200D76672 /* AMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573B5F929FCB66200D76672 /* AMTextField.swift */; };
+		0573B5FB29FCB66200D76672 /* AMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0573B5F929FCB66200D76672 /* AMTextField.swift */; };
+		0587294628DE792500254084 /* AMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0587294528DE792500254084 /* AMButton.swift */; };
+		0587294728DE792500254084 /* AMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0587294528DE792500254084 /* AMButton.swift */; };
+		05946F3528FC17AF00AF2452 /* AMImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05946F3428FC17AF00AF2452 /* AMImage.swift */; };
+		05946F3628FC17AF00AF2452 /* AMImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05946F3428FC17AF00AF2452 /* AMImage.swift */; };
+		059FB23E2A295ABE00E1312C /* AMTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FB23D2A295ABE00E1312C /* AMTableView.swift */; };
+		059FB23F2A295ABE00E1312C /* AMTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059FB23D2A295ABE00E1312C /* AMTableView.swift */; };
+		05A269E02A32164900BD5623 /* AMListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A269DF2A32164900BD5623 /* AMListView.swift */; };
+		05A269E12A32164900BD5623 /* AMListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A269DF2A32164900BD5623 /* AMListView.swift */; };
+		05B322282915576700AAA84D /* AMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B322272915576700AAA84D /* AMLabel.swift */; };
+		05B322292915576700AAA84D /* AMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B322272915576700AAA84D /* AMLabel.swift */; };
+		05B906842A85BFEC00CB34B7 /* AMShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B906832A85BFEC00CB34B7 /* AMShell.swift */; };
+		05B906852A85BFEC00CB34B7 /* AMShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B906832A85BFEC00CB34B7 /* AMShell.swift */; };
+		05BAFD23292897EB009DB1ED /* AMIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAFD22292897EB009DB1ED /* AMIconView.swift */; };
+		05BAFD24292897EB009DB1ED /* AMIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BAFD22292897EB009DB1ED /* AMIconView.swift */; };
+		05BB080228E7269700265AC9 /* ArisiaComponents.d.ts in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05BB07F528E723BA00265AC9 /* ArisiaComponents.d.ts */; };
+		05BB080628E726AB00265AC9 /* ArisiaComponents.d.ts in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05BB07F528E723BA00265AC9 /* ArisiaComponents.d.ts */; };
+		05C58CAB296420BE00615311 /* AMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C58CAA296420BE00615311 /* AMStepper.swift */; };
+		05C58CAC296420BE00615311 /* AMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C58CAA296420BE00615311 /* AMStepper.swift */; };
+		05D112342914071800EDAF71 /* window.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05B953B22913EEED00E6EC3C /* window.js */; };
+		05D112352914071800EDAF71 /* window.ts in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05B953B32913EEED00E6EC3C /* window.ts */; };
+		05D112392914074E00EDAF71 /* window.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05B953B22913EEED00E6EC3C /* window.js */; };
+		05D1123A2914074E00EDAF71 /* window.ts in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05B953B32913EEED00E6EC3C /* window.ts */; };
+		05D22134292FB84B003D1264 /* AMRadioButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D22133292FB84B003D1264 /* AMRadioButtons.swift */; };
+		05D22135292FB84B003D1264 /* AMRadioButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D22133292FB84B003D1264 /* AMRadioButtons.swift */; };
+		05E33C2C2A85BCEA000C68FF /* KiwiShell.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051405AF28D9E61C00C3E2BD /* KiwiShell.xcframework */; };
+		05E33C2E2A85BCFF000C68FF /* KiwiShell.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051405AF28D9E61C00C3E2BD /* KiwiShell.xcframework */; };
+		05F044BE297D340600494DD6 /* AMTextEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F044BD297D340600494DD6 /* AMTextEdit.swift */; };
+		05F044BF297D340600494DD6 /* AMTextEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F044BD297D340600494DD6 /* AMTextEdit.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05934A5328FED921000E777A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0524E41928D9D49400C5DA2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05FA4F8B28E90D9100407797;
+			remoteInfo = Transpile;
+		};
+		05FA4F9128E90DA300407797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0524E41928D9D49400C5DA2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0542633928D9D5C4004F05E2;
+			remoteInfo = ArisiaComponents_iOS;
+		};
+		05FA4F9328E90DA300407797 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0524E41928D9D49400C5DA2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0524E42128D9D49400C5DA2D;
+			remoteInfo = ArisiaComponents_macOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0501588C28DDB32000BE2C8D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Library/types;
+			dstSubfolderSpec = 7;
+			files = (
+				05BB080228E7269700265AC9 /* ArisiaComponents.d.ts in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BB080528E7269E00265AC9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Library/types;
+			dstSubfolderSpec = 7;
+			files = (
+				05BB080628E726AB00265AC9 /* ArisiaComponents.d.ts in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D112332914070400EDAF71 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Library;
+			dstSubfolderSpec = 7;
+			files = (
+				0515435C29583FF80042D041 /* panel.ts in CopyFiles */,
+				0515435D29583FF80042D041 /* panel.js in CopyFiles */,
+				05D112342914071800EDAF71 /* window.js in CopyFiles */,
+				05D112352914071800EDAF71 /* window.ts in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05D112382914073A00EDAF71 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Library;
+			dstSubfolderSpec = 7;
+			files = (
+				0515435E295840030042D041 /* panel.ts in CopyFiles */,
+				0515435F295840030042D041 /* panel.js in CopyFiles */,
+				05D112392914074E00EDAF71 /* window.js in CopyFiles */,
+				05D1123A2914074E00EDAF71 /* window.ts in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0501410C2BED1535008BC58F /* AMCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMCheckBox.swift; sourceTree = "<group>"; };
+		051405AA28D9E61B00C3E2BD /* CoconutDatabase.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutDatabase.xcframework; path = ../../../../Library/Frameworks/CoconutDatabase.xcframework; sourceTree = "<group>"; };
+		051405AB28D9E61B00C3E2BD /* CoconutData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutData.xcframework; path = ../../../../Library/Frameworks/CoconutData.xcframework; sourceTree = "<group>"; };
+		051405AC28D9E61B00C3E2BD /* KiwiLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiLibrary.xcframework; path = ../../../../Library/Frameworks/KiwiLibrary.xcframework; sourceTree = "<group>"; };
+		051405AD28D9E61B00C3E2BD /* KiwiControls.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiControls.xcframework; path = ../../../../Library/Frameworks/KiwiControls.xcframework; sourceTree = "<group>"; };
+		051405AE28D9E61B00C3E2BD /* CoconutShell.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutShell.xcframework; path = ../../../../Library/Frameworks/CoconutShell.xcframework; sourceTree = "<group>"; };
+		051405AF28D9E61C00C3E2BD /* KiwiShell.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiShell.xcframework; path = ../../../../Library/Frameworks/KiwiShell.xcframework; sourceTree = "<group>"; };
+		051405B028D9E61C00C3E2BD /* KiwiEngine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiEngine.xcframework; path = ../../../../Library/Frameworks/KiwiEngine.xcframework; sourceTree = "<group>"; };
+		0515435A29583DC20042D041 /* panel.ts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = panel.ts; sourceTree = "<group>"; };
+		0515435B29583FE50042D041 /* panel.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = panel.js; sourceTree = "<group>"; };
+		0517EEDC2A01C23E004EB2A0 /* AMProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMProperties.swift; sourceTree = "<group>"; };
+		0524E42228D9D49400C5DA2D /* ArisiaComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArisiaComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0524E42628D9D49400C5DA2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0532CDE22A5EE676002D7032 /* AMSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMSprite.swift; sourceTree = "<group>"; };
+		053E09982B52D7640019CE61 /* AMConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMConsole.swift; sourceTree = "<group>"; };
+		053EA5272A861D1200953C65 /* AMTerminal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMTerminal.swift; sourceTree = "<group>"; };
+		053FF24728FD98D1005A888D /* AMCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMCollection.swift; sourceTree = "<group>"; };
+		0542633A28D9D5C4004F05E2 /* ArisiaComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ArisiaComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0542633D28D9D5C4004F05E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0554C65B2A23755000B10EB0 /* AMFrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMFrameManager.swift; sourceTree = "<group>"; };
+		0556618628E090B200FC4CF2 /* AMTableData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMTableData.swift; sourceTree = "<group>"; };
+		055D8A142B3EA6E000E956D9 /* AMDeclarationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMDeclarationLoader.swift; sourceTree = "<group>"; };
+		055FE1EC28DD76380007B215 /* AMBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMBox.swift; sourceTree = "<group>"; };
+		0563631828D9E73C00F09A3E /* AMComponentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMComponentViewController.swift; sourceTree = "<group>"; };
+		0563631B28D9E9B400F09A3E /* ArisiaLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ArisiaLibrary.xcframework; path = ../../../../Library/Frameworks/ArisiaLibrary.xcframework; sourceTree = "<group>"; };
+		0563632128D9EB1C00F09A3E /* AMLibraryCompiler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMLibraryCompiler.swift; sourceTree = "<group>"; };
+		0563632428D9EB9000F09A3E /* AMMultiComponentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMMultiComponentViewController.swift; sourceTree = "<group>"; };
+		0563632728D9EBF300F09A3E /* AMAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMAlert.swift; sourceTree = "<group>"; };
+		0563632E28D9ECAE00F09A3E /* AMThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMThread.swift; sourceTree = "<group>"; };
+		05699B26298F296F00169C25 /* AMTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMTimer.swift; sourceTree = "<group>"; };
+		056B44CC2A0B0B48007E416E /* AMPopupMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMPopupMenu.swift; sourceTree = "<group>"; };
+		0573B5F929FCB66200D76672 /* AMTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMTextField.swift; sourceTree = "<group>"; };
+		0587294528DE792500254084 /* AMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMButton.swift; sourceTree = "<group>"; };
+		05946F3428FC17AF00AF2452 /* AMImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMImage.swift; sourceTree = "<group>"; };
+		059FB23D2A295ABE00E1312C /* AMTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMTableView.swift; sourceTree = "<group>"; };
+		05A269DF2A32164900BD5623 /* AMListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMListView.swift; sourceTree = "<group>"; };
+		05B322272915576700AAA84D /* AMLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMLabel.swift; sourceTree = "<group>"; };
+		05B906832A85BFEC00CB34B7 /* AMShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMShell.swift; sourceTree = "<group>"; };
+		05B953B22913EEED00E6EC3C /* window.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = window.js; sourceTree = "<group>"; };
+		05B953B32913EEED00E6EC3C /* window.ts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = window.ts; sourceTree = "<group>"; };
+		05BAFD22292897EB009DB1ED /* AMIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMIconView.swift; sourceTree = "<group>"; };
+		05BB07F228E723BA00265AC9 /* Builtin.d.ts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Builtin.d.ts; sourceTree = "<group>"; };
+		05BB07F428E723BA00265AC9 /* Frame.d.ts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Frame.d.ts; sourceTree = "<group>"; };
+		05BB07F528E723BA00265AC9 /* ArisiaComponents.d.ts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ArisiaComponents.d.ts; sourceTree = "<group>"; };
+		05BB07F728E723BA00265AC9 /* ArisiaLibrary.d.ts */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ArisiaLibrary.d.ts; sourceTree = "<group>"; };
+		05C58CAA296420BE00615311 /* AMStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMStepper.swift; sourceTree = "<group>"; };
+		05CAC86D28DD8C75001C9EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05CAC87028DD8C75001C9EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05CAC87228DD8C75001C9EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05CAC87328DD8C75001C9EF1 /* UnitTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UnitTest.entitlements; sourceTree = "<group>"; };
+		05CAC89028DD8E9B001C9EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05CAC89228DD8EA5001C9EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05CAC89528DD8EA5001C9EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05CAC89728DD8EA5001C9EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05CAC8A428DD9526001C9EF1 /* ArisiaComponents.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ArisiaComponents.xcframework; path = ../../../../Library/Frameworks/ArisiaComponents.xcframework; sourceTree = "<group>"; };
+		05D22133292FB84B003D1264 /* AMRadioButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMRadioButtons.swift; sourceTree = "<group>"; };
+		05F044BD297D340600494DD6 /* AMTextEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMTextEdit.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0524E41F28D9D49400C5DA2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051405B528D9E61C00C3E2BD /* KiwiLibrary.xcframework in Frameworks */,
+				051405BD28D9E61C00C3E2BD /* KiwiEngine.xcframework in Frameworks */,
+				051405B128D9E61C00C3E2BD /* CoconutDatabase.xcframework in Frameworks */,
+				051405B328D9E61C00C3E2BD /* CoconutData.xcframework in Frameworks */,
+				0563631C28D9E9B400F09A3E /* ArisiaLibrary.xcframework in Frameworks */,
+				051405B728D9E61C00C3E2BD /* KiwiControls.xcframework in Frameworks */,
+				05E33C2C2A85BCEA000C68FF /* KiwiShell.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0542633728D9D5C4004F05E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				051405C928D9E63200C3E2BD /* KiwiEngine.xcframework in Frameworks */,
+				051405C328D9E63200C3E2BD /* CoconutDatabase.xcframework in Frameworks */,
+				051405CB28D9E63200C3E2BD /* KiwiLibrary.xcframework in Frameworks */,
+				051405C128D9E63200C3E2BD /* CoconutData.xcframework in Frameworks */,
+				051405C728D9E63200C3E2BD /* KiwiControls.xcframework in Frameworks */,
+				0563631E28D9E9C800F09A3E /* ArisiaLibrary.xcframework in Frameworks */,
+				05E33C2E2A85BCFF000C68FF /* KiwiShell.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		051405A928D9E61B00C3E2BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05CAC8A428DD9526001C9EF1 /* ArisiaComponents.xcframework */,
+				0563631B28D9E9B400F09A3E /* ArisiaLibrary.xcframework */,
+				051405AB28D9E61B00C3E2BD /* CoconutData.xcframework */,
+				051405AA28D9E61B00C3E2BD /* CoconutDatabase.xcframework */,
+				051405AE28D9E61B00C3E2BD /* CoconutShell.xcframework */,
+				051405AD28D9E61B00C3E2BD /* KiwiControls.xcframework */,
+				051405B028D9E61C00C3E2BD /* KiwiEngine.xcframework */,
+				051405AC28D9E61B00C3E2BD /* KiwiLibrary.xcframework */,
+				051405AF28D9E61C00C3E2BD /* KiwiShell.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0524E41828D9D49400C5DA2D = {
+			isa = PBXGroup;
+			children = (
+				05F763B228D9D4E600CAF37B /* Source */,
+				05BB07EF28E71E3F00265AC9 /* Resource */,
+				05CAC87828DD8C81001C9EF1 /* Test */,
+				0524E42428D9D49400C5DA2D /* ArisiaComponents_macOS */,
+				0542633B28D9D5C4004F05E2 /* ArisiaComponents_iOS */,
+				05CAC86828DD8C6B001C9EF1 /* UnitTest_macOS */,
+				05CAC88828DD8E9B001C9EF1 /* UnitTest_iOS */,
+				0524E42328D9D49400C5DA2D /* Products */,
+				051405A928D9E61B00C3E2BD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0524E42328D9D49400C5DA2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0524E42228D9D49400C5DA2D /* ArisiaComponents.framework */,
+				0542633A28D9D5C4004F05E2 /* ArisiaComponents.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0524E42428D9D49400C5DA2D /* ArisiaComponents_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				0524E42628D9D49400C5DA2D /* Info.plist */,
+			);
+			path = ArisiaComponents_macOS;
+			sourceTree = "<group>";
+		};
+		0542633B28D9D5C4004F05E2 /* ArisiaComponents_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0542633D28D9D5C4004F05E2 /* Info.plist */,
+			);
+			path = ArisiaComponents_iOS;
+			sourceTree = "<group>";
+		};
+		055D8A132B3EA6A900E956D9 /* Declaration */ = {
+			isa = PBXGroup;
+			children = (
+				055D8A142B3EA6E000E956D9 /* AMDeclarationLoader.swift */,
+			);
+			path = Declaration;
+			sourceTree = "<group>";
+		};
+		055FE1EB28DD751F0007B215 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				055FE1EC28DD76380007B215 /* AMBox.swift */,
+				0587294528DE792500254084 /* AMButton.swift */,
+				0501410C2BED1535008BC58F /* AMCheckBox.swift */,
+				053FF24728FD98D1005A888D /* AMCollection.swift */,
+				053E09982B52D7640019CE61 /* AMConsole.swift */,
+				05BAFD22292897EB009DB1ED /* AMIconView.swift */,
+				05946F3428FC17AF00AF2452 /* AMImage.swift */,
+				05B322272915576700AAA84D /* AMLabel.swift */,
+				05A269DF2A32164900BD5623 /* AMListView.swift */,
+				056B44CC2A0B0B48007E416E /* AMPopupMenu.swift */,
+				0517EEDC2A01C23E004EB2A0 /* AMProperties.swift */,
+				05D22133292FB84B003D1264 /* AMRadioButtons.swift */,
+				05B906832A85BFEC00CB34B7 /* AMShell.swift */,
+				0532CDE22A5EE676002D7032 /* AMSprite.swift */,
+				05C58CAA296420BE00615311 /* AMStepper.swift */,
+				0556618628E090B200FC4CF2 /* AMTableData.swift */,
+				059FB23D2A295ABE00E1312C /* AMTableView.swift */,
+				053EA5272A861D1200953C65 /* AMTerminal.swift */,
+				05F044BD297D340600494DD6 /* AMTextEdit.swift */,
+				0573B5F929FCB66200D76672 /* AMTextField.swift */,
+				05699B26298F296F00169C25 /* AMTimer.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		0563631728D9E72500F09A3E /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				0563632728D9EBF300F09A3E /* AMAlert.swift */,
+				0563631828D9E73C00F09A3E /* AMComponentViewController.swift */,
+				0563632428D9EB9000F09A3E /* AMMultiComponentViewController.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		0563632028D9EAE200F09A3E /* Compiler */ = {
+			isa = PBXGroup;
+			children = (
+				0563632128D9EB1C00F09A3E /* AMLibraryCompiler.swift */,
+				0554C65B2A23755000B10EB0 /* AMFrameManager.swift */,
+			);
+			path = Compiler;
+			sourceTree = "<group>";
+		};
+		0563632A28D9EC6900F09A3E /* Process */ = {
+			isa = PBXGroup;
+			children = (
+				0563632E28D9ECAE00F09A3E /* AMThread.swift */,
+			);
+			path = Process;
+			sourceTree = "<group>";
+		};
+		05BB07EF28E71E3F00265AC9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				05BB07F028E71F4E00265AC9 /* Library */,
+			);
+			name = Resource;
+			path = ../Resource;
+			sourceTree = "<group>";
+		};
+		05BB07F028E71F4E00265AC9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				05BB07F128E7239000265AC9 /* types */,
+				0515435A29583DC20042D041 /* panel.ts */,
+				0515435B29583FE50042D041 /* panel.js */,
+				05B953B22913EEED00E6EC3C /* window.js */,
+				05B953B32913EEED00E6EC3C /* window.ts */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		05BB07F128E7239000265AC9 /* types */ = {
+			isa = PBXGroup;
+			children = (
+				05BB07F528E723BA00265AC9 /* ArisiaComponents.d.ts */,
+				05BB07F728E723BA00265AC9 /* ArisiaLibrary.d.ts */,
+				05BB07F228E723BA00265AC9 /* Builtin.d.ts */,
+				05BB07F428E723BA00265AC9 /* Frame.d.ts */,
+			);
+			path = types;
+			sourceTree = "<group>";
+		};
+		05CAC86828DD8C6B001C9EF1 /* UnitTest_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				05CAC86D28DD8C75001C9EF1 /* Assets.xcassets */,
+				05CAC86F28DD8C75001C9EF1 /* Main.storyboard */,
+				05CAC87228DD8C75001C9EF1 /* Info.plist */,
+				05CAC87328DD8C75001C9EF1 /* UnitTest.entitlements */,
+			);
+			path = UnitTest_macOS;
+			sourceTree = "<group>";
+		};
+		05CAC87828DD8C81001C9EF1 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Test;
+			path = ../Test;
+			sourceTree = "<group>";
+		};
+		05CAC88828DD8E9B001C9EF1 /* UnitTest_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				05CAC88F28DD8E9B001C9EF1 /* Main.storyboard */,
+				05CAC89228DD8EA5001C9EF1 /* Assets.xcassets */,
+				05CAC89428DD8EA5001C9EF1 /* LaunchScreen.storyboard */,
+				05CAC89728DD8EA5001C9EF1 /* Info.plist */,
+			);
+			path = UnitTest_iOS;
+			sourceTree = "<group>";
+		};
+		05F763B228D9D4E600CAF37B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0563632028D9EAE200F09A3E /* Compiler */,
+				055FE1EB28DD751F0007B215 /* Component */,
+				0563632A28D9EC6900F09A3E /* Process */,
+				0563631728D9E72500F09A3E /* Window */,
+				055D8A132B3EA6A900E956D9 /* Declaration */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0524E41D28D9D49400C5DA2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0542633528D9D5C4004F05E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXLegacyTarget section */
+		0542635128D9DCDA004F05E2 /* Install */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/install_xc.mk";
+			buildConfigurationList = 0542635228D9DCDA004F05E2 /* Build configuration list for PBXLegacyTarget "Install" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				05934A5428FED921000E777A /* PBXTargetDependency */,
+			);
+			name = Install;
+			passBuildSettingsInEnvironment = 1;
+			productName = Install;
+		};
+		05FA4F8B28E90D9100407797 /* Transpile */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/transpile.mk";
+			buildConfigurationList = 05FA4F8E28E90D9100407797 /* Build configuration list for PBXLegacyTarget "Transpile" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				05FA4F9228E90DA300407797 /* PBXTargetDependency */,
+				05FA4F9428E90DA300407797 /* PBXTargetDependency */,
+			);
+			name = Transpile;
+			passBuildSettingsInEnvironment = 1;
+			productName = Transpile;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		0524E42128D9D49400C5DA2D /* ArisiaComponents_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0524E42A28D9D49400C5DA2D /* Build configuration list for PBXNativeTarget "ArisiaComponents_macOS" */;
+			buildPhases = (
+				0524E41D28D9D49400C5DA2D /* Headers */,
+				0524E41E28D9D49400C5DA2D /* Sources */,
+				0524E41F28D9D49400C5DA2D /* Frameworks */,
+				0501588C28DDB32000BE2C8D /* CopyFiles */,
+				05D112332914070400EDAF71 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArisiaComponents_macOS;
+			productName = ArisiaComponents;
+			productReference = 0524E42228D9D49400C5DA2D /* ArisiaComponents.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0542633928D9D5C4004F05E2 /* ArisiaComponents_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0542634128D9D5C4004F05E2 /* Build configuration list for PBXNativeTarget "ArisiaComponents_iOS" */;
+			buildPhases = (
+				0542633528D9D5C4004F05E2 /* Headers */,
+				0542633628D9D5C4004F05E2 /* Sources */,
+				0542633728D9D5C4004F05E2 /* Frameworks */,
+				05BB080528E7269E00265AC9 /* CopyFiles */,
+				05D112382914073A00EDAF71 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArisiaComponents_iOS;
+			productName = ArisiaComponents_iOS;
+			productReference = 0542633A28D9D5C4004F05E2 /* ArisiaComponents.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0524E41928D9D49400C5DA2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					0524E42128D9D49400C5DA2D = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					0542633928D9D5C4004F05E2 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					0542635128D9DCDA004F05E2 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					05FA4F8B28E90D9100407797 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 0524E41C28D9D49400C5DA2D /* Build configuration list for PBXProject "ArisiaComponents" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0524E41828D9D49400C5DA2D;
+			productRefGroup = 0524E42328D9D49400C5DA2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0524E42128D9D49400C5DA2D /* ArisiaComponents_macOS */,
+				0542633928D9D5C4004F05E2 /* ArisiaComponents_iOS */,
+				05FA4F8B28E90D9100407797 /* Transpile */,
+				0542635128D9DCDA004F05E2 /* Install */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0524E41E28D9D49400C5DA2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0501410D2BED1535008BC58F /* AMCheckBox.swift in Sources */,
+				05C58CAB296420BE00615311 /* AMStepper.swift in Sources */,
+				05BAFD23292897EB009DB1ED /* AMIconView.swift in Sources */,
+				05D22134292FB84B003D1264 /* AMRadioButtons.swift in Sources */,
+				05A269E02A32164900BD5623 /* AMListView.swift in Sources */,
+				056B44CD2A0B0B48007E416E /* AMPopupMenu.swift in Sources */,
+				055FE1ED28DD76380007B215 /* AMBox.swift in Sources */,
+				053FF24828FD98D1005A888D /* AMCollection.swift in Sources */,
+				053EA5282A861D1200953C65 /* AMTerminal.swift in Sources */,
+				0556618728E090B200FC4CF2 /* AMTableData.swift in Sources */,
+				055D8A152B3EA6E000E956D9 /* AMDeclarationLoader.swift in Sources */,
+				05946F3528FC17AF00AF2452 /* AMImage.swift in Sources */,
+				059FB23E2A295ABE00E1312C /* AMTableView.swift in Sources */,
+				0587294628DE792500254084 /* AMButton.swift in Sources */,
+				05699B27298F296F00169C25 /* AMTimer.swift in Sources */,
+				0563632828D9EBF300F09A3E /* AMAlert.swift in Sources */,
+				05F044BE297D340600494DD6 /* AMTextEdit.swift in Sources */,
+				05B322282915576700AAA84D /* AMLabel.swift in Sources */,
+				0573B5FA29FCB66200D76672 /* AMTextField.swift in Sources */,
+				0563632228D9EB1C00F09A3E /* AMLibraryCompiler.swift in Sources */,
+				0563631928D9E73C00F09A3E /* AMComponentViewController.swift in Sources */,
+				05B906842A85BFEC00CB34B7 /* AMShell.swift in Sources */,
+				0563632F28D9ECAE00F09A3E /* AMThread.swift in Sources */,
+				0563632528D9EB9000F09A3E /* AMMultiComponentViewController.swift in Sources */,
+				0532CDE32A5EE676002D7032 /* AMSprite.swift in Sources */,
+				0554C65C2A23755000B10EB0 /* AMFrameManager.swift in Sources */,
+				0517EEDD2A01C23E004EB2A0 /* AMProperties.swift in Sources */,
+				053E09992B52D7640019CE61 /* AMConsole.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0542633628D9D5C4004F05E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0501410E2BED1535008BC58F /* AMCheckBox.swift in Sources */,
+				05C58CAC296420BE00615311 /* AMStepper.swift in Sources */,
+				05BAFD24292897EB009DB1ED /* AMIconView.swift in Sources */,
+				05D22135292FB84B003D1264 /* AMRadioButtons.swift in Sources */,
+				05A269E12A32164900BD5623 /* AMListView.swift in Sources */,
+				056B44CE2A0B0B48007E416E /* AMPopupMenu.swift in Sources */,
+				055FE1EE28DD76380007B215 /* AMBox.swift in Sources */,
+				053FF24928FD98D1005A888D /* AMCollection.swift in Sources */,
+				053EA5292A861D1200953C65 /* AMTerminal.swift in Sources */,
+				0556618828E090B200FC4CF2 /* AMTableData.swift in Sources */,
+				055D8A162B3EA6E000E956D9 /* AMDeclarationLoader.swift in Sources */,
+				05946F3628FC17AF00AF2452 /* AMImage.swift in Sources */,
+				059FB23F2A295ABE00E1312C /* AMTableView.swift in Sources */,
+				0587294728DE792500254084 /* AMButton.swift in Sources */,
+				05699B28298F296F00169C25 /* AMTimer.swift in Sources */,
+				0563632928D9EBF300F09A3E /* AMAlert.swift in Sources */,
+				05F044BF297D340600494DD6 /* AMTextEdit.swift in Sources */,
+				05B322292915576700AAA84D /* AMLabel.swift in Sources */,
+				0573B5FB29FCB66200D76672 /* AMTextField.swift in Sources */,
+				0563632328D9EB1C00F09A3E /* AMLibraryCompiler.swift in Sources */,
+				0563631A28D9E73C00F09A3E /* AMComponentViewController.swift in Sources */,
+				05B906852A85BFEC00CB34B7 /* AMShell.swift in Sources */,
+				0563633028D9ECAE00F09A3E /* AMThread.swift in Sources */,
+				0563632628D9EB9000F09A3E /* AMMultiComponentViewController.swift in Sources */,
+				0532CDE42A5EE676002D7032 /* AMSprite.swift in Sources */,
+				0554C65D2A23755000B10EB0 /* AMFrameManager.swift in Sources */,
+				0517EEDE2A01C23E004EB2A0 /* AMProperties.swift in Sources */,
+				053E099A2B52D7640019CE61 /* AMConsole.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05934A5428FED921000E777A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05FA4F8B28E90D9100407797 /* Transpile */;
+			targetProxy = 05934A5328FED921000E777A /* PBXContainerItemProxy */;
+		};
+		05FA4F9228E90DA300407797 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0542633928D9D5C4004F05E2 /* ArisiaComponents_iOS */;
+			targetProxy = 05FA4F9128E90DA300407797 /* PBXContainerItemProxy */;
+		};
+		05FA4F9428E90DA300407797 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0524E42128D9D49400C5DA2D /* ArisiaComponents_macOS */;
+			targetProxy = 05FA4F9328E90DA300407797 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05CAC86F28DD8C75001C9EF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05CAC87028DD8C75001C9EF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05CAC88F28DD8E9B001C9EF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05CAC89028DD8E9B001C9EF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05CAC89428DD8EA5001C9EF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05CAC89528DD8EA5001C9EF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0524E42828D9D49400C5DA2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0524E42928D9D49400C5DA2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0524E42B28D9D49400C5DA2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				INFOPLIST_FILE = ArisiaComponents_macOS/Info.plist;
+				INSTALL_PATH = "$(HOME)/local/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steelwheels.ArisiaComponents.macOS;
+				PRODUCT_NAME = ArisiaComponents;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				"SWIFT_OPTIMIZATION_LEVEL[arch=*]" = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0524E42C28D9D49400C5DA2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				INFOPLIST_FILE = ArisiaComponents_macOS/Info.plist;
+				INSTALL_PATH = "$(HOME)/local/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steelwheels.ArisiaComponents.macOS;
+				PRODUCT_NAME = ArisiaComponents;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0542633F28D9D5C4004F05E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				INFOPLIST_FILE = ArisiaComponents_iOS/Info.plist;
+				INSTALL_PATH = "$(HOME)/local/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steelwheels.ArisiaComponents.iOS;
+				PRODUCT_NAME = ArisiaComponents;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0542634028D9D5C4004F05E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				INFOPLIST_FILE = ArisiaComponents_iOS/Info.plist;
+				INSTALL_PATH = "$(HOME)/local/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steelwheels.ArisiaComponents.iOS;
+				PRODUCT_NAME = ArisiaComponents;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0542635328D9DCDA004F05E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0542635428D9DCDA004F05E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05FA4F8C28E90D9100407797 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05FA4F8D28E90D9100407797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0524E41C28D9D49400C5DA2D /* Build configuration list for PBXProject "ArisiaComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0524E42828D9D49400C5DA2D /* Debug */,
+				0524E42928D9D49400C5DA2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0524E42A28D9D49400C5DA2D /* Build configuration list for PBXNativeTarget "ArisiaComponents_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0524E42B28D9D49400C5DA2D /* Debug */,
+				0524E42C28D9D49400C5DA2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0542634128D9D5C4004F05E2 /* Build configuration list for PBXNativeTarget "ArisiaComponents_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0542633F28D9D5C4004F05E2 /* Debug */,
+				0542634028D9D5C4004F05E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0542635228D9DCDA004F05E2 /* Build configuration list for PBXLegacyTarget "Install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0542635328D9DCDA004F05E2 /* Debug */,
+				0542635428D9DCDA004F05E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05FA4F8E28E90D9100407797 /* Build configuration list for PBXLegacyTarget "Transpile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FA4F8C28E90D9100407797 /* Debug */,
+				05FA4F8D28E90D9100407797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0524E41928D9D49400C5DA2D /* Project object */;
+}

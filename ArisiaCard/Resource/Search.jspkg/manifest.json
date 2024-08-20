@@ -1,0 +1,18 @@
+{
+  application: "main.js",
+  definitions: [
+      "data/site-list.d.ts"
+    ],
+  libraries: [
+      "search-lib.js"
+    ],
+  tables: {
+      site_list: {
+          data: "data/site-list.json",
+          type: "data/site-list.d.ts"
+        }
+    },
+  views: {
+      search: "search.js"
+    }
+}

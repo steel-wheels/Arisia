@@ -1,0 +1,20 @@
+# `Label` component
+
+## Introduction
+![Stepper ScreemnShot](./Images/label-component-macos.png)
+For more details, see [label.jspkg](ARISIA_SAMPLE/label.jspkg).
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`class-Label.d.ts')
+</pre>
+
+Sample script
+<pre>
+m4_include(`label.jspkg/label.as')
+</pre>
+
+m4_include(`footer.md')
+

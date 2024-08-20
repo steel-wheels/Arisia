@@ -1,0 +1,15 @@
+## `savePanel` function
+````
+savePanel(title: string): URLIF | null ;
+````
+### Parameters
+|Name     |Type     |Description              |
+|:---     |:---     |:---                     |
+|title    |string   |Title of the panel       |
+
+### Return value
+|Type     |Description              |
+|:---     |:---                     |
+|URL      |Selected file or directory |
+|null     |Use does not select the file or directory  |
+

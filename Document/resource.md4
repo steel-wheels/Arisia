@@ -1,0 +1,18 @@
+# Resource
+
+This document describes abot the resource for the Arisia application.
+The Arisia application has one or more files to execute it.
+This is a list of the kind of theses files:
+* application script
+* type definitions
+
+## Type definitions
+<pre>
+m4_include(ARISIA_SAMPLE_DIR/resource.jspkg/typedef.d.ts)
+</pre>
+
+## Table
+
+## Property
+
+m4_include(footer.md)

@@ -1,0 +1,10 @@
+{
+	application: "main.ts"
+	views: {
+		hello: "image.as"
+	}
+	images: {
+		card: "images/card.png"
+	}
+}
+

@@ -1,0 +1,19 @@
+// name; site name, url: URL of the top web page
+[
+  {
+    category:	"computer",
+    name:  	"gihyo",
+    url:	"https://gihyo.jp"
+  },
+  {
+    category:	"computer",
+    name:	"qiita",
+    url:	"https://qiita.com"
+  },
+  {
+    category:	"computer",
+    name:	"apple developer documentation",
+    url:	"https://developer.apple.com/documentation/"
+  }
+]
+

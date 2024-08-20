@@ -1,0 +1,14 @@
+# `Console` component
+
+## Introduction
+The console to print text such as log message.
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`class-ConsoleView.d.ts')
+</pre>
+
+m4_include(`footer.md')
+

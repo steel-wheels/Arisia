@@ -1,0 +1,14 @@
+{
+  application: "main.js",
+  images: {
+      background: "images/background.png",
+      car: "images/car.png"
+    },
+  threads: {
+      car: "car.js",
+      scene: "scene.js"
+    },
+  views: {
+      sprite: "sprite.js"
+    }
+}

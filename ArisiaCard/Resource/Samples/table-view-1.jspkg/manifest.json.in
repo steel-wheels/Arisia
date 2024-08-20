@@ -1,0 +1,13 @@
+{
+  application: "main.ts"
+  views: {
+   table: "table.as"
+  }
+  tables: {
+    site_list: {
+      type: "site-list.d.ts"
+      data: "site-list.json"
+    }
+  }
+}
+

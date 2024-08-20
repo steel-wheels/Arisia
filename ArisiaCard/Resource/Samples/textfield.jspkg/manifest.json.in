@@ -1,0 +1,7 @@
+{
+  application: "main.ts"
+  views: {
+    field: "textfield.as"
+  }
+}
+

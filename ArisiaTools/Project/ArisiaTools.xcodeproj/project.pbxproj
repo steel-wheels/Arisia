@@ -1,0 +1,1173 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05748FB42A20FE4200FBF7D6 /* decl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05644C4E2A1A6A8F006CE7C0 /* decl.swift */; };
+		05748FB52A20FE4300FBF7D6 /* decl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05644C4E2A1A6A8F006CE7C0 /* decl.swift */; };
+		05C241582BE281C000270FDC /* Cobalt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2414F2BE281C000270FDC /* Cobalt.xcframework */; };
+		05C241592BE281C000270FDC /* Cobalt.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2414F2BE281C000270FDC /* Cobalt.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05C2415A2BE281C000270FDC /* KiwiEngine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241502BE281C000270FDC /* KiwiEngine.xcframework */; };
+		05C2415B2BE281C000270FDC /* KiwiEngine.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241502BE281C000270FDC /* KiwiEngine.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05C2415C2BE281C000270FDC /* ArisiaLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241512BE281C000270FDC /* ArisiaLibrary.xcframework */; };
+		05C2415D2BE281C000270FDC /* ArisiaLibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241512BE281C000270FDC /* ArisiaLibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05C2415E2BE281C000270FDC /* CoconutData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241522BE281C000270FDC /* CoconutData.xcframework */; };
+		05C2415F2BE281C000270FDC /* CoconutData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241522BE281C000270FDC /* CoconutData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05C241602BE281C000270FDC /* ArisiaComponents.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241532BE281C000270FDC /* ArisiaComponents.xcframework */; };
+		05C241612BE281C000270FDC /* ArisiaComponents.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241532BE281C000270FDC /* ArisiaComponents.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05C241622BE281C000270FDC /* KiwiLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241542BE281C000270FDC /* KiwiLibrary.xcframework */; };
+		05C241632BE281C000270FDC /* KiwiLibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241542BE281C000270FDC /* KiwiLibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05C241642BE281C100270FDC /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241552BE281C000270FDC /* CoconutDatabase.xcframework */; };
+		05C241652BE281C100270FDC /* CoconutDatabase.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241552BE281C000270FDC /* CoconutDatabase.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05C241662BE281C100270FDC /* KiwiControls.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241562BE281C000270FDC /* KiwiControls.xcframework */; };
+		05C241672BE281C100270FDC /* KiwiControls.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241562BE281C000270FDC /* KiwiControls.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05C241682BE281C100270FDC /* KiwiShell.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241572BE281C000270FDC /* KiwiShell.xcframework */; };
+		05C241692BE281C100270FDC /* KiwiShell.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241572BE281C000270FDC /* KiwiShell.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05C2BF4328E2A7CA0059F938 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C2BF2E28E2A74A0059F938 /* main.swift */; };
+		05C2BF7128E2E2650059F938 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C2BF7028E2E2650059F938 /* config.swift */; };
+		05C9C39428C7898500E57C5D /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C9C39328C7898500E57C5D /* config.swift */; };
+		05E6E28228C7771C0073FDD8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6E28128C7771C0073FDD8 /* main.swift */; };
+		05EB6B9D29E84CE100849CC2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EB6B9C29E84CE100849CC2 /* main.swift */; };
+		05EB6BA729E84E0400849CC2 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EB6BA229E84E0400849CC2 /* config.swift */; };
+		05EB6BA829E84E0400849CC2 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EB6BA329E84E0400849CC2 /* utils.swift */; };
+		05EB6BAA29E84E0400849CC2 /* makefile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EB6BA529E84E0400849CC2 /* makefile.swift */; };
+		05EB6BAB29E84E0400849CC2 /* manifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EB6BA629E84E0400849CC2 /* manifest.swift */; };
+		05FE9C0F2A1BB97C008FD19D /* decl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05644C4E2A1A6A8F006CE7C0 /* decl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		050231792920A97B001CDAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E6E27628C7771C0073FDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C9C39728C791AE00E57C5D;
+			remoteInfo = Install_Tools;
+		};
+		05A1FCAC2BE2761C00A75E01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E6E27628C7771C0073FDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C2BF2B28E2A74A0059F938;
+			remoteInfo = adecl;
+		};
+		05A1FCAE2BE2761C00A75E01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E6E27628C7771C0073FDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05EB6B9929E84CE100849CC2;
+			remoteInfo = apkg;
+		};
+		05A1FCB02BE2761C00A75E01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E6E27628C7771C0073FDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05E6E27D28C7771C0073FDD8;
+			remoteInfo = asc;
+		};
+		05A1FCB22BE2762100A75E01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E6E27628C7771C0073FDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C9C39728C791AE00E57C5D;
+			remoteInfo = Install_Tools;
+		};
+		05C2BF3728E2A75A0059F938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E6E27628C7771C0073FDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C2BF2B28E2A74A0059F938;
+			remoteInfo = adecl;
+		};
+		05C2BF6A28E2AA230059F938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E6E27628C7771C0073FDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C9C38228C7827B00E57C5D;
+			remoteInfo = Install_Bundle;
+		};
+		05C9C38828C7828600E57C5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E6E27628C7771C0073FDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C9C34E28C779B500E57C5D;
+			remoteInfo = ArisiaToolsBundle;
+		};
+		05C9C38A28C7829000E57C5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E6E27628C7771C0073FDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C9C38228C7827B00E57C5D;
+			remoteInfo = Install_Bundle;
+		};
+		05C9C39C28C791B600E57C5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E6E27628C7771C0073FDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05E6E27D28C7771C0073FDD8;
+			remoteInfo = asc;
+		};
+		05EB6BAC29E84FCD00849CC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E6E27628C7771C0073FDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C9C38228C7827B00E57C5D;
+			remoteInfo = Install_Bundle;
+		};
+		05EB6BAE29E8514100849CC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05E6E27628C7771C0073FDD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05EB6B9929E84CE100849CC2;
+			remoteInfo = apkg;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		05C2416A2BE281C100270FDC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				05C241592BE281C000270FDC /* Cobalt.xcframework in Embed Frameworks */,
+				05C241692BE281C100270FDC /* KiwiShell.xcframework in Embed Frameworks */,
+				05C2415B2BE281C000270FDC /* KiwiEngine.xcframework in Embed Frameworks */,
+				05C2415D2BE281C000270FDC /* ArisiaLibrary.xcframework in Embed Frameworks */,
+				05C241632BE281C000270FDC /* KiwiLibrary.xcframework in Embed Frameworks */,
+				05C241652BE281C100270FDC /* CoconutDatabase.xcframework in Embed Frameworks */,
+				05C241612BE281C000270FDC /* ArisiaComponents.xcframework in Embed Frameworks */,
+				05C2415F2BE281C000270FDC /* CoconutData.xcframework in Embed Frameworks */,
+				05C241672BE281C100270FDC /* KiwiControls.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		05644C4E2A1A6A8F006CE7C0 /* decl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decl.swift; sourceTree = "<group>"; };
+		05C2414F2BE281C000270FDC /* Cobalt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cobalt.xcframework; path = ../../../../Library/Frameworks/Cobalt.xcframework; sourceTree = "<group>"; };
+		05C241502BE281C000270FDC /* KiwiEngine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiEngine.xcframework; path = ../../../../Library/Frameworks/KiwiEngine.xcframework; sourceTree = "<group>"; };
+		05C241512BE281C000270FDC /* ArisiaLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ArisiaLibrary.xcframework; path = ../../../../Library/Frameworks/ArisiaLibrary.xcframework; sourceTree = "<group>"; };
+		05C241522BE281C000270FDC /* CoconutData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutData.xcframework; path = ../../../../Library/Frameworks/CoconutData.xcframework; sourceTree = "<group>"; };
+		05C241532BE281C000270FDC /* ArisiaComponents.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ArisiaComponents.xcframework; path = ../../../../Library/Frameworks/ArisiaComponents.xcframework; sourceTree = "<group>"; };
+		05C241542BE281C000270FDC /* KiwiLibrary.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiLibrary.xcframework; path = ../../../../Library/Frameworks/KiwiLibrary.xcframework; sourceTree = "<group>"; };
+		05C241552BE281C000270FDC /* CoconutDatabase.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutDatabase.xcframework; path = ../../../../Library/Frameworks/CoconutDatabase.xcframework; sourceTree = "<group>"; };
+		05C241562BE281C000270FDC /* KiwiControls.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiControls.xcframework; path = ../../../../Library/Frameworks/KiwiControls.xcframework; sourceTree = "<group>"; };
+		05C241572BE281C000270FDC /* KiwiShell.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiShell.xcframework; path = ../../../../Library/Frameworks/KiwiShell.xcframework; sourceTree = "<group>"; };
+		05C2BF2C28E2A74A0059F938 /* adecl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = adecl; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C2BF2E28E2A74A0059F938 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		05C2BF7028E2E2650059F938 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		05C9C34F28C779B500E57C5D /* ArisiaTools.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArisiaTools.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C9C35128C779B500E57C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05C9C39328C7898500E57C5D /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		05E6E27E28C7771C0073FDD8 /* asc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = asc; sourceTree = BUILT_PRODUCTS_DIR; };
+		05E6E28128C7771C0073FDD8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		05EB6B9A29E84CE100849CC2 /* apkg */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = apkg; sourceTree = BUILT_PRODUCTS_DIR; };
+		05EB6B9C29E84CE100849CC2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		05EB6BA229E84E0400849CC2 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		05EB6BA329E84E0400849CC2 /* utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		05EB6BA529E84E0400849CC2 /* makefile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = makefile.swift; sourceTree = "<group>"; };
+		05EB6BA629E84E0400849CC2 /* manifest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = manifest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05C2BF2928E2A74A0059F938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C9C34C28C779B500E57C5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C241582BE281C000270FDC /* Cobalt.xcframework in Frameworks */,
+				05C241682BE281C100270FDC /* KiwiShell.xcframework in Frameworks */,
+				05C2415A2BE281C000270FDC /* KiwiEngine.xcframework in Frameworks */,
+				05C2415C2BE281C000270FDC /* ArisiaLibrary.xcframework in Frameworks */,
+				05C241622BE281C000270FDC /* KiwiLibrary.xcframework in Frameworks */,
+				05C241642BE281C100270FDC /* CoconutDatabase.xcframework in Frameworks */,
+				05C241602BE281C000270FDC /* ArisiaComponents.xcframework in Frameworks */,
+				05C2415E2BE281C000270FDC /* CoconutData.xcframework in Frameworks */,
+				05C241662BE281C100270FDC /* KiwiControls.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05E6E27B28C7771C0073FDD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05EB6B9729E84CE100849CC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05748FB32A20FE2E00FBF7D6 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				05644C4E2A1A6A8F006CE7C0 /* decl.swift */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		05C2BF3B28E2A7800059F938 /* adecl */ = {
+			isa = PBXGroup;
+			children = (
+				05C2BF2E28E2A74A0059F938 /* main.swift */,
+				05C2BF7028E2E2650059F938 /* config.swift */,
+			);
+			path = adecl;
+			sourceTree = "<group>";
+		};
+		05C9C35028C779B500E57C5D /* ArisiaToolsBundle */ = {
+			isa = PBXGroup;
+			children = (
+				05C9C35128C779B500E57C5D /* Info.plist */,
+			);
+			path = ArisiaToolsBundle;
+			sourceTree = "<group>";
+		};
+		05C9C36328C77B8C00E57C5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05C241532BE281C000270FDC /* ArisiaComponents.xcframework */,
+				05C241512BE281C000270FDC /* ArisiaLibrary.xcframework */,
+				05C2414F2BE281C000270FDC /* Cobalt.xcframework */,
+				05C241522BE281C000270FDC /* CoconutData.xcframework */,
+				05C241552BE281C000270FDC /* CoconutDatabase.xcframework */,
+				05C241562BE281C000270FDC /* KiwiControls.xcframework */,
+				05C241502BE281C000270FDC /* KiwiEngine.xcframework */,
+				05C241542BE281C000270FDC /* KiwiLibrary.xcframework */,
+				05C241572BE281C000270FDC /* KiwiShell.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05C9C37C28C77E8B00E57C5D /* asc */ = {
+			isa = PBXGroup;
+			children = (
+				05E6E28128C7771C0073FDD8 /* main.swift */,
+				05C9C39328C7898500E57C5D /* config.swift */,
+			);
+			path = asc;
+			sourceTree = "<group>";
+		};
+		05E6E27528C7771C0073FDD8 = {
+			isa = PBXGroup;
+			children = (
+				05E6E28928C777920073FDD8 /* Source */,
+				05C9C35028C779B500E57C5D /* ArisiaToolsBundle */,
+				05E6E27F28C7771C0073FDD8 /* Products */,
+				05C9C36328C77B8C00E57C5D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		05E6E27F28C7771C0073FDD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05E6E27E28C7771C0073FDD8 /* asc */,
+				05C9C34F28C779B500E57C5D /* ArisiaTools.bundle */,
+				05C2BF2C28E2A74A0059F938 /* adecl */,
+				05EB6B9A29E84CE100849CC2 /* apkg */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05E6E28928C777920073FDD8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				05C2BF3B28E2A7800059F938 /* adecl */,
+				05EB6BA129E84D0200849CC2 /* apkg */,
+				05C9C37C28C77E8B00E57C5D /* asc */,
+				05748FB32A20FE2E00FBF7D6 /* common */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+		05EB6BA129E84D0200849CC2 /* apkg */ = {
+			isa = PBXGroup;
+			children = (
+				05EB6BA229E84E0400849CC2 /* config.swift */,
+				05EB6B9C29E84CE100849CC2 /* main.swift */,
+				05EB6BA529E84E0400849CC2 /* makefile.swift */,
+				05EB6BA629E84E0400849CC2 /* manifest.swift */,
+				05EB6BA329E84E0400849CC2 /* utils.swift */,
+			);
+			path = apkg;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		0502316F2920A96F001CDAD9 /* Make_decls */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/install_tool.mk install_decls";
+			buildConfigurationList = 050231722920A96F001CDAD9 /* Build configuration list for PBXLegacyTarget "Make_decls" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				0502317A2920A97B001CDAD9 /* PBXTargetDependency */,
+			);
+			name = Make_decls;
+			passBuildSettingsInEnvironment = 1;
+			productName = Make_decls;
+		};
+		05A1FCA82BE2760400A75E01 /* make_package */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/install_tool.mk  make_package";
+			buildConfigurationList = 05A1FCAB2BE2760400A75E01 /* Build configuration list for PBXLegacyTarget "make_package" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				05A1FCB32BE2762100A75E01 /* PBXTargetDependency */,
+				05A1FCAD2BE2761C00A75E01 /* PBXTargetDependency */,
+				05A1FCAF2BE2761C00A75E01 /* PBXTargetDependency */,
+				05A1FCB12BE2761C00A75E01 /* PBXTargetDependency */,
+			);
+			name = make_package;
+			passBuildSettingsInEnvironment = 1;
+			productName = make_package;
+		};
+		05C9C38228C7827B00E57C5D /* Install_Bundle */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/install_tool.mk install_bundle";
+			buildConfigurationList = 05C9C38328C7827B00E57C5D /* Build configuration list for PBXLegacyTarget "Install_Bundle" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				05C9C38928C7828600E57C5D /* PBXTargetDependency */,
+			);
+			name = Install_Bundle;
+			passBuildSettingsInEnvironment = 1;
+			productName = Install_Bundle;
+		};
+		05C9C39728C791AE00E57C5D /* Install_Tools */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "-f ../../Script/install_tool.mk install_tools";
+			buildConfigurationList = 05C9C39828C791AE00E57C5D /* Build configuration list for PBXLegacyTarget "Install_Tools" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+				05EB6BAF29E8514100849CC2 /* PBXTargetDependency */,
+				05C2BF3828E2A75A0059F938 /* PBXTargetDependency */,
+				05C9C39D28C791B600E57C5D /* PBXTargetDependency */,
+			);
+			name = Install_Tools;
+			passBuildSettingsInEnvironment = 1;
+			productName = Install_Tools;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		05C2BF2B28E2A74A0059F938 /* adecl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05C2BF3228E2A74A0059F938 /* Build configuration list for PBXNativeTarget "adecl" */;
+			buildPhases = (
+				05C2BF2828E2A74A0059F938 /* Sources */,
+				05C2BF2928E2A74A0059F938 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05C2BF6B28E2AA230059F938 /* PBXTargetDependency */,
+			);
+			name = adecl;
+			productName = adecl;
+			productReference = 05C2BF2C28E2A74A0059F938 /* adecl */;
+			productType = "com.apple.product-type.tool";
+		};
+		05C9C34E28C779B500E57C5D /* ArisiaToolsBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05C9C35428C779B500E57C5D /* Build configuration list for PBXNativeTarget "ArisiaToolsBundle" */;
+			buildPhases = (
+				05C9C34B28C779B500E57C5D /* Sources */,
+				05C9C34C28C779B500E57C5D /* Frameworks */,
+				05C2416A2BE281C100270FDC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArisiaToolsBundle;
+			productName = ArisiaToolsBundle;
+			productReference = 05C9C34F28C779B500E57C5D /* ArisiaTools.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		05E6E27D28C7771C0073FDD8 /* asc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05E6E28528C7771C0073FDD8 /* Build configuration list for PBXNativeTarget "asc" */;
+			buildPhases = (
+				05E6E27A28C7771C0073FDD8 /* Sources */,
+				05E6E27B28C7771C0073FDD8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05C9C38B28C7829000E57C5D /* PBXTargetDependency */,
+			);
+			name = asc;
+			productName = ArisiaTools;
+			productReference = 05E6E27E28C7771C0073FDD8 /* asc */;
+			productType = "com.apple.product-type.tool";
+		};
+		05EB6B9929E84CE100849CC2 /* apkg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05EB6BA029E84CE100849CC2 /* Build configuration list for PBXNativeTarget "apkg" */;
+			buildPhases = (
+				05EB6B9629E84CE100849CC2 /* Sources */,
+				05EB6B9729E84CE100849CC2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05EB6BAD29E84FCD00849CC2 /* PBXTargetDependency */,
+			);
+			name = apkg;
+			productName = apkg;
+			productReference = 05EB6B9A29E84CE100849CC2 /* apkg */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05E6E27628C7771C0073FDD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					0502316F2920A96F001CDAD9 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					05A1FCA82BE2760400A75E01 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					05C2BF2B28E2A74A0059F938 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					05C9C34E28C779B500E57C5D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					05C9C38228C7827B00E57C5D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					05C9C39728C791AE00E57C5D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					05E6E27D28C7771C0073FDD8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					05EB6B9929E84CE100849CC2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 05E6E27928C7771C0073FDD8 /* Build configuration list for PBXProject "ArisiaTools" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05E6E27528C7771C0073FDD8;
+			productRefGroup = 05E6E27F28C7771C0073FDD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05C9C34E28C779B500E57C5D /* ArisiaToolsBundle */,
+				05C9C38228C7827B00E57C5D /* Install_Bundle */,
+				05C9C39728C791AE00E57C5D /* Install_Tools */,
+				0502316F2920A96F001CDAD9 /* Make_decls */,
+				05E6E27D28C7771C0073FDD8 /* asc */,
+				05C2BF2B28E2A74A0059F938 /* adecl */,
+				05EB6B9929E84CE100849CC2 /* apkg */,
+				05A1FCA82BE2760400A75E01 /* make_package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05C2BF2828E2A74A0059F938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C2BF4328E2A7CA0059F938 /* main.swift in Sources */,
+				05748FB52A20FE4300FBF7D6 /* decl.swift in Sources */,
+				05C2BF7128E2E2650059F938 /* config.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C9C34B28C779B500E57C5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05E6E27A28C7771C0073FDD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05748FB42A20FE4200FBF7D6 /* decl.swift in Sources */,
+				05E6E28228C7771C0073FDD8 /* main.swift in Sources */,
+				05C9C39428C7898500E57C5D /* config.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05EB6B9629E84CE100849CC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FE9C0F2A1BB97C008FD19D /* decl.swift in Sources */,
+				05EB6BAA29E84E0400849CC2 /* makefile.swift in Sources */,
+				05EB6BA829E84E0400849CC2 /* utils.swift in Sources */,
+				05EB6B9D29E84CE100849CC2 /* main.swift in Sources */,
+				05EB6BAB29E84E0400849CC2 /* manifest.swift in Sources */,
+				05EB6BA729E84E0400849CC2 /* config.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0502317A2920A97B001CDAD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05C9C39728C791AE00E57C5D /* Install_Tools */;
+			targetProxy = 050231792920A97B001CDAD9 /* PBXContainerItemProxy */;
+		};
+		05A1FCAD2BE2761C00A75E01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05C2BF2B28E2A74A0059F938 /* adecl */;
+			targetProxy = 05A1FCAC2BE2761C00A75E01 /* PBXContainerItemProxy */;
+		};
+		05A1FCAF2BE2761C00A75E01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05EB6B9929E84CE100849CC2 /* apkg */;
+			targetProxy = 05A1FCAE2BE2761C00A75E01 /* PBXContainerItemProxy */;
+		};
+		05A1FCB12BE2761C00A75E01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05E6E27D28C7771C0073FDD8 /* asc */;
+			targetProxy = 05A1FCB02BE2761C00A75E01 /* PBXContainerItemProxy */;
+		};
+		05A1FCB32BE2762100A75E01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05C9C39728C791AE00E57C5D /* Install_Tools */;
+			targetProxy = 05A1FCB22BE2762100A75E01 /* PBXContainerItemProxy */;
+		};
+		05C2BF3828E2A75A0059F938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05C2BF2B28E2A74A0059F938 /* adecl */;
+			targetProxy = 05C2BF3728E2A75A0059F938 /* PBXContainerItemProxy */;
+		};
+		05C2BF6B28E2AA230059F938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05C9C38228C7827B00E57C5D /* Install_Bundle */;
+			targetProxy = 05C2BF6A28E2AA230059F938 /* PBXContainerItemProxy */;
+		};
+		05C9C38928C7828600E57C5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05C9C34E28C779B500E57C5D /* ArisiaToolsBundle */;
+			targetProxy = 05C9C38828C7828600E57C5D /* PBXContainerItemProxy */;
+		};
+		05C9C38B28C7829000E57C5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05C9C38228C7827B00E57C5D /* Install_Bundle */;
+			targetProxy = 05C9C38A28C7829000E57C5D /* PBXContainerItemProxy */;
+		};
+		05C9C39D28C791B600E57C5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05E6E27D28C7771C0073FDD8 /* asc */;
+			targetProxy = 05C9C39C28C791B600E57C5D /* PBXContainerItemProxy */;
+		};
+		05EB6BAD29E84FCD00849CC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05C9C38228C7827B00E57C5D /* Install_Bundle */;
+			targetProxy = 05EB6BAC29E84FCD00849CC2 /* PBXContainerItemProxy */;
+		};
+		05EB6BAF29E8514100849CC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05EB6B9929E84CE100849CC2 /* apkg */;
+			targetProxy = 05EB6BAE29E8514100849CC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		050231702920A96F001CDAD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		050231712920A96F001CDAD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05A1FCA92BE2760400A75E01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05A1FCAA2BE2760400A75E01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05C2BF3028E2A74A0059F938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
+				GCC_OPTIMIZATION_LEVEL = 2;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steelwheels.ArisiaTools.adecl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		05C2BF3128E2A74A0059F938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
+				GCC_OPTIMIZATION_LEVEL = 2;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steelwheels.ArisiaTools.adecl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		05C9C35228C779B500E57C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ArisiaToolsBundle/Info.plist;
+				INSTALL_PATH = "$(HOME)/ltools/bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steelwheels.ArisiaToolsBundle;
+				PRODUCT_NAME = ArisiaTools;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		05C9C35328C779B500E57C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = ArisiaToolsBundle/Info.plist;
+				INSTALL_PATH = "$(HOME)/ltools/bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steelwheels.ArisiaToolsBundle;
+				PRODUCT_NAME = ArisiaTools;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		05C9C38428C7827B00E57C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05C9C38528C7827B00E57C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05C9C39928C791AE00E57C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05C9C39A28C791AE00E57C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05E6E28328C7771C0073FDD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05E6E28428C7771C0073FDD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		05E6E28628C7771C0073FDD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"@executable_path/ArisiaTools.bundle/Contents/Frameworks",
+					/usr/local/libexec/arisia/bin/ArisiaTools.bundle/Contents/Frameworks,
+				);
+				GCC_OPTIMIZATION_LEVEL = 2;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steelwheels.ArisiaTools.asc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		05E6E28728C7771C0073FDD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"@executable_path/ArisiaTools.bundle/Contents/Frameworks",
+					/usr/local/libexec/arisia/bin/ArisiaTools.bundle/Contents/Frameworks,
+				);
+				GCC_OPTIMIZATION_LEVEL = 2;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steelwheels.ArisiaTools.asc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		05EB6B9E29E84CE100849CC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
+				GCC_OPTIMIZATION_LEVEL = 2;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steelwheels.ArisiaTools.apkg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		05EB6B9F29E84CE100849CC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = TR2DNF3P93;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
+				GCC_OPTIMIZATION_LEVEL = 2;
+				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
+				PRODUCT_BUNDLE_IDENTIFIER = gitlab.com.steelwheels.ArisiaTools.apkg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		050231722920A96F001CDAD9 /* Build configuration list for PBXLegacyTarget "Make_decls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050231702920A96F001CDAD9 /* Debug */,
+				050231712920A96F001CDAD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05A1FCAB2BE2760400A75E01 /* Build configuration list for PBXLegacyTarget "make_package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05A1FCA92BE2760400A75E01 /* Debug */,
+				05A1FCAA2BE2760400A75E01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05C2BF3228E2A74A0059F938 /* Build configuration list for PBXNativeTarget "adecl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C2BF3028E2A74A0059F938 /* Debug */,
+				05C2BF3128E2A74A0059F938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05C9C35428C779B500E57C5D /* Build configuration list for PBXNativeTarget "ArisiaToolsBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C9C35228C779B500E57C5D /* Debug */,
+				05C9C35328C779B500E57C5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05C9C38328C7827B00E57C5D /* Build configuration list for PBXLegacyTarget "Install_Bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C9C38428C7827B00E57C5D /* Debug */,
+				05C9C38528C7827B00E57C5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05C9C39828C791AE00E57C5D /* Build configuration list for PBXLegacyTarget "Install_Tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C9C39928C791AE00E57C5D /* Debug */,
+				05C9C39A28C791AE00E57C5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05E6E27928C7771C0073FDD8 /* Build configuration list for PBXProject "ArisiaTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05E6E28328C7771C0073FDD8 /* Debug */,
+				05E6E28428C7771C0073FDD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05E6E28528C7771C0073FDD8 /* Build configuration list for PBXNativeTarget "asc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05E6E28628C7771C0073FDD8 /* Debug */,
+				05E6E28728C7771C0073FDD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05EB6BA029E84CE100849CC2 /* Build configuration list for PBXNativeTarget "apkg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05EB6B9E29E84CE100849CC2 /* Debug */,
+				05EB6B9F29E84CE100849CC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05E6E27628C7771C0073FDD8 /* Project object */;
+}

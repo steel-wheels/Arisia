@@ -1,0 +1,12 @@
+{
+  application: "main.js",
+  properties: {
+      prop_data: {
+          data: "prop_data.json",
+          type: "prop_data.d.ts"
+        }
+    },
+  views: {
+      prop_view: "prop_view.js"
+    }
+}

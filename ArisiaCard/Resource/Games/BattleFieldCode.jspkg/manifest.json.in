@@ -1,0 +1,27 @@
+{
+  application: "main.ts"
+  views: {
+    home:	 "home.as"
+    field:	 "field.as"
+  }
+  images: {
+    title: "images/title.png"
+    car:   "images/car.png"
+  }
+  definitions: [
+    "types/team.d.ts"
+  ]
+  properties: {
+    team_properties: {
+      type: "data/team_data.d.ts"
+      data: "data/team_data.json"
+    }
+  }
+  threads: {
+    scene: "scene.ts"
+  }
+  libraries: [
+    "lib/machine.ts"
+  ]
+}
+

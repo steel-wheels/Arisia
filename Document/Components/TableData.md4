@@ -1,0 +1,34 @@
+# `TableData` component
+
+## Introduction
+The TableData component manages the database which contains
+multiple data records.
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`class-TableData.d.ts')
+</pre>
+
+## Example
+You can find the sample script at
+[table-data-0.jspkg](ARISIA_SAMPLE/table-data-0.jspkg) .
+
+### Type definition
+<pre>
+m4_include(`table-data-0.jspkg/record.d.ts')
+</pre>
+
+### Initial data definition
+<pre>
+m4_include(`table-data-0.jspkg/table.json')
+</pre>
+
+### IScript
+<pre>
+m4_include(`table-data-0.jspkg/table.as')
+</pre>
+
+m4_include(`footer.md')
+

@@ -1,0 +1,15 @@
+[
+    {
+      style:	.sedan,
+      count:   1
+    },
+    {
+      style:	.minival,
+      count:   2
+    },
+    {
+      style:	.coupe,
+      count:   3
+    }
+]
+

@@ -1,0 +1,9 @@
+{
+  application: "main.js",
+  definitions: [
+      "typedef.d.ts"
+    ],
+  views: {
+      hello: "label.js"
+    }
+}

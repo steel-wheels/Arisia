@@ -1,0 +1,20 @@
+# `Button` component
+
+## Introduction
+A control that defines an area on the screen that a user clicks to trigger an action.
+![Button ScreemnShot](./Images/button-component-macos.png)
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`class-Button.d.ts')
+</pre>
+
+## Example
+<pre>
+m4_include(`button.jspkg/button.as')
+</pre>
+
+m4_include(`footer.md')
+

@@ -1,0 +1,15 @@
+{
+  application: "main.js",
+  definitions: [
+      "record.d.ts"
+    ],
+  tables: {
+      table0: {
+          data: "table.json",
+          type: "record.d.ts"
+        }
+    },
+  views: {
+      table: "table.js"
+    }
+}

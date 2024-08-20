@@ -1,0 +1,7 @@
+{
+  application: "main.ts"
+  views: {
+    checkbox: "checkbox.as"
+  }
+}
+

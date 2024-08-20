@@ -1,0 +1,13 @@
+# `Shell` component
+
+## Introduction
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`class-Shell.d.ts')
+</pre>
+
+m4_include(`footer.md')
+

@@ -1,0 +1,28 @@
+# `vim` support
+
+## How to support ArisiaScript file
+
+Reference: https://easyramble.com/set-vim-indent-with-filetype.html (Japanese)
+
+### Step 1: Indent for each file types
+Add following lines into <code>~/.vimrc</code>
+<pre>
+filetype plugin indent on
+</pre>
+
+### Step 2: Define file type by <code>~/.vim/filetype.vim</code>
+Edit the <code>~/.vim/filetype.vim</code>
+<pre>
+augroup filetypedetect
+        au BufRead,BufNewFile *.as setfiletype arisia_script
+augroup END
+</pre>
+
+ ### Step 3: Setting for each file types
+ Edit the <code>~/.vim/ftplugin/arisia_script.vim</code> to support ArisiaScript.
+<pre>
+set tabstop=4
+</pre>
+
+m4_include(footer.md)
+

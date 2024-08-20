@@ -1,0 +1,16 @@
+{
+  application: "main.js",
+  definitions: [
+      "types/basic.d.ts",
+      "data/table_data.d.ts"
+    ],
+  tables: {
+      table0: {
+          data: "data/table_data.json",
+          type: "data/table_data.d.ts"
+        }
+    },
+  views: {
+      table: "table.js"
+    }
+}

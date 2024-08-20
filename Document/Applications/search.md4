@@ -1,0 +1,14 @@
+# Search application
+The search application helps you to search operation with search options.
+
+![Screen shot of search application](./Images/search-app-screenshot.png)
+
+## Implementation
+You can find the source code of this application at 
+[Search.jspkg](https://gitlab.com/steewheels/arisia/-/tree/main/ArisiaCard/Resource/Search.jspkg).
+
+## Reference
+* [Google Search Operators: The Complete List](https://ahrefs.com/blog/google-advanced-search-operators/) : The expression which can be used by google search
+
+m4_include(`footer.md')
+

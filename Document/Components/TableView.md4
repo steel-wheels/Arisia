@@ -1,0 +1,14 @@
+# `TableView` component
+
+## Introduction
+Text table
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`class-TableView.d.ts')
+</pre>
+
+m4_include(`footer.md')
+

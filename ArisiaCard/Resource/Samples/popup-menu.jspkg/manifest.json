@@ -1,0 +1,6 @@
+{
+  application: "main.js",
+  views: {
+      popup: "popup-menu.js"
+    }
+}

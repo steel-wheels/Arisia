@@ -1,0 +1,4 @@
+framework module CoconutData {
+  header "CoconutData-Swift.h"
+  requires objc
+}

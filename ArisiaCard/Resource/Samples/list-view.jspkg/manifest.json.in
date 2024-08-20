@@ -1,0 +1,7 @@
+{
+  application: "main.ts"
+  views: {
+   list: "list.as"
+  }
+}
+

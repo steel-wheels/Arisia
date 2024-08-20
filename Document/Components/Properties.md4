@@ -1,0 +1,37 @@
+# `Property` component
+
+## Introduction
+The record database.
+The initial values are defined in the resource file.
+They are copied into the application support directory as cache file.
+This component loads/stores the values from/to the cache file.
+
+About the data format, see [storage](../arisia-storage.md).
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`class-PropertiesData.d.ts')
+</pre>
+
+## Example
+### Record type definition
+The record type is described by <code>interface</code> of TypeScript.
+<pre>
+m4_include(`properties.jspkg/prop_data.d.ts')
+</pre>
+
+### Initial data definition
+The record data is defined by JSON format.
+<pre>
+m4_include(`properties.jspkg/prop_data.json')
+</pre>
+
+### Source code
+<pre>
+m4_include(`properties.jspkg/prop_view.as')
+</pre>
+
+m4_include(`footer.md')
+

@@ -1,0 +1,6 @@
+{
+  application: "main.js",
+  views: {
+      list: "list.js"
+    }
+}

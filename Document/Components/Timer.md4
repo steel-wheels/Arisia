@@ -1,0 +1,15 @@
+# `Timer` component
+
+## Introduction
+The Timer component is used for repetitive operation which 
+has fixed interval time.
+
+## Interface
+
+This is the interface definition for TypeScript:
+<pre>
+m4_include(`class-Timer.d.ts')
+</pre>
+
+m4_include(`footer.md')
+
