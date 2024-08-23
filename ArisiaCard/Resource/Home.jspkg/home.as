@@ -47,7 +47,12 @@
 			  } break ;
 			  case 3: {
 				/* Preference */
-				enterView("preference", null) ;
+				let url = env.searchPackage("Preference.jspkg") ;
+				if(url != null){
+					run(url, [], console) ;
+				} else {
+					console.log("Preference.jspkg is not found") ;
+				}
 			  } break ;
 			  case 4: {
 				/* Game */

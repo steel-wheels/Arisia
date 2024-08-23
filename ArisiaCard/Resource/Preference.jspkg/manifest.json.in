@@ -1,0 +1,7 @@
+{
+	application: "main.ts"
+	views: {
+		preference: "preference.as"
+	}
+}
+

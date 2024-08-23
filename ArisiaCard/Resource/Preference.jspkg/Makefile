@@ -24,7 +24,7 @@ asc_opt =
 	$(tsc) $(tsc_opt) $<
 
 # source files
-assrcs	=  terminal.as game.as paint.as home.as
+assrcs	=  preference.as
 utssrcs	=  main.ts
 ltssrcs	= 
 

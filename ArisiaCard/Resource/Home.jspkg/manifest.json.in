@@ -5,7 +5,6 @@
     game:	 "game.as"
     terminal:	 "terminal.as"
     paint:	 "paint.as"
-    preference:  "pref.as"
   }
   images: {
     arisia_icon: "images/arisia-icon.png"

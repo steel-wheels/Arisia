@@ -1,0 +1,6 @@
+{
+  application: "main.js",
+  views: {
+      preference: "preference.js"
+    }
+}

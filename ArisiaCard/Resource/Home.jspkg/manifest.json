@@ -7,7 +7,6 @@
       game: "game.js",
       home: "home.js",
       paint: "paint.js",
-      preference: "pref.js",
       terminal: "terminal.js"
     }
 }
