@@ -88,6 +88,14 @@
 		055DDC872BC297E0005440D0 /* textfield.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112322BC28197009CDB1B /* textfield.jspkg */; };
 		055DDC882BC297E0005440D0 /* timer.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112362BC28197009CDB1B /* timer.jspkg */; };
 		055DDC8A2BC2981A005440D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0537BE0B2BC21F2C00C92172 /* ViewController.swift */; };
+		056D7AF92C7B04240098E352 /* Search.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0556FB942C4BEF6D001E8F6C /* Search.jspkg */; };
+		056D7AFA2C7B04240098E352 /* Home.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112172BC27FC2009CDB1B /* Home.jspkg */; };
+		056D7AFB2C7B04240098E352 /* Preference.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F5D26A2C7955910065A22D /* Preference.jspkg */; };
+		056D7AFC2C7B04240098E352 /* Terminal.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 056D7AF42C7B03780098E352 /* Terminal.jspkg */; };
+		056D7AFD2C7B04380098E352 /* Search.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0556FB942C4BEF6D001E8F6C /* Search.jspkg */; };
+		056D7AFE2C7B04380098E352 /* Home.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112172BC27FC2009CDB1B /* Home.jspkg */; };
+		056D7AFF2C7B04380098E352 /* Preference.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F5D26A2C7955910065A22D /* Preference.jspkg */; };
+		056D7B002C7B04380098E352 /* Terminal.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 056D7AF42C7B03780098E352 /* Terminal.jspkg */; };
 		05BAADF72BC27736004AFAE6 /* CoconutData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADF62BC27736004AFAE6 /* CoconutData.xcframework */; };
 		05BAADF82BC27736004AFAE6 /* CoconutData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADF62BC27736004AFAE6 /* CoconutData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05BAADFB2BC27836004AFAE6 /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADFA2BC27836004AFAE6 /* CoconutDatabase.xcframework */; };
@@ -106,12 +114,6 @@
 		05BAAE0F2BC2792B004AFAE6 /* ArisiaLibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE0C2BC2792B004AFAE6 /* ArisiaLibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05BAAE102BC2792B004AFAE6 /* ArisiaComponents.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE0D2BC2792B004AFAE6 /* ArisiaComponents.xcframework */; };
 		05BAAE112BC2792B004AFAE6 /* ArisiaComponents.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAAE0D2BC2792B004AFAE6 /* ArisiaComponents.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		05F5D26F2C79572F0065A22D /* Preference.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F5D26A2C7955910065A22D /* Preference.jspkg */; };
-		05F5D2702C7957390065A22D /* Preference.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F5D26A2C7955910065A22D /* Preference.jspkg */; };
-		05F5D2712C79586D0065A22D /* Search.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0556FB942C4BEF6D001E8F6C /* Search.jspkg */; };
-		05F5D2722C79586D0065A22D /* Home.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112172BC27FC2009CDB1B /* Home.jspkg */; };
-		05F5D2732C79587B0065A22D /* Search.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0556FB942C4BEF6D001E8F6C /* Search.jspkg */; };
-		05F5D2742C79587B0065A22D /* Home.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112172BC27FC2009CDB1B /* Home.jspkg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,9 +194,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				05F5D2712C79586D0065A22D /* Search.jspkg in CopyFiles */,
-				05F5D2722C79586D0065A22D /* Home.jspkg in CopyFiles */,
-				05F5D26F2C79572F0065A22D /* Preference.jspkg in CopyFiles */,
+				056D7AF92C7B04240098E352 /* Search.jspkg in CopyFiles */,
+				056D7AFA2C7B04240098E352 /* Home.jspkg in CopyFiles */,
+				056D7AFB2C7B04240098E352 /* Preference.jspkg in CopyFiles */,
+				056D7AFC2C7B04240098E352 /* Terminal.jspkg in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,9 +207,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				05F5D2732C79587B0065A22D /* Search.jspkg in CopyFiles */,
-				05F5D2742C79587B0065A22D /* Home.jspkg in CopyFiles */,
-				05F5D2702C7957390065A22D /* Preference.jspkg in CopyFiles */,
+				056D7AFD2C7B04380098E352 /* Search.jspkg in CopyFiles */,
+				056D7AFE2C7B04380098E352 /* Home.jspkg in CopyFiles */,
+				056D7AFF2C7B04380098E352 /* Preference.jspkg in CopyFiles */,
+				056D7B002C7B04380098E352 /* Terminal.jspkg in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +316,7 @@
 		055DDC612BC296EF005440D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		055DDC642BC296F0005440D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		055DDC662BC296F0005440D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		056D7AF42C7B03780098E352 /* Terminal.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Terminal.jspkg; path = ../Resource/Terminal.jspkg; sourceTree = "<group>"; };
 		05BAADF62BC27736004AFAE6 /* CoconutData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutData.xcframework; path = ../../../../Library/Frameworks/CoconutData.xcframework; sourceTree = "<group>"; };
 		05BAADFA2BC27836004AFAE6 /* CoconutDatabase.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutDatabase.xcframework; path = ../../../../Library/Frameworks/CoconutDatabase.xcframework; sourceTree = "<group>"; };
 		05BAADFD2BC2784B004AFAE6 /* Cobalt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cobalt.xcframework; path = ../../../../Library/Frameworks/Cobalt.xcframework; sourceTree = "<group>"; };
@@ -366,6 +371,7 @@
 				0556FB942C4BEF6D001E8F6C /* Search.jspkg */,
 				053112172BC27FC2009CDB1B /* Home.jspkg */,
 				05F5D26A2C7955910065A22D /* Preference.jspkg */,
+				056D7AF42C7B03780098E352 /* Terminal.jspkg */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
