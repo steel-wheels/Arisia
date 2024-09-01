@@ -15,7 +15,7 @@ public class ALConfig: KEConfig
 
 	public static var rootInstanceName: String = "root"
 
-	public override init(applicationType atype: KEApplicationType, doStrict strict: Bool, logLevel log: CNConfig.LogLevel) {
+	public override init(applicationType atype: CNApplicationType, doStrict strict: Bool, logLevel log: CNConfig.LogLevel) {
 		super.init(applicationType: atype, doStrict: strict, logLevel: log)
 	}
 
@@ -23,7 +23,7 @@ public class ALConfig: KEConfig
 		return ALConfig.rootFrameName(for: super.applicationType)
 	}}
 
-	public static func rootFrameName(for atype: KEApplicationType) -> String {
+	public static func rootFrameName(for atype: CNApplicationType) -> String {
 		let result: String
 		switch atype {
 		case .terminal:

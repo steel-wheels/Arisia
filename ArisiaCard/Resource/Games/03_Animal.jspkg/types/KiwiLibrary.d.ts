@@ -641,6 +641,11 @@ declare function _openURL(title: URLIF | string, cbfunc: any): void ;
 
 declare function tokenize(str: string): TokenIF[] | null ;
 
+interface ReadlineCoreIF {
+	execute(): string | null ;	
+}
+declare var _readlineCore:	ReadlineCoreIF
+
 /**
  * @file Result.ts
  */
@@ -763,6 +768,7 @@ declare class CancelException extends Error {
 }
 declare function _cancel(): void;
 declare function openURL(url: URLIF | string): boolean;
+declare function readline(): string;
 declare function Thread(name: string, console: ConsoleIF): ThreadIF | null;
 declare function waitThread(thread: ThreadIF): void;
 /**
@@ -825,32 +831,3 @@ declare class SpriteRadar {
     private isThisNode;
 }
 declare function run(path: URLIF | string, args: string[], cons: ConsoleIF): number;
-/*
- * Builtin.d.ts: Declaration of type and functions of ArisiaLibrary
- */
-
-declare function _setup_component(root: FrameIF): void ;
-
-
-declare function _alloc_Frame(): FrameIF ;
-
-/**
- * Transpiler.ts
- */
-declare function _definePropertyIF(frame: FrameIF, names: string[]): void;
-/**
- * Builtin.d.ts : Built-in objects in KiwiComponents
- */
-
-declare function _enterView(path: string, arg: any, cbfunc: (retval: any) => void): void ;
-declare function _alert(type: AlertType, message: string, labels: string[], cbfunc: (retval: number) => void): void ;
-declare function leaveView(param: any): void ;
-
-declare function _openPanel(title: string, type: FileType, exts: string[], cbfunc: any): void ;
-declare function _savePanel(title: string, cbfunc: any): void ;
-
-
-declare function openPanel(title: string, type: FileType, exts: string[]): URLIF | null;
-declare function savePanel(title: string): URLIF | null;
-declare function alert(type: AlertType, message: string, labels: string[]): number;
-declare function enterView(path: string, arg: any): any;

@@ -4,14 +4,16 @@
 
 apkg_cmd = /usr/local/libexec/arisia/bin/apkg
 
-all: bfc
+GAME_03	= 03_Animal.jspkg
 
-bfc: dummy
-	$(apkg_cmd) BattleFieldCode.jspkg
-	(cd BattleFieldCode.jspkg && make clean && make)
+all: game_03
+
+game_03: dummy
+	$(apkg_cmd) $(GAME_03)
+	(cd $(GAME_03) && make clean && make)
 
 clean: dummy
-	(cd BattleFieldCode.jspkg && make clean)
+	(cd $(GAME_03)  && make clean)
 
 dummy:
 

@@ -64,8 +64,7 @@ declare enum ExitCode {
 }
 declare enum FileType {
   directory = 2,
-  file = 1,
-  notExist = 0
+  file = 1
 }
 declare enum FontSize {
   large = 2,
@@ -252,6 +251,7 @@ interface FileManagerIF {
   isWritable(p0 : URLIF): boolean ;
   isExecutable(p0 : URLIF): boolean ;
   isAccessible(p0 : URLIF): boolean ;
+  checkFileType(p0 : URLIF): FileType | null ;
   documentDirectory : URLIF ;
   libraryDirectory : URLIF ;
   applicationSupportDirectory : URLIF ;
@@ -641,6 +641,11 @@ declare function _openURL(title: URLIF | string, cbfunc: any): void ;
 
 declare function tokenize(str: string): TokenIF[] | null ;
 
+interface ReadlineCoreIF {
+	execute(): string | null ;	
+}
+declare var _readlineCore:	ReadlineCoreIF
+
 /**
  * @file Result.ts
  */
@@ -690,6 +695,7 @@ declare class FileManagerClass {
     isExecutable(url: URLIF): boolean;
     isReadable(url: URLIF): boolean;
     isWritable(url: URLIF): boolean;
+    checkFileType(url: URLIF): FileType | null;
     get currentDirectory(): URLIF;
     get documentDirectory(): URLIF;
     get libraryDirectory(): URLIF;
@@ -762,6 +768,7 @@ declare class CancelException extends Error {
 }
 declare function _cancel(): void;
 declare function openURL(url: URLIF | string): boolean;
+declare function readline(): string;
 declare function Thread(name: string, console: ConsoleIF): ThreadIF | null;
 declare function waitThread(thread: ThreadIF): void;
 /**
@@ -824,3 +831,160 @@ declare class SpriteRadar {
     private isThisNode;
 }
 declare function run(path: URLIF | string, args: string[], cons: ConsoleIF): number;
+/*
+ * Builtin.d.ts: Declaration of type and functions of ArisiaLibrary
+ */
+
+declare function _setup_component(root: FrameIF): void ;
+
+
+declare function _alloc_Frame(): FrameIF ;
+
+/**
+ * Transpiler.ts
+ */
+declare function _definePropertyIF(frame: FrameIF, names: string[]): void;
+/**
+ * Builtin.d.ts : Built-in objects in KiwiComponents
+ */
+
+declare function _enterView(path: string, arg: any, cbfunc: (retval: any) => void): void ;
+declare function _alert(type: AlertType, message: string, labels: string[], cbfunc: (retval: number) => void): void ;
+declare function leaveView(param: any): void ;
+
+declare function _openPanel(title: string, type: FileType, exts: string[], cbfunc: any): void ;
+declare function _savePanel(title: string, cbfunc: any): void ;
+
+
+declare function openPanel(title: string, type: FileType, exts: string[]): URLIF | null;
+declare function savePanel(title: string): URLIF | null;
+declare function alert(type: AlertType, message: string, labels: string[]): number;
+declare function enterView(path: string, arg: any): any;
+
+interface BoxIF extends FrameIF {
+  axis : Axis ;
+  alignment : Alignment ;
+  distribution : Distribution ;
+}
+declare function _alloc_Box(): BoxIF ;
+interface ButtonIF extends FrameIF {
+  pressed(p0 : ButtonIF): void ;
+  isEnabled : boolean ;
+  title : string ;
+}
+declare function _alloc_Button(): ButtonIF ;
+interface CheckBoxIF extends FrameIF {
+  label : string ;
+  status : boolean ;
+}
+declare function _alloc_CheckBox(): CheckBoxIF ;
+interface CollectionIF extends FrameIF {
+  count : number ;
+  load(): IconIF[] ;
+  pressed(p0 : CollectionIF, p1 : number): void ;
+}
+declare function _alloc_Collection(): CollectionIF ;
+interface ConsoleViewIF extends FrameIF {
+  error(p0 : string): void ;
+  height : number ;
+  console : ConsoleIF ;
+  width : number ;
+}
+declare function _alloc_ConsoleView(): ConsoleViewIF ;
+interface IconViewIF extends FrameIF {
+  pressed(p0 : FrameIF): void ;
+  symbol : string ;
+  title : string ;
+}
+declare function _alloc_IconView(): IconViewIF ;
+interface ImageIF extends FrameIF {
+  size(): string ;
+}
+declare function _alloc_Image(): ImageIF ;
+interface LabelIF extends FrameIF {
+  text : string ;
+  number : number ;
+}
+declare function _alloc_Label(): LabelIF ;
+interface ListViewIF extends FrameIF {
+  isEditable : boolean ;
+  items(): string[] ;
+  setItems(p0 : string[]): void ;
+  selectedItem : string | null ;
+  updated : number ;
+  visibleRowCounts : number ;
+}
+declare function _alloc_ListView(): ListViewIF ;
+interface PopupMenuIF extends FrameIF {
+  current : MenuItemIF | null ;
+  set(p0 : MenuItemIF[]): void ;
+  selected(p0 : PopupMenuIF, p1 : MenuItemIF): void ;
+}
+declare function _alloc_PopupMenu(): PopupMenuIF ;
+interface PropertiesDataIF extends FrameIF {
+  name : string ;
+}
+declare function _alloc_PropertiesData(): PropertiesDataIF ;
+interface RadioButtonsIF extends FrameIF {
+  currentIndex : number ;
+  columnNum : number ;
+  labels : string[] ;
+  setEnable(p0 : string, p1 : boolean): void ;
+}
+declare function _alloc_RadioButtons(): RadioButtonsIF ;
+interface ShellIF extends FrameIF {
+  console : ConsoleIF ;
+  run(p0 : URLIF): void ;
+}
+declare function _alloc_Shell(): ShellIF ;
+interface SpriteIF extends FrameIF {
+  addNode(p0 : string, p1 : string, p2 : number): void ;
+  background : string ;
+  isPaused : boolean ;
+  isStarted(): boolean ;
+  script : string ;
+  start(): void ;
+  nodes : SpriteNodeDeclIF[] ;
+}
+declare function _alloc_Sprite(): SpriteIF ;
+interface StepperIF extends FrameIF {
+  initValue : number ;
+  maxValue : number ;
+  minValue : number ;
+  stepValue : number ;
+  updated(p0 : StepperIF, p1 : number): void ;
+}
+declare function _alloc_Stepper(): StepperIF ;
+interface TableDataIF extends FrameIF {
+  name : string ;
+}
+declare function _alloc_TableData(): TableDataIF ;
+interface TableViewIF extends FrameIF {
+  columnCount : number ;
+  name : string ;
+  rowCount : number ;
+}
+declare function _alloc_TableView(): TableViewIF ;
+interface TerminalIF extends FrameIF {
+  console : ConsoleIF ;
+}
+declare function _alloc_Terminal(): TerminalIF ;
+interface TextEditIF extends FrameIF {
+  isEditable : boolean ;
+  terminal : EscapeCodesIF ;
+}
+declare function _alloc_TextEdit(): TextEditIF ;
+interface TextFieldIF extends FrameIF {
+  isEditable : boolean ;
+  text : string ;
+  number : number ;
+  hasBackgroundColor : boolean ;
+}
+declare function _alloc_TextField(): TextFieldIF ;
+interface TimerIF extends FrameIF {
+  interval : number ;
+  start(): void ;
+  stop(): void ;
+  addHandler(p0 : (p0 : number) => boolean): boolean ;
+}
+declare function _alloc_Timer(): TimerIF ;

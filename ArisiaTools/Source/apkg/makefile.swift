@@ -11,14 +11,14 @@ import Foundation
 
 public class Makefile
 {
-	private var mApplicationType:		KEApplicationType
+	private var mApplicationType:		CNApplicationType
 	private var mUserTypeScriptFiles:	Array<String>
 	private var mLibTypeScriptFiles:	Array<String>
 	private var mLibTypeDeclarationFiles:	Array<String>
 	private var mArisiaScriptFiles:		Array<String>
 	private var mToolPath:			String
 
-	public init(applicationType atype: KEApplicationType){
+	public init(applicationType atype: CNApplicationType){
 		mApplicationType		= atype
 		mUserTypeScriptFiles		= []
 		mLibTypeScriptFiles		= []
@@ -27,7 +27,7 @@ public class Makefile
 		mToolPath			= "/usr/local/libexec/arisia/bin"
 	}
 
-	public static func libraryDecrationFileName(applicationType atype: KEApplicationType) -> String {
+	public static func libraryDecrationFileName(applicationType atype: CNApplicationType) -> String {
 		let KiwiLibraryDeclarationFile		= "KiwiLibrary.d.ts"
 		let ArisiaComponentDeclarationFile	= "ArisiaComponents.d.ts"
 

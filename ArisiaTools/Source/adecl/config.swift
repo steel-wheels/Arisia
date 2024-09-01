@@ -110,8 +110,8 @@ public class CommandLineParser
 		return config
 	}
 
-	private func parseTarget(values vals: Array<CBValue>) -> KEApplicationType? {
-		let result: KEApplicationType?
+	private func parseTarget(values vals: Array<CBValue>) -> CNApplicationType? {
+		let result: CNApplicationType?
 		switch vals.count {
 		case 1:
 			if let form = parseTarget(value: vals[0]) {
@@ -130,8 +130,8 @@ public class CommandLineParser
 		return result
 	}
 
-	private func parseTarget(value val: CBValue) -> KEApplicationType? {
-		let result: KEApplicationType?
+	private func parseTarget(value val: CBValue) -> CNApplicationType? {
+		let result: CNApplicationType?
 		switch val {
 		case .stringValue(let str):
 			switch str {

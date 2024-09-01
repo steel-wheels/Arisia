@@ -18,24 +18,25 @@ public class Config
 		case TypeDeclaration
 	}
 
+        private var mApplicationType:   CNApplicationType
 	private var mScriptFile: 	String
 	private var mPackageDirectory:	URL?
 	private var mImportFiles:	Array<String>
 	private var mOutputFormat:	Format
-	private var mTarget:		KEApplicationType
 
-	public var scriptFile: String		{ get { return mScriptFile		}}
-	public var packageDirectory: URL?	{ get { return mPackageDirectory	}}
-	public var importFiles: Array<String> 	{ get { return mImportFiles		}}
-	public var outputFormat: Format		{ get { return mOutputFormat		}}
-	public var target: KEApplicationType	{ get { return mTarget			}}
+        public var applicationType: CNApplicationType   { get { return mApplicationType    }}
+	public var scriptFile: String		        { get { return mScriptFile		}}
+	public var packageDirectory: URL?	        { get { return mPackageDirectory	}}
+	public var importFiles: Array<String> 	        { get { return mImportFiles		}}
+	public var outputFormat: Format		        { get { return mOutputFormat		}}
 
-	public init(scriptFile file: String, packageDirectory packdir: URL?, importFiles ifiles: Array<String>, outputFormat form: Format, target targ: KEApplicationType){
+
+        public init(applicationType atype: CNApplicationType, scriptFile file: String, packageDirectory packdir: URL?, importFiles ifiles: Array<String>, outputFormat form: Format){
+                mApplicationType        = atype
 		mScriptFile		= file
 		mPackageDirectory	= packdir
 		mImportFiles 		= ifiles
 		mOutputFormat		= form
-		mTarget			= targ
 	}
 
 	public func outputFileName() -> Result<String, NSError> {
@@ -118,7 +119,7 @@ public class CommandLineParser
 		var srcfile: String?		= nil
 		var format:  Format		= .TypeScript
 		var imports: Array<String>	= []
-		var target:  KEApplicationType	= .terminal
+		var target:  CNApplicationType	= .terminal
 		var package: URL?		= nil
 		let stream   			= CNArrayStream(source: args)
 		while let arg = stream.get() {
@@ -174,7 +175,7 @@ public class CommandLineParser
 			}
 		}
 		if let file = srcfile {
-			return Config(scriptFile: file, packageDirectory: package, importFiles: imports, outputFormat: format, target: target)
+                        return Config(applicationType: target, scriptFile: file, packageDirectory: package, importFiles: imports, outputFormat: format)
 		} else {
 			mConsole.error(string: "[Error] The souce file name is required\n")
 			return nil
@@ -265,8 +266,8 @@ public class CommandLineParser
 		return result
 	}
 
-	private func parseTarget(values vals: Array<CBValue>) -> KEApplicationType? {
-		let result: KEApplicationType?
+	private func parseTarget(values vals: Array<CBValue>) -> CNApplicationType? {
+		let result: CNApplicationType?
 		switch vals.count {
 		case 1:
 			if let form = parseTarget(value: vals[0]) {
@@ -285,8 +286,8 @@ public class CommandLineParser
 		return result
 	}
 
-	private func parseTarget(value val: CBValue) -> KEApplicationType? {
-		let result: KEApplicationType?
+	private func parseTarget(value val: CBValue) -> CNApplicationType? {
+		let result: CNApplicationType?
 		switch val {
 		case .stringValue(let str):
 			switch str {

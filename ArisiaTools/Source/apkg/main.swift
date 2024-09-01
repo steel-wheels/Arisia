@@ -40,7 +40,7 @@ func main(arguments args: Array<String>) -> Int
 	}
 
 	/* Decide application type */
-	let apptype: KEApplicationType
+	let apptype: CNApplicationType
 	if let _ = manidict[KEResource.ViewsCategory] {
 		apptype = .window
 	} else {
@@ -150,7 +150,7 @@ private func loadManifest(config conf: Config) -> Result<CNValue, NSError> {
 	}
 }
 
-private func copyResources(applicationType apptype: KEApplicationType, config conf: Config, console cons: CNConsole) -> CNErrorCode?
+private func copyResources(applicationType apptype: CNApplicationType, config conf: Config, console cons: CNConsole) -> CNErrorCode?
 {
 	let srcname = Makefile.libraryDecrationFileName(applicationType: apptype)
 
@@ -439,7 +439,7 @@ private func checkProperties(makefile make: Makefile, manifest mani: Manifest, p
 	return nil
 }
 
-private func checkTables(makefile make: Makefile, manifest mani: Manifest, tables tblsval: CNValue, applicationType atype: KEApplicationType, config conf: Config, console cons: CNConsole) -> CNErrorCode?
+private func checkTables(makefile make: Makefile, manifest mani: Manifest, tables tblsval: CNValue, applicationType atype: CNApplicationType, config conf: Config, console cons: CNConsole) -> CNErrorCode?
 {
 	guard let tables = tblsval.toDictionary() else {
 		cons.error(string: "[Error] The tables property must be dictionary.\n")

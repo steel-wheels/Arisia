@@ -307,6 +307,9 @@
 		0537BE122BC21F2D00C92172 /* ArisiaCard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ArisiaCard.entitlements; sourceTree = "<group>"; };
 		053A8BA52BE46F4400BE862D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		053C73922C02BC67004E32EB /* resource.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = resource.jspkg; sourceTree = "<group>"; };
+		0550B2B22C7EC8A200D67B6B /* 03_Animal.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = 03_Animal.jspkg; sourceTree = "<group>"; };
+		0550B2B42C7EC8A200D67B6B /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		0550B2B52C7EC8A200D67B6B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0556FB942C4BEF6D001E8F6C /* Search.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Search.jspkg; path = ../Resource/Search.jspkg; sourceTree = "<group>"; };
 		055DDC562BC296EE005440D0 /* ArisiaCard_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArisiaCard_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		055DDC582BC296EE005440D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -367,6 +370,7 @@
 		053112152BC27EC3009CDB1B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				0550B2B62C7EC8A200D67B6B /* Games */,
 				0531121A2BC27FF9009CDB1B /* Samples */,
 				0556FB942C4BEF6D001E8F6C /* Search.jspkg */,
 				053112172BC27FC2009CDB1B /* Home.jspkg */,
@@ -451,6 +455,17 @@
 			);
 			name = Source;
 			path = ../Source;
+			sourceTree = "<group>";
+		};
+		0550B2B62C7EC8A200D67B6B /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				0550B2B22C7EC8A200D67B6B /* 03_Animal.jspkg */,
+				0550B2B42C7EC8A200D67B6B /* Makefile */,
+				0550B2B52C7EC8A200D67B6B /* README.md */,
+			);
+			name = Games;
+			path = ../Resource/Games;
 			sourceTree = "<group>";
 		};
 		055DDC572BC296EE005440D0 /* ArisiaCard.iOS */ = {
