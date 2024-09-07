@@ -64,7 +64,7 @@ _definePropertyIF(root, ["title","top","return_button","axis","alignment","distr
                 let resdir = FileManager.resourceDirectory ;
       	  let bfcdir = resdir.appending("Games/BattleFieldCode.jspkg") ;
       	  if(FileManager.fileExists(bfcdir)) {
-                  run(bfcdir, [], console) ;
+                  runThread(bfcdir, [], console) ;
       	  } else {
       	    console.log("Files is NOT exist " + bfcdir.path) ;
       	  }

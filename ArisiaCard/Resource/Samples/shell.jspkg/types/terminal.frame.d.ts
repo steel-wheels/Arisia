@@ -5,7 +5,6 @@ interface root_terminal_TerminalIF extends TerminalIF {
 }
 interface ShellIF extends FrameIF {
   console : ConsoleIF ;
-  run(p0 : URLIF): void ;
 }
 interface root_shell_ShellIF extends ShellIF {
   main(p0 : root_shell_ShellIF): void ;

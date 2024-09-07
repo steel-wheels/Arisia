@@ -13,7 +13,7 @@
       pressed: event() %{
         let urlp = openPanel("Select source file", FileType.file, ["js"]) ;
         if(urlp != null){
-          root.shell.run(urlp!) ;
+          runThread(urlp, [], console) ;
         }
       %}
     }

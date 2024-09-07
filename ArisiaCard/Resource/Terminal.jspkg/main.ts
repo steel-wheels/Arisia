@@ -6,6 +6,6 @@
 
 function main(args: string[])
 {
-	enterView("preference", null) ;
+	enterView("terminal", null) ;
 }
 

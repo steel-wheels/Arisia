@@ -19,7 +19,6 @@ public class AMShell: ALFrame
 	public static let ClassName = "Shell"
 
 	private static let ConsoleItem	= "console"
-	private static let RunItem	= "run"
 
 	private var mContext:		KEContext
 	private var mFrameCore:		ALFrameCore
@@ -66,16 +65,8 @@ public class AMShell: ALFrame
 			} else {
 				consif = .voidType
 			}
-			let urlif: CNValueType
-			if let uif = vmgr.search(byName: URL.InterfaceName) {
-				urlif = uif
-			} else {
-				CNLog(logLevel: .error, message: "No URL IF", atFunction: #function, inFile: #file)
-				urlif = .voidType
-			}
 			let ptypes: Array<M> = [
-				M(name: AMShell.ConsoleItem,	type: consif),
-				M(name: AMShell.RunItem,	type: .functionType(.voidType, [urlif]))
+				M(name: AMShell.ConsoleItem,	type: consif)
 			]
 			let newif = CNInterfaceType(name: ifname, base: baseif, members: ptypes)
 			vmgr.add(interfaceType: newif)
@@ -106,32 +97,7 @@ public class AMShell: ALFrame
 			}
 		})
 
-		/* run item */
-		let runfunc: @convention(block) (_ urlval: JSValue) -> JSValue = {
-			(_ urlval: JSValue) -> JSValue in
-			return self.runFunction(url: urlval, resource: res, console: cons)
-		}
-		if let runval = JSValue(object: runfunc, in: mContext) {
-			setValue(name: AMShell.RunItem, value: runval)
-		} else {
-			CNLog(logLevel: .error, message: "Failed to allocate \(AMShell.RunItem) function", atFunction: #function, inFile: #file)
-		}
-
 		return nil
-	}
-
-	private func runFunction(url  urlval: JSValue, resource res: KEResource,console cons: CNFileConsole) -> JSValue {
-		var result = false
-		if let url = valueToURL(value: urlval) {
-			if let shell = mShell {
-				shell.run(scriptAt: url, resource: res, arguments: [])
-				result = true
-			}
-		}
-		if !result {
-			CNLog(logLevel: .error, message: "Invalid parameter", atFunction: #function, inFile: #file)
-		}
-		return JSValue(bool: result, in: mContext)
 	}
 
 	private func valueToConsole(value val: JSValue) -> CNFileConsole? {
@@ -153,19 +119,13 @@ public class AMShell: ALFrame
 	}
 
 	private func executeShell(console cons: CNFileConsole) {
-		let shell: KHShell
-		if let sh = mShell {
-			shell = sh
-		} else {
-			let sh = KHShell(application: .window, console: cons)
-			mShell = sh
-			shell  = sh
-		}
-		if !shell.isRunning {
-			CNExecuteInUserThread(level: .thread, execute: {
-				() -> Void in shell.execute()
-			})
-		}
+                if mShell == nil {
+                        let sh = KHShell(application: .window, console: cons)
+                        CNExecuteInUserThread(level: .thread, execute: {
+                                () -> Void in sh.execute()
+                        })
+                        mShell = sh
+                }
 	}
 }
 

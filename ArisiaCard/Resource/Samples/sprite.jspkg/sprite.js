@@ -19,7 +19,7 @@ _definePropertyIF(root, ["sprite", "console", "ok_button", "axis", "alignment", 
     sprite._definePropertyType("background", "s");
     sprite._definePropertyType("script", "s");
     sprite._definePropertyType("console", "i(ConsoleIF)");
-    sprite._definePropertyType("nodes", "a(d(n))");
+    sprite._definePropertyType("nodes", "a(d(s))");
     sprite._definePropertyType("main", "f(v,[o(root_sprite_SpriteIF)])");
     sprite._definePropertyType("addNode", "f(v,[s,s,n])");
     sprite._definePropertyType("isPaused", "b");

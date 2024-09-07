@@ -1,6 +1,6 @@
 {
   application: "main.js",
   views: {
-      preference: "terminal.js"
+      terminal: "terminal.js"
     }
 }

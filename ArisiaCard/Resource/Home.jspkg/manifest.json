@@ -6,7 +6,6 @@
   views: {
       game: "game.js",
       home: "home.js",
-      paint: "paint.js",
-      terminal: "terminal.js"
+      paint: "paint.js"
     }
 }

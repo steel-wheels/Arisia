@@ -3,7 +3,6 @@
   views: {
     home:	 "home.as"
     game:	 "game.as"
-    terminal:	 "terminal.as"
     paint:	 "paint.as"
   }
   images: {

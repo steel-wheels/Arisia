@@ -27,9 +27,8 @@ _definePropertyIF(root, ["terminal", "shell", "buttons", "axis", "alignment", "d
     /* define type for all properties */
     shell._definePropertyType("main", "f(v,[o(root_shell_ShellIF)])");
     shell._definePropertyType("console", "i(ConsoleIF)");
-    shell._definePropertyType("run", "f(v,[i(URLIF)])");
     /* define getter/setter for all properties */
-    _definePropertyIF(shell, ["main", "console", "run"]);
+    _definePropertyIF(shell, ["main", "console"]);
     /* assign user declared properties */
     shell.main = function (self) {
         self.console = root.terminal.console;
@@ -61,9 +60,9 @@ _definePropertyIF(root, ["terminal", "shell", "buttons", "axis", "alignment", "d
         /* assign user declared properties */
         run.title = "Run";
         run.pressed = function (self) {
-            let urlp = openPanel("Select source file", FileType.file, ["js", "jspkg"]);
+            let urlp = openPanel("Select source file", FileType.file, ["jspkg"]);
             if (urlp != null) {
-                root.shell.run(urlp);
+                runThread(urlp, [], root.terminal.console);
             }
         };
         buttons.run = run;

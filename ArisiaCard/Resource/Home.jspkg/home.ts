@@ -57,7 +57,7 @@ root.alignment = Alignment.center;
   						FileType.file, ["jspkg"]) ;
   				if(url != null){
   					if(FileManager.isReadable(url)){
-  						run(url, [], console) ;
+  						runThread(url, [], console) ;
   					} else {
   						console.log("Not readable") ;
   					}
@@ -65,13 +65,18 @@ root.alignment = Alignment.center;
   			  } break ;
   			  case 1: {
   				/* Terminal */
-  				enterView("terminal", null) ;
+  				let url = env.searchPackage("Terminal.jspkg") ;
+  				if(url != null){
+  					runThread(url, [], console) ;
+  				} else {
+  					console.log("Search.jspkg is not found") ;
+  				}
   			  } break ;
   			  case 2: {
   				/* Search */
   				let url = env.searchPackage("Search.jspkg") ;
   				if(url != null){
-  					run(url, [], console) ;
+  					runThread(url, [], console) ;
   				} else {
   					console.log("Search.jspkg is not found") ;
   				}
@@ -80,7 +85,7 @@ root.alignment = Alignment.center;
   				/* Preference */
   				let url = env.searchPackage("Preference.jspkg") ;
   				if(url != null){
-  					run(url, [], console) ;
+  					runThread(url, [], console) ;
   				} else {
   					console.log("Preference.jspkg is not found") ;
   				}
