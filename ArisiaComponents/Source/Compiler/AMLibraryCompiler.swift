@@ -190,7 +190,16 @@ open class AMLibraryCompiler: ALLibraryCompiler
 				case .success(let resource):
 					switch self.mainScriptInResource(resource) {
 					case .success(let mainfile):
-						let thread = AMThread(viewController: vcont, virtualMachine: ctxt.virtualMachine, scriptFile: mainfile, resource: resource, console: cons, environment: env, config: conf)
+                                                let thread: KLScriptThread
+                                                switch resource.applicationType {
+                                                case .terminal:
+                                                        thread = KLScriptThread(scriptFile: mainfile, resource: res, virtualMachine: ctxt.virtualMachine, console: cons, environment: env, config: conf)
+                                                case .window:
+                                                        thread = AMThread(viewController: vcont, virtualMachine: ctxt.virtualMachine, scriptFile: mainfile, resource: resource, console: cons, environment: env, config: conf)
+                                                @unknown default:
+                                                        CNLog(logLevel: .error, message: "Can not happend: \(#function)")
+                                                        thread = KLScriptThread(scriptFile: path, resource: res, virtualMachine: ctxt.virtualMachine, console: cons, environment: env, config: conf)
+                                                }
 						let object = KLThread(thread: thread, context: ctxt)
 						return JSValue(object: object, in: ctxt)
 					case .failure(let err):
