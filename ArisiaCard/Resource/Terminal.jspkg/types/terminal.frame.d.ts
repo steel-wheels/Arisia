@@ -3,12 +3,6 @@ interface TerminalIF extends FrameIF {
 }
 interface root_terminal_TerminalIF extends TerminalIF {
 }
-interface ShellIF extends FrameIF {
-  console : ConsoleIF ;
-}
-interface root_shell_ShellIF extends ShellIF {
-  main(p0 : root_shell_ShellIF): void ;
-}
 interface ButtonIF extends FrameIF {
   pressed(p0 : ButtonIF): void ;
   isEnabled : boolean ;
@@ -29,6 +23,5 @@ interface root_buttons_BoxIF extends BoxIF {
 }
 interface root_BoxIF extends BoxIF {
   buttons : root_buttons_BoxIF ;
-  shell : root_shell_ShellIF ;
   terminal : root_terminal_TerminalIF ;
 }

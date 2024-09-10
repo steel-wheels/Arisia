@@ -1,11 +1,11 @@
 {
   terminal: Terminal {
   }
-  shell: Shell {
-    main: init %{
-      self.console = root.terminal.console ;
-    %}
-  }
+  //shell: Shell {
+  //  main: init %{
+  //    self.console = root.terminal.console ;
+  //  %}
+  //}
   buttons: Box {
     axis: Axis horizontal
     run: Button {

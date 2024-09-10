@@ -4,13 +4,12 @@
 let root = _alloc_Box() as root_BoxIF  ;
 /* define type for all properties */
 root._definePropertyType("terminal", "o(Terminal)") ;
-root._definePropertyType("shell", "o(Shell)") ;
 root._definePropertyType("buttons", "o(Box)") ;
 root._definePropertyType("axis", "e(Axis)") ;
 root._definePropertyType("alignment", "e(Alignment)") ;
 root._definePropertyType("distribution", "e(Distribution)") ;
 /* define getter/setter for all properties */
-_definePropertyIF(root, ["terminal","shell","buttons","axis","alignment","distribution"]) ;
+_definePropertyIF(root, ["terminal","buttons","axis","alignment","distribution"]) ;
 {
   /* allocate function for frame: Terminal */
   let terminal = _alloc_Terminal() as root_terminal_TerminalIF  ;
@@ -19,20 +18,6 @@ _definePropertyIF(root, ["terminal","shell","buttons","axis","alignment","distri
   /* define getter/setter for all properties */
   _definePropertyIF(terminal, ["console"]) ;
   root.terminal = terminal ;
-}
-{
-  /* allocate function for frame: Shell */
-  let shell = _alloc_Shell() as root_shell_ShellIF  ;
-  /* define type for all properties */
-  shell._definePropertyType("main", "f(v,[o(root_shell_ShellIF)])") ;
-  shell._definePropertyType("console", "i(ConsoleIF)") ;
-  /* define getter/setter for all properties */
-  _definePropertyIF(shell, ["main","console"]) ;
-  /* assign user declared properties */
-  shell.main = function(self: root_shell_ShellIF): void {
-        self.console = root.terminal.console ;
-      };
-  root.shell = shell ;
 }
 {
   /* allocate function for frame: Box */
@@ -87,7 +72,5 @@ _definePropertyIF(root, ["terminal","shell","buttons","axis","alignment","distri
 /* Define listner functions */
 /* Setup the component */
 _setup_component(root) ;
-/* execute initializer methods for frame shell */
-root.shell.main(root.shell) ;
 /* This value will be return value of evaluateScript() */
 root ;

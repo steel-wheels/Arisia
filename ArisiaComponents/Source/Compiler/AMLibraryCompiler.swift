@@ -193,12 +193,12 @@ open class AMLibraryCompiler: ALLibraryCompiler
                                                 let thread: KLScriptThread
                                                 switch resource.applicationType {
                                                 case .terminal:
-                                                        thread = KLScriptThread(scriptFile: mainfile, resource: res, virtualMachine: ctxt.virtualMachine, console: cons, environment: env, config: conf)
+                                                        thread = KLScriptThread(scriptFile: mainfile, resource: resource, virtualMachine: ctxt.virtualMachine, console: cons, environment: env, config: conf)
                                                 case .window:
                                                         thread = AMThread(viewController: vcont, virtualMachine: ctxt.virtualMachine, scriptFile: mainfile, resource: resource, console: cons, environment: env, config: conf)
                                                 @unknown default:
                                                         CNLog(logLevel: .error, message: "Can not happend: \(#function)")
-                                                        thread = KLScriptThread(scriptFile: path, resource: res, virtualMachine: ctxt.virtualMachine, console: cons, environment: env, config: conf)
+                                                        thread = KLScriptThread(scriptFile: path, resource: resource, virtualMachine: ctxt.virtualMachine, console: cons, environment: env, config: conf)
                                                 }
 						let object = KLThread(thread: thread, context: ctxt)
 						return JSValue(object: object, in: ctxt)
