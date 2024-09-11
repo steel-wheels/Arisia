@@ -12,7 +12,7 @@ function main(argv) {
         let line = readline();
         let cmd = parser.parse(line);
         if (cmd != null) {
-            cmd.dump();
+            cmd.execute();
         }
     }
 }

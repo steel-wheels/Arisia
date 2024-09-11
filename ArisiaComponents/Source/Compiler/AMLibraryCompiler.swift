@@ -68,7 +68,7 @@ open class AMLibraryCompiler: ALLibraryCompiler
 		/* _alert */
 		let alertfunc: @convention(block) (_ type: JSValue, _ msg: JSValue, _ labels: JSValue, _ cbfunc: JSValue) -> Void = {
 			(_ type: JSValue, _ msg: JSValue, _ labels: JSValue, _ cbfunc: JSValue) -> Void in
-            AMAlert.execute(type: type, message: msg, labels: labels, callback: cbfunc, viewController: vcont, context: ctxt)
+                        AMAlert.execute(type: type, message: msg, labels: labels, callback: cbfunc, viewController: vcont, context: ctxt)
 		}
 		ctxt.set(name: "_alert", function: alertfunc)
 
@@ -184,37 +184,40 @@ open class AMLibraryCompiler: ALLibraryCompiler
 		/* Redefine _runThread method */
 		let runfunc: @convention(block) (_ pathval: JSValue, _ consval: JSValue) -> JSValue = {
 			(_ pathval: JSValue, _ consval: JSValue) -> JSValue in
-			if let path = self.valueToURL(value: pathval),
-			   let cons = self.valueToConsole(value: consval) {
-				switch self.resourceFromFile(path) {
-				case .success(let resource):
-					switch self.mainScriptInResource(resource) {
-					case .success(let mainfile):
-                                                let thread: KLScriptThread
-                                                switch resource.applicationType {
-                                                case .terminal:
-                                                        thread = KLScriptThread(scriptFile: mainfile, resource: resource, virtualMachine: ctxt.virtualMachine, console: cons, environment: env, config: conf)
-                                                case .window:
-                                                        thread = AMThread(viewController: vcont, virtualMachine: ctxt.virtualMachine, scriptFile: mainfile, resource: resource, console: cons, environment: env, config: conf)
-                                                @unknown default:
-                                                        CNLog(logLevel: .error, message: "Can not happend: \(#function)")
-                                                        thread = KLScriptThread(scriptFile: path, resource: resource, virtualMachine: ctxt.virtualMachine, console: cons, environment: env, config: conf)
-                                                }
-						let object = KLThread(thread: thread, context: ctxt)
-						return JSValue(object: object, in: ctxt)
-					case .failure(let err):
-						CNLog(logLevel: .error, message: err.toString())
-					}
-				case .failure(let err):
-					CNLog(logLevel: .error, message: err.toString())
-				}
-			} else {
-				CNLog(logLevel: .error, message: "Unexpected parameter types")
-			}
-			return JSValue(undefinedIn: ctxt)
+                        return self.runThread(pathValue: pathval, consoleValue: consval, context: ctxt, viewController: vcont, resource: res, environment: env, config: conf)
 		}
 		ctxt.set(name: "_runThread", function: runfunc)
 	}
+
+        private func runThread(pathValue pathval: JSValue, consoleValue consval: JSValue, context ctxt: KEContext, viewController vcont: AMComponentViewController, resource res: KEResource, environment env: CNEnvironment, config conf: KEConfig) -> JSValue {
+                guard let path = self.valueToURL(value: pathval), let cons = self.valueToConsole(value: consval) else {
+                        CNLog(logLevel: .error, message: "Unexpected parameter types")
+                        return JSValue(nullIn: ctxt)
+                }
+                switch self.resourceFromFile(path) {
+                case .success(let resource):
+                        switch self.mainScriptInResource(resource) {
+                        case .success(let mainfile):
+                                let thread: KLScriptThread
+                                switch resource.applicationType {
+                                case .terminal:
+                                        thread = KLScriptThread(scriptFile: mainfile, resource: resource, virtualMachine: ctxt.virtualMachine, console: cons, environment: env, config: conf)
+                                case .window:
+                                        thread = AMThread(viewController: vcont, virtualMachine: ctxt.virtualMachine, scriptFile: mainfile, resource: resource, console: cons, environment: env, config: conf)
+                                @unknown default:
+                                        CNLog(logLevel: .error, message: "Can not happend: \(#function)")
+                                        thread = KLScriptThread(scriptFile: path, resource: resource, virtualMachine: ctxt.virtualMachine, console: cons, environment: env, config: conf)
+                                }
+                                let object = KLThread(thread: thread, context: ctxt)
+                                return JSValue(object: object, in: ctxt)
+                        case .failure(let err):
+                                CNLog(logLevel: .error, message: err.toString())
+                        }
+                case .failure(let err):
+                        CNLog(logLevel: .error, message: err.toString())
+                }
+                return JSValue(undefinedIn: ctxt)
+        }
 
 	private func parameterToViewName(parameter param: JSValue) -> String? {
 		return param.toString()

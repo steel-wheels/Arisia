@@ -5,7 +5,7 @@
 /// <reference path="../types/ArisiaPlatform.d.ts"/>
 
 enum CommandType {
-	run	= "run"
+	ls	= "ls"
 }
 
 class Command
@@ -16,6 +16,18 @@ class Command
 	constructor(ctype: CommandType, args: string[]){
 		this.commandType = ctype ;
 		this.arguments   = args ;
+	}
+
+	execute() {
+		switch(this.commandType){
+		  case CommandType.ls: {
+			  this.lsCommand() ;
+		  } break ;
+		}
+	}
+
+	lsCommand(){
+		console.print("ls command\n") ;
 	}
 
 	dump(){
@@ -40,12 +52,12 @@ class CommandLineParser
 
 		let result: Command | null ;
 		switch(cmdname){
-		  case CommandType.run: {
-			/* run command */
-			result = new Command(CommandType.run, args) ;
+		  case CommandType.ls: {
+			/* ls command */
+			result = new Command(CommandType.ls, args) ;
 		  } break ;
 		  default: {
-			console.log("Unknown command: " + words[0] + "\n") ;
+			console.print("Unknown command: " + words[0] + "\n") ;
 			result = null ;
 		  } break ;
 		}

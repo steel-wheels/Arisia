@@ -5,12 +5,24 @@
 /// <reference path="../types/ArisiaPlatform.d.ts"/>
 var CommandType;
 (function (CommandType) {
-    CommandType["run"] = "run";
+    CommandType["ls"] = "ls";
 })(CommandType || (CommandType = {}));
 class Command {
     constructor(ctype, args) {
         this.commandType = ctype;
         this.arguments = args;
+    }
+    execute() {
+        switch (this.commandType) {
+            case CommandType.ls:
+                {
+                    this.lsCommand();
+                }
+                break;
+        }
+    }
+    lsCommand() {
+        console.print("ls command\n");
     }
     dump() {
         console.print(this.commandType + ":" +
@@ -29,15 +41,15 @@ class CommandLineParser {
         let args = words.slice(1);
         let result;
         switch (cmdname) {
-            case CommandType.run:
+            case CommandType.ls:
                 {
-                    /* run command */
-                    result = new Command(CommandType.run, args);
+                    /* ls command */
+                    result = new Command(CommandType.ls, args);
                 }
                 break;
             default:
                 {
-                    console.log("Unknown command: " + words[0] + "\n");
+                    console.print("Unknown command: " + words[0] + "\n");
                     result = null;
                 }
                 break;

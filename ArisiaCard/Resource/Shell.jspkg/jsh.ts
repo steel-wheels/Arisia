@@ -14,7 +14,7 @@ function main(argv: string[])
 		let line = readline() ;
 		let cmd  = parser.parse(line) ;
 		if(cmd != null){
-			cmd.dump() ;
+			cmd.execute() ;
 		}
 	}
 }
