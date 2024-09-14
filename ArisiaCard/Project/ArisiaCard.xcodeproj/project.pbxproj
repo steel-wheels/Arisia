@@ -56,6 +56,8 @@
 		053C73932C02BC67004E32EB /* resource.jspkg in Resources */ = {isa = PBXBuildFile; fileRef = 053C73922C02BC67004E32EB /* resource.jspkg */; };
 		053C73952C02BC79004E32EB /* resource.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053C73922C02BC67004E32EB /* resource.jspkg */; };
 		053C73962C02BC87004E32EB /* resource.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053C73922C02BC67004E32EB /* resource.jspkg */; };
+		055C15562C952CBB00727BB6 /* 02_Amazing.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 055C15552C952C2A00727BB6 /* 02_Amazing.jspkg */; };
+		055C15572C952CC900727BB6 /* 02_Amazing.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 055C15552C952C2A00727BB6 /* 02_Amazing.jspkg */; };
 		055DDC592BC296EE005440D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DDC582BC296EE005440D0 /* AppDelegate.swift */; };
 		055DDC5B2BC296EE005440D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055DDC5A2BC296EE005440D0 /* SceneDelegate.swift */; };
 		055DDC602BC296EE005440D0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 055DDC5F2BC296EE005440D0 /* Base */; };
@@ -264,6 +266,7 @@
 			dstPath = Games;
 			dstSubfolderSpec = 7;
 			files = (
+				055C15572C952CC900727BB6 /* 02_Amazing.jspkg in CopyFiles */,
 				05880C1F2C94F1320065BD39 /* 01_Acey_Ducey.jspkg in CopyFiles */,
 				05880C202C94F1320065BD39 /* 03_Animal.jspkg in CopyFiles */,
 				05880C212C94F1320065BD39 /* Makefile in CopyFiles */,
@@ -277,6 +280,7 @@
 			dstPath = Games;
 			dstSubfolderSpec = 7;
 			files = (
+				055C15562C952CBB00727BB6 /* 02_Amazing.jspkg in CopyFiles */,
 				05880C242C94F1570065BD39 /* 01_Acey_Ducey.jspkg in CopyFiles */,
 				05880C252C94F1570065BD39 /* 03_Animal.jspkg in CopyFiles */,
 				05880C262C94F1570065BD39 /* Makefile in CopyFiles */,
@@ -345,6 +349,7 @@
 		0550B2B42C7EC8A200D67B6B /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		0550B2B52C7EC8A200D67B6B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0556FB942C4BEF6D001E8F6C /* Search.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Search.jspkg; path = ../Resource/Search.jspkg; sourceTree = "<group>"; };
+		055C15552C952C2A00727BB6 /* 02_Amazing.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = 02_Amazing.jspkg; sourceTree = "<group>"; };
 		055DDC562BC296EE005440D0 /* ArisiaCard_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArisiaCard_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		055DDC582BC296EE005440D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		055DDC5A2BC296EE005440D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -496,6 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				05880C1D2C94F0EC0065BD39 /* 01_Acey_Ducey.jspkg */,
+				055C15552C952C2A00727BB6 /* 02_Amazing.jspkg */,
 				0550B2B22C7EC8A200D67B6B /* 03_Animal.jspkg */,
 				0550B2B42C7EC8A200D67B6B /* Makefile */,
 				0550B2B52C7EC8A200D67B6B /* README.md */,
