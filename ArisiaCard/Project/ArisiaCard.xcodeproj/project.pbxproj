@@ -96,6 +96,14 @@
 		056D7AFE2C7B04380098E352 /* Home.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 053112172BC27FC2009CDB1B /* Home.jspkg */; };
 		056D7AFF2C7B04380098E352 /* Preference.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05F5D26A2C7955910065A22D /* Preference.jspkg */; };
 		056D7B002C7B04380098E352 /* Terminal.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 056D7AF42C7B03780098E352 /* Terminal.jspkg */; };
+		05880C1F2C94F1320065BD39 /* 01_Acey_Ducey.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05880C1D2C94F0EC0065BD39 /* 01_Acey_Ducey.jspkg */; };
+		05880C202C94F1320065BD39 /* 03_Animal.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0550B2B22C7EC8A200D67B6B /* 03_Animal.jspkg */; };
+		05880C212C94F1320065BD39 /* Makefile in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0550B2B42C7EC8A200D67B6B /* Makefile */; };
+		05880C222C94F1320065BD39 /* README.md in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0550B2B52C7EC8A200D67B6B /* README.md */; };
+		05880C242C94F1570065BD39 /* 01_Acey_Ducey.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 05880C1D2C94F0EC0065BD39 /* 01_Acey_Ducey.jspkg */; };
+		05880C252C94F1570065BD39 /* 03_Animal.jspkg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0550B2B22C7EC8A200D67B6B /* 03_Animal.jspkg */; };
+		05880C262C94F1570065BD39 /* Makefile in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0550B2B42C7EC8A200D67B6B /* Makefile */; };
+		05880C272C94F1570065BD39 /* README.md in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0550B2B52C7EC8A200D67B6B /* README.md */; };
 		05BAADF72BC27736004AFAE6 /* CoconutData.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADF62BC27736004AFAE6 /* CoconutData.xcframework */; };
 		05BAADF82BC27736004AFAE6 /* CoconutData.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADF62BC27736004AFAE6 /* CoconutData.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05BAADFB2BC27836004AFAE6 /* CoconutDatabase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BAADFA2BC27836004AFAE6 /* CoconutDatabase.xcframework */; };
@@ -250,6 +258,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05880C1E2C94F11E0065BD39 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Games;
+			dstSubfolderSpec = 7;
+			files = (
+				05880C1F2C94F1320065BD39 /* 01_Acey_Ducey.jspkg in CopyFiles */,
+				05880C202C94F1320065BD39 /* 03_Animal.jspkg in CopyFiles */,
+				05880C212C94F1320065BD39 /* Makefile in CopyFiles */,
+				05880C222C94F1320065BD39 /* README.md in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05880C232C94F1490065BD39 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Games;
+			dstSubfolderSpec = 7;
+			files = (
+				05880C242C94F1570065BD39 /* 01_Acey_Ducey.jspkg in CopyFiles */,
+				05880C252C94F1570065BD39 /* 03_Animal.jspkg in CopyFiles */,
+				05880C262C94F1570065BD39 /* Makefile in CopyFiles */,
+				05880C272C94F1570065BD39 /* README.md in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05BAADF92BC27736004AFAE6 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +354,7 @@
 		055DDC642BC296F0005440D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		055DDC662BC296F0005440D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		056D7AF42C7B03780098E352 /* Terminal.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Terminal.jspkg; path = ../Resource/Terminal.jspkg; sourceTree = "<group>"; };
+		05880C1D2C94F0EC0065BD39 /* 01_Acey_Ducey.jspkg */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = 01_Acey_Ducey.jspkg; sourceTree = "<group>"; };
 		05BAADF62BC27736004AFAE6 /* CoconutData.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutData.xcframework; path = ../../../../Library/Frameworks/CoconutData.xcframework; sourceTree = "<group>"; };
 		05BAADFA2BC27836004AFAE6 /* CoconutDatabase.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CoconutDatabase.xcframework; path = ../../../../Library/Frameworks/CoconutDatabase.xcframework; sourceTree = "<group>"; };
 		05BAADFD2BC2784B004AFAE6 /* Cobalt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Cobalt.xcframework; path = ../../../../Library/Frameworks/Cobalt.xcframework; sourceTree = "<group>"; };
@@ -460,6 +495,7 @@
 		0550B2B62C7EC8A200D67B6B /* Games */ = {
 			isa = PBXGroup;
 			children = (
+				05880C1D2C94F0EC0065BD39 /* 01_Acey_Ducey.jspkg */,
 				0550B2B22C7EC8A200D67B6B /* 03_Animal.jspkg */,
 				0550B2B42C7EC8A200D67B6B /* Makefile */,
 				0550B2B52C7EC8A200D67B6B /* README.md */,
@@ -530,6 +566,7 @@
 				05BAADF92BC27736004AFAE6 /* Embed Frameworks */,
 				053112182BC27FC9009CDB1B /* CopyFiles */,
 				053112572BC281F5009CDB1B /* CopyFiles */,
+				05880C232C94F1490065BD39 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -550,6 +587,7 @@
 				055DDC6A2BC297AC005440D0 /* CopyFiles */,
 				055DDC6E2BC297D3005440D0 /* CopyFiles */,
 				05279BB92BC58025005C15F7 /* Embed Frameworks */,
+				05880C1E2C94F11E0065BD39 /* CopyFiles */,
 			);
 			buildRules = (
 			);
