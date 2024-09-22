@@ -25,7 +25,7 @@ asc_opt =
 
 # source files
 assrcs	=  sprite.as
-utssrcs	=  main.ts car.ts scene.ts
+utssrcs	=  main.ts scene.ts car.ts
 ltssrcs	= 
 
 # destination files

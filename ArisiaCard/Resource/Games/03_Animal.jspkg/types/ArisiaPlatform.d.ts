@@ -335,6 +335,9 @@ interface BitmapContextIF {
   get(p0 : number, p1 : number): ColorIF ;
   set(p0 : number, p1 : number, p2 : ColorIF): void ;
 }
+interface ReadlineCoreIF {
+  execute(): string | null ;
+}
 interface TriggerIF {
   trigger(): void ;
   isRunning(): boolean ;
@@ -552,8 +555,16 @@ interface PreferenceIF {
   user : UserPreferenceIF ;
   view : ViewPreferenceIF ;
 }
+declare var Colors:      	ColorsIF ;
+declare var console:		ConsoleIF ;
+declare var Curses:     	CursesIF ;
+declare var env:		EnvironmentIF ;
+declare var EscapeSequences:   EscapeSequencesIF
+declare var FileManagerCore:	FileManagerIF ;
+declare var TerminalController:        EscapeCodesIF ;
 declare var Preference:         PreferenceIF ;
 
+declare function asciiCodeName(code: number): string | null ;
 declare function exit(code: number): void ;
 
 declare function isAlphaNumerics(str: string): boolean ;
@@ -585,65 +596,43 @@ declare function Icon(tag: number, symbol: Symbols, label: String): IconIF ;
 
 declare function MenuItem(title: string, value: number): MenuItemIF ;
 
+declare function Oval(x: number, y: number, radius:number): OvalIF ;
 declare function Pipe(): PipeIF ;
 
+declare function Point(x: number, y: number): PointIF ;
 declare function Properties(name: string): PropertiesIF | null ;
-
+declare function Rect(x: number, y: number, width: number, height: number): RectIF ;
+declare function Size(width: number, height: number): SizeIF ;
 declare function SpriteActions(): SpriteActionsIF ;
 
+declare function StringStream(str: string): StringStreamIF ;
 declare function Table(name: string): TableIF | null ;
 
-declare function _Thread(path: string, console: ConsoleIF): ThreadIF | null ;
-
-/**
- * Builtin.d.ts
- */
-
-/* Singleton object*/
-declare var console:		ConsoleIF ;
-declare var Colors:      	ColorsIF ;
-declare var Curses:     	CursesIF ;
-declare var FileManagerCore:	FileManagerIF ;
-declare var TerminalController:	EscapeCodesIF ;
-declare var EscapeSequences:	EscapeSequencesIF ;
-
-declare var env:		EnvironmentIF ;
-
-
-declare function Point(x: number, y: number): PointIF ;
-declare function Rect(x: number, y: number, width: number, height: number): RectIF ;
-declare function Oval(x: number, y: number, radius:number): OvalIF ;
-declare function Vector(dx: number, dy: number): VectorIF ;
-declare function Size(width: number, height: number): SizeIF ;
-declare function URL(path: string): URLIF | null ;
-
-declare function StringStream(str: string): StringStreamIF ;
-
+declare function tokenize(str: string): TokenIF[] | null ;
 declare function toArray(value: any): any[] | null ;
 declare function toBitmap(value: any): BitmapContextIF | null ;
 declare function toBoolean(value: any): boolean | null ;
 declare function toDate(value: any): object | null ;
-declare function toNumber(value: any): number | null ;
 declare function toDictionary(value: any): {[name:string]: any} | null ;
-declare function toRecord(value: any): RecordIF | null ;
+declare function toNumber(value: any): number | null ;
 declare function toObject(value: any): object | null ;
+declare function toOval(value: any): OvalIF | null ;
 declare function toPoint(value: any): PointIF | null ;
 declare function toRect(value: any): RectIF | null ;
-declare function toOval(value: any): OvalIF | null ;
-declare function toVector(value: any): VectorIF | null ;
+declare function toRecord(value: any): RecordIF | null ;
 declare function toSize(value: any): SizeIF | null ;
 declare function toString(value: any): string | null ;
 declare function toURL(value: any): URLIF | null ;
-
-declare function asciiCodeName(code: number): string | null ;
-
+declare function toVector(value: any): VectorIF | null ;
 declare function _openURL(title: URLIF | string, cbfunc: any): void ;
+declare function _Thread(path: string, console: ConsoleIF): ThreadIF | null ;
 
-declare function tokenize(str: string): TokenIF[] | null ;
+declare function URL(path: string): URLIF | null ;
+declare function Vector(dx: number, dy: number): VectorIF ;
+/**
+ * Builtin.d.ts
+ */
 
-interface ReadlineCoreIF {
-	execute(): string | null ;
-}
 declare var _readlineCore:	ReadlineCoreIF
 
 /**
