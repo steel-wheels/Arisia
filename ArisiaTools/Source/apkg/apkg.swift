@@ -14,7 +14,14 @@ import Foundation
 
 let TypesDir    	= "types"
 
-func main(arguments args: Array<String>) -> Int
+@main struct AppBoxCLI {
+        static func main() async throws {
+                let ecode = apkg(arguments: CommandLine.arguments)
+                exit(Int32(ecode))
+        }
+}
+
+func apkg(arguments args: Array<String>) -> Int
 {
 	let console = CNFileConsole()
 
@@ -595,7 +602,5 @@ private func save(fileName fname: String, strings strs: Array<String>, config co
 	}
 }
 
-let retval = main(arguments: CommandLine.arguments)
-exit(Int32(retval))
 
 

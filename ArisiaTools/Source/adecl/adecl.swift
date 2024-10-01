@@ -12,7 +12,14 @@ import KiwiEngine
 import JavaScriptCore
 import Foundation
 
-func main(arguments args: Array<String>) {
+@main struct AppBoxCLI {
+        static func main() async throws {
+                adecl(arguments: CommandLine.arguments)
+                exit(Int32(0))
+        }
+}
+
+func adecl(arguments args: Array<String>) {
 	let console = CNFileConsole()
 	let cmdline = CommandLineParser(console: console)
 	guard let (config, _) = cmdline.parseArguments(arguments: Array(args.dropFirst())) else {
@@ -98,5 +105,4 @@ private func dump(className cname: String, interfaceType iftype: CNInterfaceType
 	return result
 }
 
-main(arguments: CommandLine.arguments)
 

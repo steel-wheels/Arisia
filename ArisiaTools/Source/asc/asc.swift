@@ -12,7 +12,14 @@ import CoconutData
 import JavaScriptCore
 import Foundation
 
-func main(arguments args: Array<String>) {
+@main struct AppBoxCLI {
+        static func main() async throws {
+                asc(arguments: CommandLine.arguments)
+                exit(Int32(0))
+        }
+}
+
+func asc(arguments args: Array<String>) {
 	let console = CNFileConsole()
 	let cmdline = CommandLineParser(console: console)
 	guard let (config, _) = cmdline.parseArguments(arguments: Array(args.dropFirst())) else {
@@ -197,5 +204,4 @@ private func outputScript(config conf: Config, text txt: CNText, console cons: C
 	}
 }
 
-main(arguments: CommandLine.arguments)
 

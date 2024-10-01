@@ -27,11 +27,11 @@
 		05C241672BE281C100270FDC /* KiwiControls.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241562BE281C000270FDC /* KiwiControls.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		05C241682BE281C100270FDC /* KiwiShell.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241572BE281C000270FDC /* KiwiShell.xcframework */; };
 		05C241692BE281C100270FDC /* KiwiShell.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05C241572BE281C000270FDC /* KiwiShell.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		05C2BF4328E2A7CA0059F938 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C2BF2E28E2A74A0059F938 /* main.swift */; };
+		05C2BF4328E2A7CA0059F938 /* adecl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C2BF2E28E2A74A0059F938 /* adecl.swift */; };
 		05C2BF7128E2E2650059F938 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C2BF7028E2E2650059F938 /* config.swift */; };
 		05C9C39428C7898500E57C5D /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C9C39328C7898500E57C5D /* config.swift */; };
-		05E6E28228C7771C0073FDD8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6E28128C7771C0073FDD8 /* main.swift */; };
-		05EB6B9D29E84CE100849CC2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EB6B9C29E84CE100849CC2 /* main.swift */; };
+		05E6E28228C7771C0073FDD8 /* asc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E6E28128C7771C0073FDD8 /* asc.swift */; };
+		05EB6B9D29E84CE100849CC2 /* apkg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EB6B9C29E84CE100849CC2 /* apkg.swift */; };
 		05EB6BA729E84E0400849CC2 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EB6BA229E84E0400849CC2 /* config.swift */; };
 		05EB6BA829E84E0400849CC2 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EB6BA329E84E0400849CC2 /* utils.swift */; };
 		05EB6BAA29E84E0400849CC2 /* makefile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EB6BA529E84E0400849CC2 /* makefile.swift */; };
@@ -160,15 +160,15 @@
 		05C241562BE281C000270FDC /* KiwiControls.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiControls.xcframework; path = ../../../../Library/Frameworks/KiwiControls.xcframework; sourceTree = "<group>"; };
 		05C241572BE281C000270FDC /* KiwiShell.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KiwiShell.xcframework; path = ../../../../Library/Frameworks/KiwiShell.xcframework; sourceTree = "<group>"; };
 		05C2BF2C28E2A74A0059F938 /* adecl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = adecl; sourceTree = BUILT_PRODUCTS_DIR; };
-		05C2BF2E28E2A74A0059F938 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		05C2BF2E28E2A74A0059F938 /* adecl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adecl.swift; sourceTree = "<group>"; };
 		05C2BF7028E2E2650059F938 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 		05C9C34F28C779B500E57C5D /* ArisiaTools.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArisiaTools.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C9C35128C779B500E57C5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C9C39328C7898500E57C5D /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 		05E6E27E28C7771C0073FDD8 /* asc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = asc; sourceTree = BUILT_PRODUCTS_DIR; };
-		05E6E28128C7771C0073FDD8 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		05E6E28128C7771C0073FDD8 /* asc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = asc.swift; sourceTree = "<group>"; };
 		05EB6B9A29E84CE100849CC2 /* apkg */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = apkg; sourceTree = BUILT_PRODUCTS_DIR; };
-		05EB6B9C29E84CE100849CC2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		05EB6B9C29E84CE100849CC2 /* apkg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apkg.swift; sourceTree = "<group>"; };
 		05EB6BA229E84E0400849CC2 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 		05EB6BA329E84E0400849CC2 /* utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
 		05EB6BA529E84E0400849CC2 /* makefile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = makefile.swift; sourceTree = "<group>"; };
@@ -227,7 +227,7 @@
 		05C2BF3B28E2A7800059F938 /* adecl */ = {
 			isa = PBXGroup;
 			children = (
-				05C2BF2E28E2A74A0059F938 /* main.swift */,
+				05C2BF2E28E2A74A0059F938 /* adecl.swift */,
 				05C2BF7028E2E2650059F938 /* config.swift */,
 			);
 			path = adecl;
@@ -260,7 +260,7 @@
 		05C9C37C28C77E8B00E57C5D /* asc */ = {
 			isa = PBXGroup;
 			children = (
-				05E6E28128C7771C0073FDD8 /* main.swift */,
+				05E6E28128C7771C0073FDD8 /* asc.swift */,
 				05C9C39328C7898500E57C5D /* config.swift */,
 			);
 			path = asc;
@@ -302,8 +302,8 @@
 		05EB6BA129E84D0200849CC2 /* apkg */ = {
 			isa = PBXGroup;
 			children = (
+				05EB6B9C29E84CE100849CC2 /* apkg.swift */,
 				05EB6BA229E84E0400849CC2 /* config.swift */,
-				05EB6B9C29E84CE100849CC2 /* main.swift */,
 				05EB6BA529E84E0400849CC2 /* makefile.swift */,
 				05EB6BA629E84E0400849CC2 /* manifest.swift */,
 				05EB6BA329E84E0400849CC2 /* utils.swift */,
@@ -516,7 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05C2BF4328E2A7CA0059F938 /* main.swift in Sources */,
+				05C2BF4328E2A7CA0059F938 /* adecl.swift in Sources */,
 				05748FB52A20FE4300FBF7D6 /* decl.swift in Sources */,
 				05C2BF7128E2E2650059F938 /* config.swift in Sources */,
 			);
@@ -534,7 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05748FB42A20FE4200FBF7D6 /* decl.swift in Sources */,
-				05E6E28228C7771C0073FDD8 /* main.swift in Sources */,
+				05E6E28228C7771C0073FDD8 /* asc.swift in Sources */,
 				05C9C39428C7898500E57C5D /* config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,7 +546,7 @@
 				05FE9C0F2A1BB97C008FD19D /* decl.swift in Sources */,
 				05EB6BAA29E84E0400849CC2 /* makefile.swift in Sources */,
 				05EB6BA829E84E0400849CC2 /* utils.swift in Sources */,
-				05EB6B9D29E84CE100849CC2 /* main.swift in Sources */,
+				05EB6B9D29E84CE100849CC2 /* apkg.swift in Sources */,
 				05EB6BAB29E84E0400849CC2 /* manifest.swift in Sources */,
 				05EB6BA729E84E0400849CC2 /* config.swift in Sources */,
 			);
@@ -627,10 +627,11 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = TR2DNF3P93;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Debug;
 		};
@@ -641,9 +642,11 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_OPTIMIZATION_LEVEL = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -658,11 +661,12 @@
 				DEVELOPMENT_TEAM = TR2DNF3P93;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Debug;
 		};
@@ -675,10 +679,12 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = TR2DNF3P93;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_OPTIMIZATION_LEVEL = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -695,7 +701,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
-				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
@@ -723,7 +729,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
-				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
@@ -750,6 +756,7 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				INFOPLIST_FILE = ArisiaToolsBundle/Info.plist;
 				INSTALL_PATH = "$(HOME)/ltools/bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -759,6 +766,7 @@
 				PRODUCT_NAME = ArisiaTools;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -775,6 +783,7 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = TR2DNF3P93;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				INFOPLIST_FILE = ArisiaToolsBundle/Info.plist;
 				INSTALL_PATH = "$(HOME)/ltools/bundles";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -784,6 +793,7 @@
 				PRODUCT_NAME = ArisiaTools;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -797,10 +807,11 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = TR2DNF3P93;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Debug;
 		};
@@ -811,9 +822,11 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_OPTIMIZATION_LEVEL = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -826,10 +839,11 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = TR2DNF3P93;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Debug;
 		};
@@ -840,9 +854,11 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = TR2DNF3P93;
+				GCC_OPTIMIZATION_LEVEL = "";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -981,7 +997,7 @@
 					"@executable_path/ArisiaTools.bundle/Contents/Frameworks",
 					/usr/local/libexec/arisia/bin/ArisiaTools.bundle/Contents/Frameworks,
 				);
-				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
@@ -1012,7 +1028,7 @@
 					"@executable_path/ArisiaTools.bundle/Contents/Frameworks",
 					/usr/local/libexec/arisia/bin/ArisiaTools.bundle/Contents/Frameworks,
 				);
-				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
@@ -1041,7 +1057,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
-				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -1069,7 +1085,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
-				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_OPTIMIZATION_LEVEL = 1;
 				INSTALL_PATH = "$(PROJECT_DIR)/../Product/bin";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/ArisiaTools.bundle/Contents/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;

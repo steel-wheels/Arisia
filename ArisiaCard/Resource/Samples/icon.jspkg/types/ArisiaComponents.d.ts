@@ -564,6 +564,7 @@ declare var FileManagerCore:	FileManagerIF ;
 declare var TerminalController:        EscapeCodesIF ;
 declare var Preference:         PreferenceIF ;
 
+declare var _readlineCore:	ReadlineCoreIF
 declare function asciiCodeName(code: number): string | null ;
 declare function exit(code: number): void ;
 
@@ -629,12 +630,6 @@ declare function _Thread(path: string, console: ConsoleIF): ThreadIF | null ;
 
 declare function URL(path: string): URLIF | null ;
 declare function Vector(dx: number, dy: number): VectorIF ;
-/**
- * Builtin.d.ts
- */
-
-declare var _readlineCore:	ReadlineCoreIF
-
 /**
  * @file Result.ts
  */

@@ -148,8 +148,10 @@ public class CommandLineParser
 	}
 
 	private func printVersionMessage() {
-		let plist   = CNPropertyList.load(bundleName: "ArisiaTools.bundle")
-                let version = plist.versionString
+                var version = "unknown"
+                if let plist = CNPropertyList.loadFromBundle(name: "ArisiaTools.bundle") {
+                        version = plist.versionString
+                }
 		mConsole.print(string: "\(version)\n")
 	}
 }
